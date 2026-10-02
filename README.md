@@ -1,18 +1,14 @@
 # cdlpermits.com
 
-Free CDL permit practice tests. Static site on GitHub Pages, same idea as OTR News.
+Free CDL permit practice tests. Static site on GitHub Pages.
 
-## Go live
-1. In your GitHub account, create a new public repo named `cdlpermits`.
-2. Upload everything in this folder (including the hidden `.github` folder) to the repo.
-3. Repo Settings > Pages: Source = "Deploy from a branch", Branch = `main`, folder `/ (root)`. Save.
-4. Same page, Custom domain: `cdlpermits.com`. Save, then tick "Enforce HTTPS" once it's available.
-5. At GoDaddy, DNS for cdlpermits.com:
-   - Four A records for `@`: 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
-   - CNAME record `www` pointing to `<your-github-username>.github.io`
-6. Submit https://cdlpermits.com/sitemap.xml in Google Search Console.
+- Questions: questions.json (English) and questions_es.json (Spanish). Each question has q, a (right answer), w (wrong answers), e (explanation).
+- Ads, links and state list: top of build.py.
+- MyCDLCoach links on the results screen: top of quiz.js.
 
-## Add or fix questions
-Edit `questions.json` on GitHub. Each question has `q` (question), `a` (correct answer),
-`w` (wrong answers) and `e` (explanation). Answers are shuffled automatically.
-When you save, the "Rebuild site" action regenerates every page.
+## Daily rebuild (question of the day, social image, RSS for Zapier)
+Create the file `.github/workflows/build.yml` (Add file > Create new file, type that full name)
+and paste in the contents of build.yml.txt. It rebuilds every morning and whenever questions change.
+
+Zapier: use "RSS by Zapier" with https://cdlpermits.com/feed.xml, then post to Facebook and Instagram.
+The daily image is https://cdlpermits.com/qotd-YYYY-MM-DD.png (in the feed item's enclosure).

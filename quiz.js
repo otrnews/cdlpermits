@@ -1,7 +1,31 @@
 // ===== Settings: where the results screen sends people =====
 var LINKS = {
-  course: 'https://mycdlcoach.com',  // CDL Fast Track ($149) checkout or course page
-  lounge: 'https://mycdlcoach.com'   // Free Driver's Lounge sign-up page
+  course: 'https://www.mycdlcoach.com/theory-and-endorsements',  // ELDT theory course ($149)
+  lounge: 'https://www.mycdlcoach.com/offers/DzKSWbj5/checkout'  // Free Driver's Lounge sign-up
+};
+var ES = document.documentElement.lang === 'es';
+var S = ES ? {
+  how:'¿Cómo quiere practicar?', best:'Su mejor puntaje: ', practice:'Modo práctica', practiceD:'Vea la respuesta correcta y por qué después de cada pregunta.',
+  exam:'Modo examen', examD:'Sin pistas hasta el final, como el examen real.', fix:'Corregir mis errores', fixD:'Repita solo las preguntas que falló antes.',
+  fixing:'Corrigiendo errores', read:'🔊 Leer en voz alta', q:'Pregunta ', of:' de ', soFar:' correctas', ok:'¡Correcto!', no:'No exactamente.',
+  score:'Ver mi puntaje', next:'Siguiente pregunta', passed:function(n){return '¡Aprobó '+n+'!';}, fixed:'¡Errores corregidos!', notYet:'Todavía no aprueba.',
+  got:function(r,t){return 'Acertó '+r+' de '+t+'. La mayoría de los estados piden 80% para aprobar.';}, streak:'días seguidos estudiando',
+  passH:'Su siguiente paso: la teoría ELDT', passP:'Antes del examen práctico de la CDL, la ley federal exige la capacitación ELDT (teoría) con un proveedor registrado. El curso de MyCDLCoach es certificado por la FMCSA, 100% en línea, y la mayoría lo termina en menos de un día.',
+  passB:'Obtener mi certificado ELDT, $149', notReady:'¿No está listo para pagar? ', lounge:'Únase gratis al Driver\'s Lounge',
+  failH:'Reciba ayuda para llegar al 80%', failP:'Únase gratis al Driver\'s Lounge de MyCDLCoach. Pregunte a conductores con experiencia sobre lo que le costó trabajo y conecte con otros que están sacando su CDL.',
+  again:'Repetir el examen', share:'Compartir mi puntaje', other:'Elegir otro examen', review:'Repase lo que falló', yours:'Su respuesta: ',
+  shareT:function(p,n){return 'Saqué '+p+'% en el examen de práctica CDL de '+n+'. ¿Puede superarlo?';}, copied:'Enlace copiado. Péguelo donde quiera.', voice:'es-US', home:'/examen-cdl-en-espanol'
+} : {
+  how:'How do you want to practice?', best:'Your best score: ', practice:'Practice mode', practiceD:'See the right answer and why after every question.',
+  exam:'Exam mode', examD:'No hints until the end, just like the real test.', fix:'Fix my mistakes', fixD:'Retake only the questions you got wrong before.',
+  fixing:'Fixing mistakes', read:'🔊 Read aloud', q:'Question ', of:' of ', soFar:' correct so far', ok:'Correct.', no:'Not quite.',
+  score:'See my score', next:'Next question', passed:function(n){return 'You passed '+n+'!';}, fixed:'Mistakes fixed!', notYet:'Not passing yet.',
+  got:function(r,t){return 'You got '+r+' of '+t+' right. Most states require 80% to pass.';}, streak:'-day study streak',
+  passH:'Your next step: ELDT theory', passP:'Before your CDL skills test, federal rules require Entry-Level Driver Training theory from a registered provider. MyCDLCoach\'s course is FMCSA-certified, 100% online, and most students finish in under a day. Your certificate is uploaded to the FMCSA the same day.',
+  passB:'Get my ELDT certificate, $149', notReady:'Not ready to pay? ', lounge:'Join the free Driver\'s Lounge',
+  failH:'Get help reaching 80%', failP:'Join the free MyCDLCoach Driver\'s Lounge. Ask working drivers about the questions that tripped you up, get study tips, and connect with people going through the same process.',
+  again:'Take it again', share:'Share my score', other:'Pick another test', review:'Review what you missed', yours:'Your answer: ',
+  shareT:function(p,n){return 'I scored '+p+'% on the CDL '+n+' practice test. Can you beat it?';}, copied:'Link copied. Paste it anywhere to share.', voice:'en-US', home:'/'
 };
 var PASS = 80;
 // ===========================================================
@@ -29,7 +53,7 @@ var Store={
 };
 
 // ----- Read aloud (free, built into phones) -----
-function speak(text){try{speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(text);u.rate=.95;speechSynthesis.speak(u);}catch(e){}}
+function speak(text){try{speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(text);u.lang=S.voice;u.rate=.95;speechSynthesis.speak(u);}catch(e){}}
 var canSpeak='speechSynthesis' in window;
 
 // ----- Confetti for passing -----
@@ -50,7 +74,7 @@ function confetti(){
 function share(text){
   var url='https://cdlpermits.com'+location.pathname;
   if(navigator.share){navigator.share({title:'CDL Permits',text:text,url:url}).catch(function(){});return;}
-  try{navigator.clipboard.writeText(text+' '+url);alert('Link copied. Paste it anywhere to share.');}catch(e){prompt('Copy this link:',url);}
+  try{navigator.clipboard.writeText(text+' '+url);alert(S.copied);}catch(e){prompt('Copy this link:',url);}
 }
 
 // ===== Test page =====
@@ -61,12 +85,12 @@ function share(text){
 
   function menu(){
     var m=Store.missed(data.slug),b=Store.best(data.slug);
-    var h='<h2 class="menu-h">How do you want to practice?</h2>'+
-      (b!=null?'<p class="count">Your best score: '+b+'%</p>':'')+
+    var h='<h2 class="menu-h">'+S.how+'</h2>'+
+      (b!=null?'<p class="count">'+S.best+b+'%</p>':'')+
       '<div class="modes">'+
-      '<button class="mode" type="button" data-m="practice"><strong>Practice mode</strong><span>See the right answer and why after every question.</span></button>'+
-      '<button class="mode" type="button" data-m="exam"><strong>Exam mode</strong><span>No hints until the end, just like the real test.</span></button>';
-    if(m.length)h+='<button class="mode mode-warn" type="button" data-m="missed"><strong>Fix my mistakes ('+m.length+')</strong><span>Retake only the questions you got wrong before.</span></button>';
+      '<button class="mode" type="button" data-m="practice"><strong>'+S.practice+'</strong><span>'+S.practiceD+'</span></button>'+
+      '<button class="mode" type="button" data-m="exam"><strong>'+S.exam+'</strong><span>'+S.examD+'</span></button>';
+    if(m.length)h+='<button class="mode mode-warn" type="button" data-m="missed"><strong>'+S.fix+' ('+m.length+')</strong><span>'+S.fixD+'</span></button>';
     h+='</div>';
     box.innerHTML=h;
     box.querySelectorAll('.mode').forEach(function(b){b.addEventListener('click',function(){start(b.getAttribute('data-m'));});});
@@ -76,17 +100,17 @@ function share(text){
     mode=m;
     var pool=data.questions;
     if(m==='missed'){var set=Store.missed(data.slug);pool=pool.filter(function(q){return set.indexOf(q.q)>-1;});}
-    qs=shuffle(pool);i=0;right=0;missed=[];answers=[];show();
+    qs=shuffle(pool);if(data.limit&&m!=='missed')qs=qs.slice(0,data.limit);i=0;right=0;missed=[];answers=[];show();
     box.scrollIntoView({behavior:'smooth',block:'start'});
   }
 
   function show(){
     var q=qs[i],opts=shuffle([q.a].concat(q.w)),pct=Math.round(i/qs.length*100);
-    var label=mode==='exam'?'Exam mode':(mode==='missed'?'Fixing mistakes':'Practice mode');
+    var label=mode==='exam'?S.exam:(mode==='missed'?S.fixing:S.practice);
     var h='<div class="qbar"><span class="pill">'+label+'</span>'+
-      (canSpeak?'<button class="say" type="button" id="say" aria-label="Read the question aloud">🔊 Read aloud</button>':'')+'</div>'+
+      (canSpeak?'<button class="say" type="button" id="say" aria-label="Read the question aloud">'+S.read+'</button>':'')+'</div>'+
       '<div class="lane" aria-hidden="true"><span style="width:'+pct+'%"></span></div>'+
-      '<p class="count">Question '+(i+1)+' of '+qs.length+(mode!=='exam'?', '+right+' correct so far':'')+'</p>'+
+      '<p class="count">'+S.q+(i+1)+S.of+qs.length+(mode!=='exam'?', '+right+S.soFar:'')+'</p>'+
       '<h2 id="qtext">'+esc(q.q)+'</h2><div class="opts" role="group" aria-labelledby="qtext">';
     opts.forEach(function(o,k){h+='<button class="opt" type="button"><span class="key">'+'ABCD'[k]+'</span>'+esc(o)+'</button>';});
     h+='</div><div id="after" aria-live="polite"></div>';
@@ -105,8 +129,8 @@ function share(text){
     if(mode==='exam'){b.classList.add('picked');setTimeout(function(){if(last)done();else{i++;show();}},250);return;}
     btns.forEach(function(x){if(x.textContent.slice(1)===q.a){x.classList.add('right');x.insertAdjacentHTML('beforeend','<span class="mark">✓</span>');}});
     if(!ok){b.classList.add('wrong');b.insertAdjacentHTML('beforeend','<span class="mark">✗</span>');}
-    document.getElementById('after').innerHTML='<div class="why"><strong>'+(ok?'Correct.':'Not quite.')+'</strong>'+esc(q.e)+'</div>'+
-      '<div class="actions"><button class="btn btn-sign" type="button" id="next">'+(last?'See my score':'Next question')+'</button></div>';
+    document.getElementById('after').innerHTML='<div class="why"><strong>'+(ok?S.ok:S.no)+'</strong>'+esc(q.e)+'</div>'+
+      '<div class="actions"><button class="btn btn-sign" type="button" id="next">'+(last?S.score:S.next)+'</button></div>';
     var n=document.getElementById('next');
     n.addEventListener('click',function(){if(last)done();else{i++;show();}});
     n.focus({preventScroll:true});
@@ -123,29 +147,29 @@ function share(text){
     var h='<div class="lane" aria-hidden="true"><span style="width:100%"></span></div>'+
       '<div class="result"><div class="score">'+p+'%</div>'+
       (pass&&full?'<div class="badge big" aria-hidden="true"><span>✓</span></div>':'')+'</div>'+
-      '<p class="verdict '+(pass?'pass':'fail')+'">'+(pass?(full?'You passed '+esc(data.name)+'!':'Mistakes fixed!'):'Not passing yet.')+'</p>'+
-      '<p>You got '+right+' of '+qs.length+' right. Most states require 80% to pass.'+
-      (streak>1?' <span class="streak">🔥 '+streak+'-day study streak</span>':'')+'</p>';
+      '<p class="verdict '+(pass?'pass':'fail')+'">'+(pass?(full?S.passed(esc(data.name)):S.fixed):S.notYet)+'</p>'+
+      '<p>'+S.got(right,qs.length)+
+      (streak>1?' <span class="streak">🔥 '+streak+(ES?' ':'')+S.streak+'</span>':'')+'</p>';
     if(pass){
-      h+='<div class="next"><h3>Your next step: ELDT theory</h3>'+
-        '<p>Before your CDL skills test, federal rules require Entry-Level Driver Training theory from a registered provider. MyCDLCoach Fast Track is FMCSA-certified, 100% online, and most students finish in under a day. Your certificate is uploaded to the FMCSA the same day.</p>'+
-        '<a class="btn btn-sign" href="'+track(LINKS.course,'pass')+'">Get my ELDT certificate, $149</a>'+
-        '<p class="alt">Not ready to pay? <a href="'+track(LINKS.lounge,'pass')+'">Join the free Driver\'s Lounge</a></p></div>';
+      h+='<div class="next"><img class="shield-img" src="https://otrnews.com/partners/mycdlcoach-shield.webp" alt="MyCDLCoach" width="44" height="44"><h3>'+S.passH+'</h3>'+
+        '<p>'+S.passP+'</p>'+
+        '<a class="btn btn-sign" href="'+track(LINKS.course,'pass')+'">'+S.passB+'</a>'+
+        '<p class="alt">'+S.notReady+'<a href="'+track(LINKS.lounge,'pass')+'">'+S.lounge+'</a></p></div>';
     }else{
-      h+='<div class="next"><h3>Get help reaching 80%</h3>'+
-        '<p>Join the free MyCDLCoach Driver\'s Lounge. Ask working drivers about the questions that tripped you up, get study tips, and connect with people going through the same process.</p>'+
-        '<a class="btn btn-sign" href="'+track(LINKS.lounge,'fail')+'">Join the free Driver\'s Lounge</a></div>';
+      h+='<div class="next"><img class="shield-img" src="https://otrnews.com/partners/mycdlcoach-shield.webp" alt="MyCDLCoach" width="44" height="44"><h3>'+S.failH+'</h3>'+
+        '<p>'+S.failP+'</p>'+
+        '<a class="btn btn-sign" href="'+track(LINKS.lounge,'fail')+'">'+S.lounge+'</a></div>';
     }
     h+='<div class="actions">'+
-      (Store.missed(data.slug).length?'<button class="btn btn-ghost" type="button" id="fix">Fix my mistakes ('+Store.missed(data.slug).length+')</button>':'')+
-      '<button class="btn btn-ghost" type="button" id="again">Take it again</button>'+
-      '<button class="btn btn-ghost" type="button" id="share">Share my score</button>'+
-      '<a class="btn btn-ghost" href="/">Pick another test</a></div>';
+      (Store.missed(data.slug).length?'<button class="btn btn-ghost" type="button" id="fix">'+S.fix+' ('+Store.missed(data.slug).length+')</button>':'')+
+      '<button class="btn btn-ghost" type="button" id="again">'+S.again+'</button>'+
+      '<button class="btn btn-ghost" type="button" id="share">'+S.share+'</button>'+
+      '<a class="btn btn-ghost" href="'+S.home+'">'+S.other+'</a></div>';
     var wrong=answers.filter(function(a){return !a.ok;});
     if(wrong.length){
-      h+='<h3>Review what you missed</h3><ul class="missed">';
+      h+='<h3>'+S.review+'</h3><ul class="missed">';
       wrong.forEach(function(a){h+='<li><div>'+esc(a.q.q)+'</div>'+
-        (mode==='exam'?'<div class="yours">Your answer: '+esc(a.choice)+'</div>':'')+
+        (mode==='exam'?'<div class="yours">'+S.yours+esc(a.choice)+'</div>':'')+
         '<div class="ans">'+esc(a.q.a)+'</div><div class="exp">'+esc(a.q.e)+'</div></li>';});
       h+='</ul>';
     }
@@ -153,7 +177,7 @@ function share(text){
     document.getElementById('again').addEventListener('click',menu);
     var f=document.getElementById('fix');if(f)f.addEventListener('click',function(){start('missed');});
     document.getElementById('share').addEventListener('click',function(){
-      share('I scored '+p+'% on the CDL '+data.name+' practice test. Can you beat it?');});
+      share(S.shareT(p,data.name));});
     box.scrollIntoView({behavior:'smooth',block:'start'});
     if(pass)confetti();
   }

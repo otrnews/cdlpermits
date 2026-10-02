@@ -170,3 +170,17 @@ details.study summary{cursor:pointer;font-weight:800;font-size:20px;padding:14px
 .pkind{font-size:14px;color:var(--muted);font-weight:600}
 .ptext{font-size:16px;flex:1}
 .pcta{margin-top:6px;font-weight:800;color:var(--blue)}
+
+/* ---------- v3 ---------- */
+.top nav{display:flex;gap:16px}
+.shield-img{display:block;width:44px;height:44px;object-fit:contain;margin-bottom:10px}
+.cta .alt{margin:14px 0 0;font-size:16px}
+.cta .alt a{color:var(--white);font-weight:700}
+.pimg{display:grid;place-items:center;height:110px;background:var(--road);border-radius:8px;overflow:hidden;margin:4px 0 6px}
+.pimg img{max-width:100%;max-height:110px;object-fit:contain}
+.statepick{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:6px 0 14px}
+.statepick label{font-weight:700}
+.statepick select{font:inherit;font-size:18px;padding:10px 12px;border:2px solid var(--line);border-radius:8px;background:var(--white);color:var(--ink);min-width:220px}
+.steps{padding-left:22px;max-width:64ch}
+.steps li{margin:0 0 12px}
+ul.states{margin-top:16px}
