@@ -1,0 +1,1160 @@
+{
+ "tests": [
+  {
+   "slug": "general-knowledge",
+   "name": "General Knowledge",
+   "real": "50 questions in most states",
+   "who": "Required for every CDL class.",
+   "questions": [
+    {
+     "q": "You drive a 40-foot truck at under 40 mph. What is the minimum following distance?",
+     "a": "4 seconds",
+     "w": [
+      "2 seconds",
+      "3 seconds",
+      "6 seconds"
+     ],
+     "e": "Below 40 mph, leave at least one second for every 10 feet of vehicle length. 40 feet means 4 seconds."
+    },
+    {
+     "q": "You drive a 40-foot truck at 55 mph. What is the minimum following distance?",
+     "a": "5 seconds",
+     "w": [
+      "4 seconds",
+      "3 seconds",
+      "8 seconds"
+     ],
+     "e": "Above 40 mph, add one second to the one-second-per-10-feet rule. 4 seconds plus 1 equals 5."
+    },
+    {
+     "q": "Total stopping distance is made up of which three parts?",
+     "a": "Perception distance, reaction distance and braking distance",
+     "w": [
+      "Reaction distance, braking distance and coasting distance",
+      "Following distance, reaction distance and braking distance",
+      "Perception distance, steering distance and braking distance"
+     ],
+     "e": "Total stopping distance is the distance you travel while you see the hazard, react to it and brake to a stop."
+    },
+    {
+     "q": "About how long does it take an alert driver to react once they see a hazard?",
+     "a": "About three-quarters of a second",
+     "w": [
+      "About one-quarter of a second",
+      "About two seconds",
+      "About four seconds"
+     ],
+     "e": "The average alert driver takes about 3/4 of a second to react after seeing and recognizing a hazard."
+    },
+    {
+     "q": "If you double your speed, your braking distance increases by about:",
+     "a": "Four times",
+     "w": [
+      "Two times",
+      "Three times",
+      "It stays the same"
+     ],
+     "e": "Braking distance grows with the square of speed. Double the speed and it takes roughly four times the distance to stop."
+    },
+    {
+     "q": "Why does an empty truck often need more distance to stop than a loaded one?",
+     "a": "The brakes, tires and springs are designed for heavy loads, so an empty truck has less traction",
+     "w": [
+      "Empty trucks have weaker brakes by law",
+      "Empty trucks go faster downhill",
+      "It doesn't; empty trucks always stop shorter"
+     ],
+     "e": "Brakes, tires, springs and shock absorbers work best when loaded. An empty truck can lock wheels and skid more easily."
+    },
+    {
+     "q": "Hydroplaning can happen at speeds as low as:",
+     "a": "30 mph",
+     "w": [
+      "45 mph",
+      "55 mph",
+      "65 mph"
+     ],
+     "e": "With enough water on the road, tires can lose contact with the surface at speeds as low as 30 mph."
+    },
+    {
+     "q": "How far ahead should you look while driving?",
+     "a": "12 to 15 seconds ahead",
+     "w": [
+      "3 to 5 seconds ahead",
+      "5 to 8 seconds ahead",
+      "30 seconds ahead"
+     ],
+     "e": "Looking 12 to 15 seconds ahead gives you time to spot hazards and change speed or lanes. At highway speed that is about a quarter mile."
+    },
+    {
+     "q": "You stop on a two-lane road. Where do you place your rear warning triangle?",
+     "a": "About 100 feet behind the vehicle",
+     "w": [
+      "About 10 feet behind the vehicle",
+      "About 50 feet behind the vehicle",
+      "About 500 feet behind the vehicle"
+     ],
+     "e": "On a two-lane road, place one device within 10 feet of the vehicle on the traffic side, one about 100 feet behind and one about 100 feet ahead."
+    },
+    {
+     "q": "You stop on a one-way or divided highway. Where do the warning devices go?",
+     "a": "10 feet, 100 feet and 200 feet behind the vehicle",
+     "w": [
+      "10 feet behind, 100 feet behind and 100 feet ahead",
+      "50 feet, 100 feet and 150 feet behind the vehicle",
+      "All three directly behind the bumper"
+     ],
+     "e": "Traffic only approaches from behind on a divided or one-way road, so all three devices go behind: at 10, 100 and 200 feet."
+    },
+    {
+     "q": "You stop just past a hill or curve. How far back can the rear warning device go?",
+     "a": "Up to 500 feet",
+     "w": [
+      "Up to 100 feet",
+      "Up to 200 feet",
+      "Up to 1,000 feet"
+     ],
+     "e": "If a hill, curve or other obstruction blocks the view, move the rear device back as far as 500 feet so drivers get enough warning."
+    },
+    {
+     "q": "What is the minimum tread depth for steering axle tires?",
+     "a": "4/32 inch",
+     "w": [
+      "2/32 inch",
+      "1/32 inch",
+      "6/32 inch"
+     ],
+     "e": "Front (steering) tires need at least 4/32 inch of tread in every major groove. Other tires need at least 2/32 inch."
+    },
+    {
+     "q": "Steering wheel free play is too much if it is more than about:",
+     "a": "10 degrees (about 2 inches on a 20-inch wheel)",
+     "w": [
+      "2 degrees",
+      "25 degrees",
+      "45 degrees"
+     ],
+     "e": "More than 10 degrees of play, roughly 2 inches of movement at the rim of a 20-inch wheel, makes the vehicle hard to steer."
+    },
+    {
+     "q": "During a pre-trip inspection, how many missing leaves in a leaf spring put the vehicle out of service?",
+     "a": "One-fourth or more of the leaves",
+     "w": [
+      "Any single leaf",
+      "Half of the leaves",
+      "Only if every leaf is missing"
+     ],
+     "e": "A leaf spring with one-fourth or more of its leaves missing puts the vehicle out of service."
+    },
+    {
+     "q": "What is the most common cause of serious skids?",
+     "a": "Driving too fast for conditions",
+     "w": [
+      "Bald tires",
+      "Worn shock absorbers",
+      "Steering too slowly"
+     ],
+     "e": "Most serious skids come from going too fast for road conditions. Over-braking, over-steering and over-accelerating also cause skids."
+    },
+    {
+     "q": "Your drive wheels start to skid. What should you do first?",
+     "a": "Take your foot off the accelerator and stop braking",
+     "w": [
+      "Brake hard",
+      "Accelerate to pull out of the skid",
+      "Turn the wheel away from the skid"
+     ],
+     "e": "To regain traction, let the rear wheels roll again: stop braking, ease off the accelerator, then steer where you want to go and be ready to countersteer."
+    },
+    {
+     "q": "In an emergency, why is steering away from a hazard often better than stopping?",
+     "a": "You can usually turn to miss an obstacle more quickly than you can stop",
+     "w": [
+      "Brakes are not allowed in emergencies",
+      "Steering never causes a rollover",
+      "Stopping always causes a jackknife"
+     ],
+     "e": "Top-heavy trucks need a lot of distance to stop. A quick turn often avoids the hazard in less space."
+    },
+    {
+     "q": "If you must leave the road to avoid a crash, you should:",
+     "a": "Avoid braking until speed drops to about 20 mph, and keep one set of wheels on the pavement if you can",
+     "w": [
+      "Brake as hard as possible right away",
+      "Turn sharply back onto the road at full speed",
+      "Shift into neutral and coast"
+     ],
+     "e": "Hard braking on a soft shoulder can cause a skid. Slow down gradually and keep one side on the pavement if possible."
+    },
+    {
+     "q": "Your safe speed downhill is 40 mph. Using snub braking, when do you apply the brakes?",
+     "a": "At 45 mph, braking down to 35 mph",
+     "w": [
+      "At 40 mph, braking down to 30 mph",
+      "At 50 mph, braking down to 40 mph",
+      "Hold the brakes lightly the whole way down"
+     ],
+     "e": "When you reach 5 mph over your safe speed, brake firmly until you are 5 mph under it, then release. Repeat as needed."
+    },
+    {
+     "q": "When should you choose a low gear for a long downgrade?",
+     "a": "Before you start down the grade",
+     "w": [
+      "Halfway down the grade",
+      "When the brakes start to fade",
+      "At the bottom of the grade"
+     ],
+     "e": "Shifting down on a steep grade can be hard or impossible. Pick the right low gear before you start down."
+    },
+    {
+     "q": "What is the legal blood alcohol limit for a CMV driver?",
+     "a": "0.04%",
+     "w": [
+      "0.08%",
+      "0.02%",
+      "0.10%"
+     ],
+     "e": "Federal law sets the limit for commercial drivers at 0.04% blood alcohol concentration, half the usual limit for car drivers."
+    },
+    {
+     "q": "Which fire extinguisher class is used on electrical fires?",
+     "a": "Class C",
+     "w": [
+      "Class A",
+      "Class B",
+      "Class D"
+     ],
+     "e": "Class C is for electrical fires. Class B is for flammable liquids like gasoline and grease. Most trucks carry a B:C extinguisher."
+    },
+    {
+     "q": "When should you never remove the radiator cap?",
+     "a": "When the engine is hot",
+     "w": [
+      "When the engine is cold",
+      "After the vehicle sits overnight",
+      "When checking the coolant at a truck stop"
+     ],
+     "e": "The cooling system is under pressure when hot. Opening it can spray scalding coolant. Let the engine cool first."
+    },
+    {
+     "q": "What is the minimum number of tiedowns for any flatbed load?",
+     "a": "Two, with at least one for every 10 feet of cargo",
+     "w": [
+      "One for every 20 feet of cargo",
+      "One, as long as it is tight",
+      "Four, no matter the length"
+     ],
+     "e": "You need at least one tiedown per 10 feet of cargo and never fewer than two, no matter how small the load."
+    },
+    {
+     "q": "After you start a trip, when must you first check your cargo and its securement?",
+     "a": "Within the first 50 miles",
+     "w": [
+      "Within the first 150 miles",
+      "Only at the end of the day",
+      "Within the first 5 miles"
+     ],
+     "e": "Check cargo within the first 50 miles, then every 3 hours or 150 miles, whichever comes first, and after every break."
+    },
+    {
+     "q": "Objects in a convex (curved) mirror look:",
+     "a": "Smaller and farther away than they really are",
+     "w": [
+      "Larger and closer than they really are",
+      "Exactly as they are",
+      "Upside down"
+     ],
+     "e": "Convex mirrors show a wider area but make things look smaller and farther away. Keep that in mind when judging distance."
+    },
+    {
+     "q": "At night, you should switch to low beams when an oncoming vehicle is within:",
+     "a": "500 feet",
+     "w": [
+      "100 feet",
+      "1,000 feet",
+      "1 mile"
+     ],
+     "e": "Dim your lights within 500 feet of an oncoming vehicle and when following another vehicle so you don't blind the driver."
+    },
+    {
+     "q": "When crossing railroad tracks, you should never:",
+     "a": "Shift gears while on the tracks",
+     "w": [
+      "Look both ways",
+      "Turn on your four-way flashers",
+      "Roll down your window to listen"
+     ],
+     "e": "Pick a gear that gets you all the way across before you start. Shifting on the tracks can stall the vehicle."
+    },
+    {
+     "q": "When making a right turn, you should:",
+     "a": "Go straight ahead until the rear clears the curb, then turn, keeping the rear close to the curb",
+     "w": [
+      "Swing wide to the left before turning",
+      "Turn as sharply as possible from the left lane",
+      "Use the shoulder to make the turn"
+     ],
+     "e": "Swinging left before a right turn invites cars to pass you on the right. Keep the back of the trailer near the curb so no one can squeeze in."
+    },
+    {
+     "q": "When backing, it is safest to back toward:",
+     "a": "The driver's side",
+     "w": [
+      "The passenger side",
+      "Either side, it doesn't matter",
+      "Whichever way the trailer is already pointed"
+     ],
+     "e": "Backing toward the driver's side lets you watch the rear of the vehicle by looking out the window. Use a helper whenever you can."
+    }
+   ]
+  },
+  {
+   "slug": "air-brakes",
+   "name": "Air Brakes",
+   "real": "25 questions in most states",
+   "who": "Needed to drive any vehicle with air brakes, which covers most trucks and buses.",
+   "questions": [
+    {
+     "q": "At about what pressure does the governor stop the air compressor from pumping (cut-out)?",
+     "a": "125 psi",
+     "w": [
+      "60 psi",
+      "100 psi",
+      "150 psi"
+     ],
+     "e": "The governor stops the compressor at about 125 psi. It starts pumping again (cut-in) around 100 psi."
+    },
+    {
+     "q": "At about what pressure does the governor let the compressor start pumping again (cut-in)?",
+     "a": "100 psi",
+     "w": [
+      "60 psi",
+      "80 psi",
+      "125 psi"
+     ],
+     "e": "Cut-in is about 100 psi. If it is much lower or higher than spec, the governor needs service."
+    },
+    {
+     "q": "The low air pressure warning must come on before pressure in the tanks drops below:",
+     "a": "60 psi",
+     "w": [
+      "20 psi",
+      "45 psi",
+      "100 psi"
+     ],
+     "e": "The warning light, buzzer or wig wag must activate before supply pressure falls below 60 psi."
+    },
+    {
+     "q": "In most vehicles, spring brakes come on automatically when air pressure drops to:",
+     "a": "Between 20 and 45 psi",
+     "w": [
+      "Between 60 and 80 psi",
+      "Between 100 and 125 psi",
+      "Exactly 0 psi"
+     ],
+     "e": "Spring brakes are held off by air. When pressure drops into the 20-45 psi range, the springs apply the brakes."
+    },
+    {
+     "q": "With the engine off and brakes released, a single vehicle should lose no more than:",
+     "a": "2 psi in one minute",
+     "w": [
+      "3 psi in one minute",
+      "5 psi in one minute",
+      "10 psi in one minute"
+     ],
+     "e": "The static leakage limit is 2 psi per minute for a single vehicle and 3 psi per minute for a combination."
+    },
+    {
+     "q": "With the engine off and the brake pedal held down, a single vehicle should lose no more than:",
+     "a": "3 psi in one minute",
+     "w": [
+      "1 psi in one minute",
+      "6 psi in one minute",
+      "10 psi in one minute"
+     ],
+     "e": "Applied leakage should stay under 3 psi per minute for a single vehicle and 4 psi per minute for a combination."
+    },
+    {
+     "q": "In a dual air system, how long should it take to build pressure from 85 to 100 psi at fast idle?",
+     "a": "Within 45 seconds",
+     "w": [
+      "Within 2 minutes",
+      "Within 5 minutes",
+      "Within 10 seconds"
+     ],
+     "e": "Build-up from 85 to 100 psi should take 45 seconds or less in a dual air system. Slower means a compressor or leak problem."
+    },
+    {
+     "q": "At what pressure does the safety relief valve usually open?",
+     "a": "150 psi",
+     "w": [
+      "60 psi",
+      "100 psi",
+      "200 psi"
+     ],
+     "e": "The safety valve protects the tanks from too much pressure. It is usually set to open at 150 psi."
+    },
+    {
+     "q": "Why are air tanks drained?",
+     "a": "To remove water and compressor oil that collect in them",
+     "w": [
+      "To lower the pressure before driving",
+      "To test the governor",
+      "To cool the brakes"
+     ],
+     "e": "Water and oil in the tanks can freeze or damage the system. Tanks without automatic drains should be drained at the end of each day."
+    },
+    {
+     "q": "What is the most common type of foundation brake on air-brake trucks?",
+     "a": "S-cam drum brakes",
+     "w": [
+      "Wedge brakes",
+      "Disc brakes",
+      "Band brakes"
+     ],
+     "e": "S-cam brakes are the most common. The S-shaped cam spreads the brake shoes against the drum."
+    },
+    {
+     "q": "With the parking brake released and the engine off, how far should a manual slack adjuster move when pulled by hand?",
+     "a": "No more than about 1 inch where the pushrod attaches",
+     "w": [
+      "At least 3 inches",
+      "About 6 inches",
+      "It should not move at all under any condition"
+     ],
+     "e": "If the slack adjuster moves more than about an inch, the brakes likely need adjusting."
+    },
+    {
+     "q": "Brake drum cracks are a defect if they are:",
+     "a": "Longer than half the width of the friction area",
+     "w": [
+      "Any length at all",
+      "Longer than the full width of the drum",
+      "Only if you can see daylight through them"
+     ],
+     "e": "Drums must not have cracks longer than half the width of the friction area."
+    },
+    {
+     "q": "Why does an air brake system take longer to stop than hydraulic brakes?",
+     "a": "Air takes time to flow through the lines to the brakes (brake lag)",
+     "w": [
+      "Air brakes are weaker",
+      "Air brakes only work on the rear axles",
+      "Air brakes require you to pump the pedal"
+     ],
+     "e": "Brake lag is about half a second. At 55 mph that adds roughly 32 feet to your stopping distance."
+    },
+    {
+     "q": "What color and shape is the parking brake control knob?",
+     "a": "Yellow and diamond-shaped",
+     "w": [
+      "Red and eight-sided",
+      "Blue and round",
+      "Green and square"
+     ],
+     "e": "The parking brake control is a yellow diamond knob. The red eight-sided knob is the trailer air supply on combinations."
+    },
+    {
+     "q": "When should you avoid using the parking brakes?",
+     "a": "When the brakes are very hot or very cold and wet",
+     "w": [
+      "Any time the truck is parked",
+      "Only on level ground",
+      "When the air pressure is above 100 psi"
+     ],
+     "e": "Hot drums can be damaged when parking brakes apply, and wet brakes can freeze to the drums in cold weather. Use wheel chocks instead."
+    },
+    {
+     "q": "What is an alcohol evaporator for?",
+     "a": "To reduce the risk of ice in brake valves and lines in cold weather",
+     "w": [
+      "To clean oil from the tanks",
+      "To test a driver's blood alcohol",
+      "To cool the compressor"
+     ],
+     "e": "It puts alcohol into the air system so moisture is less likely to freeze and block the brakes."
+    },
+    {
+     "q": "The low air pressure warning comes on while you are driving. What should you do?",
+     "a": "Stop and safely park as soon as possible",
+     "w": [
+      "Keep driving to the next terminal",
+      "Pump the brake pedal to build pressure",
+      "Shift to neutral and coast"
+     ],
+     "e": "Low pressure means you could lose braking ability or the spring brakes could lock up. Stop safely while you still control where."
+    },
+    {
+     "q": "In a dual air system, the primary system usually operates the brakes on:",
+     "a": "The rear axle or axles",
+     "w": [
+      "The front axle only",
+      "The trailer only",
+      "All axles at once"
+     ],
+     "e": "Usually the primary system runs the rear brakes and the secondary system runs the front brakes. Both may serve the trailer."
+    },
+    {
+     "q": "How do you test that the spring brakes come on automatically?",
+     "a": "Fan off air by pumping the brake pedal until the parking brake knob pops out, around 20 to 45 psi",
+     "w": [
+      "Pull the trailer hand valve",
+      "Rev the engine to 2,000 rpm",
+      "Drain all the tanks completely"
+     ],
+     "e": "Pumping the pedal drops pressure. The parking brake valve should pop out in the 20-45 psi range on most vehicles."
+    },
+    {
+     "q": "Air-braked trucks and buses built on or after March 1, 1998 must have:",
+     "a": "Anti-lock brakes (ABS)",
+     "w": [
+      "Disc brakes on every axle",
+      "Automatic tank drains",
+      "Two compressors"
+     ],
+     "e": "Federal rules require ABS on air-braked trucks and buses built on or after March 1, 1998. Tractors needed it a year earlier."
+    }
+   ]
+  },
+  {
+   "slug": "combination-vehicles",
+   "name": "Combination Vehicles",
+   "real": "20 questions in most states",
+   "who": "Required for a Class A CDL (tractor-trailers).",
+   "questions": [
+    {
+     "q": "What is the 'crack-the-whip' effect?",
+     "a": "Rearward amplification, where a quick steering move can tip over the trailer",
+     "w": [
+      "When the trailer brakes lock before the tractor's",
+      "When the fifth wheel comes unlocked",
+      "When the driver over-revs the engine"
+     ],
+     "e": "Sudden steering is amplified toward the back of a combination. The rear trailer can tip over even if the tractor stays upright."
+    },
+    {
+     "q": "What color is the emergency (supply) air line glad hand?",
+     "a": "Red",
+     "w": [
+      "Blue",
+      "Yellow",
+      "Black"
+     ],
+     "e": "The emergency or supply line is red. The service line is blue."
+    },
+    {
+     "q": "What color is the service air line glad hand?",
+     "a": "Blue",
+     "w": [
+      "Red",
+      "Green",
+      "Yellow"
+     ],
+     "e": "The blue service line carries air controlled by the brake pedal or trailer hand brake to apply the trailer brakes."
+    },
+    {
+     "q": "What does the trailer air supply control look like?",
+     "a": "A red, eight-sided knob",
+     "w": [
+      "A yellow, diamond-shaped knob",
+      "A blue, round knob",
+      "A green toggle switch"
+     ],
+     "e": "Push the red eight-sided knob in to supply the trailer with air. Pull it out to shut off air and apply the trailer emergency brakes."
+    },
+    {
+     "q": "What happens if the emergency line breaks or comes apart while driving?",
+     "a": "The trailer emergency brakes come on",
+     "w": [
+      "The trailer brakes stop working",
+      "Nothing happens until you press the pedal",
+      "The tractor brakes release"
+     ],
+     "e": "Loss of pressure in the emergency line causes the trailer's emergency (spring) brakes to apply."
+    },
+    {
+     "q": "The tractor protection valve closes automatically when air pressure drops to:",
+     "a": "Between 20 and 45 psi",
+     "w": [
+      "Between 60 and 80 psi",
+      "Exactly 100 psi",
+      "Below 10 psi"
+     ],
+     "e": "The valve keeps air in the tractor if the trailer lines break or leak badly. It closes in the 20-45 psi range."
+    },
+    {
+     "q": "Should you use the trailer hand valve (trolley valve) to park?",
+     "a": "No, use the parking brakes",
+     "w": [
+      "Yes, it holds better than parking brakes",
+      "Yes, but only on hills",
+      "Only overnight"
+     ],
+     "e": "The hand valve uses service air, which can leak off and let the trailer roll. Always park with the spring parking brakes."
+    },
+    {
+     "q": "When coupling, how high should the trailer be compared to the fifth wheel?",
+     "a": "Just low enough that the trailer is raised slightly when the tractor backs under it",
+     "w": [
+      "Several inches above the fifth wheel",
+      "Exactly level with the top of the frame",
+      "As low as the landing gear will go"
+     ],
+     "e": "If the trailer is too high it may not couple right. Set it so the fifth wheel lifts it slightly as you back under."
+    },
+    {
+     "q": "After coupling, what should you see when you look at the fifth wheel?",
+     "a": "No space between the upper and lower fifth wheel, and the jaws locked around the shank of the kingpin",
+     "w": [
+      "A small gap so the trailer can pivot",
+      "The jaws locked around the head of the kingpin",
+      "The release arm pulled out"
+     ],
+     "e": "A gap means the trailer is riding on the jaws or is high-coupled. The jaws must close around the kingpin shank, not the head."
+    },
+    {
+     "q": "How do you test that the coupling is secure?",
+     "a": "With the trailer brakes locked, pull forward gently in low gear (a tug test)",
+     "w": [
+      "Rock the trailer by hand",
+      "Drive forward at speed and brake hard",
+      "Check that the air lines are connected"
+     ],
+     "e": "A gentle tug against the locked trailer brakes confirms the kingpin is locked in the fifth wheel."
+    },
+    {
+     "q": "Before driving away after coupling, the landing gear should be:",
+     "a": "Fully raised, with the crank handle secured",
+     "w": [
+      "Raised halfway",
+      "Left down for stability",
+      "Lowered to the ground"
+     ],
+     "e": "Landing gear left partly down can catch on railroad tracks or other objects."
+    },
+    {
+     "q": "During a turn, the trailer wheels follow a path that is:",
+     "a": "Shorter than the tractor wheels' path (off-tracking)",
+     "w": [
+      "The same as the tractor wheels",
+      "Wider than the tractor wheels",
+      "Random, depending on speed"
+     ],
+     "e": "Off-tracking means the rear wheels cut inside the path of the front wheels, which is why you need to turn wide."
+    },
+    {
+     "q": "Your trailer starts to swing out in a jackknife skid. What should you do?",
+     "a": "Release the brakes to let the wheels grip again",
+     "w": [
+      "Brake harder",
+      "Use the trailer hand brake to straighten it",
+      "Accelerate sharply"
+     ],
+     "e": "Trailer jackknifes usually come from locked trailer wheels. Releasing the brakes lets the tires regain traction."
+    },
+    {
+     "q": "Compared to an empty rig, a fully loaded rig is about how much more likely to roll over in a crash?",
+     "a": "About 10 times more likely",
+     "w": [
+      "About 2 times more likely",
+      "Equally likely",
+      "Less likely, because it's heavier"
+     ],
+     "e": "The high center of gravity of a loaded trailer makes rollovers far more likely. Steer gently and take curves slowly."
+    },
+    {
+     "q": "Which statement about combination vehicles and rollovers is true?",
+     "a": "Keeping cargo low and steering gently reduces rollover risk",
+     "w": [
+      "Heavier loads should go on top",
+      "Rollovers only happen at highway speed",
+      "Rollovers only happen to empty trailers"
+     ],
+     "e": "Keep the load as close to the ground as possible and avoid quick lane changes or tight turns at speed."
+    }
+   ]
+  },
+  {
+   "slug": "hazmat",
+   "name": "Hazardous Materials",
+   "real": "30 questions in most states",
+   "who": "For the H endorsement. Also requires a TSA background check.",
+   "questions": [
+    {
+     "q": "Where must placards appear on a vehicle that requires them?",
+     "a": "On all four sides",
+     "w": [
+      "On the front and back only",
+      "On the driver's side only",
+      "On the back only"
+     ],
+     "e": "Placards must be on the front, rear and both sides, readable from each direction."
+    },
+    {
+     "q": "Where must hazmat shipping papers be while you drive?",
+     "a": "In a pouch on the driver's door, or in clear view within reach while you wear your seat belt",
+     "w": [
+      "In the sleeper berth",
+      "Locked in the glove box",
+      "In the trailer with the cargo"
+     ],
+     "e": "Papers must be easy to reach for you or emergency responders. When you leave the cab, put them on the driver's seat or in the door pouch."
+    },
+    {
+     "q": "Which hazard class covers flammable liquids such as gasoline?",
+     "a": "Class 3",
+     "w": [
+      "Class 1",
+      "Class 5",
+      "Class 8"
+     ],
+     "e": "Class 3 is flammable liquids. Class 1 is explosives, Class 5 is oxidizers and Class 8 is corrosives."
+    },
+    {
+     "q": "Which hazard class covers explosives?",
+     "a": "Class 1",
+     "w": [
+      "Class 2",
+      "Class 4",
+      "Class 9"
+     ],
+     "e": "Class 1 is explosives, divided into divisions 1.1 through 1.6."
+    },
+    {
+     "q": "Which hazard class covers corrosive materials?",
+     "a": "Class 8",
+     "w": [
+      "Class 6",
+      "Class 7",
+      "Class 3"
+     ],
+     "e": "Class 8 is corrosives, like many acids. Class 6 is poisons and Class 7 is radioactive materials."
+    },
+    {
+     "q": "How far from a vehicle loaded with explosives, flammables or oxidizers must you be to smoke?",
+     "a": "At least 25 feet",
+     "w": [
+      "At least 5 feet",
+      "At least 10 feet",
+      "At least 100 feet"
+     ],
+     "e": "No smoking or open flame within 25 feet of a vehicle carrying Class 1, Division 2.1, Class 3, 4 or 5 materials."
+    },
+    {
+     "q": "A placarded vehicle must stop how far from the nearest rail at a railroad crossing?",
+     "a": "Between 15 and 50 feet",
+     "w": [
+      "Between 5 and 10 feet",
+      "Between 50 and 100 feet",
+      "Exactly 100 feet"
+     ],
+     "e": "Stop no closer than 15 feet and no farther than 50 feet, look and listen, then cross without shifting gears."
+    },
+    {
+     "q": "A vehicle with Division 1.1, 1.2 or 1.3 explosives may not park within how far of a bridge, tunnel or building?",
+     "a": "300 feet",
+     "w": [
+      "50 feet",
+      "100 feet",
+      "1,000 feet"
+     ],
+     "e": "Do not park within 300 feet of a bridge, tunnel, building, open fire or place where people gather, and not within 5 feet of the road."
+    },
+    {
+     "q": "On a placarded vehicle with dual tires, how often must you check the tires?",
+     "a": "At the start of each trip and each time you park",
+     "w": [
+      "Once a week",
+      "Only at the start of the trip",
+      "Every 500 miles"
+     ],
+     "e": "Check tires at the start of every trip and every time you park. A hot or flat tire must be fixed before moving on."
+    },
+    {
+     "q": "What does 'RQ' on a shipping paper mean?",
+     "a": "Reportable Quantity",
+     "w": [
+      "Required Quarantine",
+      "Restricted Quality",
+      "Rail Qualified"
+     ],
+     "e": "RQ means the material is a hazardous substance in an amount that must be reported to authorities if it spills."
+    },
+    {
+     "q": "What book helps emergency responders identify hazardous materials by ID number?",
+     "a": "The Emergency Response Guidebook (ERG)",
+     "w": [
+      "The FMCSA Driver Handbook",
+      "The Hours of Service Manual",
+      "The Bill of Lading Guide"
+     ],
+     "e": "The ERG lists actions to take for each material by its four-digit identification number."
+    },
+    {
+     "q": "An identification number on a shipping paper or placard has how many digits?",
+     "a": "Four",
+     "w": [
+      "Two",
+      "Six",
+      "Ten"
+     ],
+     "e": "Hazmat ID numbers are four digits, preceded by UN or NA, such as UN1203 for gasoline."
+    },
+    {
+     "q": "For Table 2 materials, placards are required once the total weight reaches:",
+     "a": "1,001 pounds or more",
+     "w": [
+      "Any amount",
+      "100 pounds or more",
+      "5,000 pounds or more"
+     ],
+     "e": "Table 1 materials need placards in any amount. Table 2 materials need them at 1,001 pounds or more aggregate gross weight."
+    },
+    {
+     "q": "A placarded vehicle must carry a fire extinguisher with a UL rating of at least:",
+     "a": "10 B:C",
+     "w": [
+      "5 B:C",
+      "2 A",
+      "1 B"
+     ],
+     "e": "The power unit of a placarded vehicle needs an extinguisher rated 10 B:C or more."
+    },
+    {
+     "q": "A cargo tank that has been emptied but not cleaned or purged:",
+     "a": "Must still be placarded",
+     "w": [
+      "Can have its placards removed",
+      "Needs only a front placard",
+      "Is no longer regulated"
+     ],
+     "e": "Residue can still be dangerous. Placards stay on until the tank has been cleaned or purged."
+    }
+   ]
+  },
+  {
+   "slug": "tanker",
+   "name": "Tank Vehicles",
+   "real": "20 questions in most states",
+   "who": "For the N endorsement, needed to haul liquids or gases in bulk.",
+   "questions": [
+    {
+     "q": "When is a tank endorsement required?",
+     "a": "When hauling liquid or gas in a tank of 119 gallons or more, or tanks totaling 1,000 gallons or more",
+     "w": [
+      "Only when hauling hazardous materials",
+      "Only for tanks over 5,000 gallons",
+      "Any time the truck has a fuel tank"
+     ],
+     "e": "The N endorsement is required for individual tanks of 119+ gallons or a total of 1,000+ gallons that are permanently or temporarily attached."
+    },
+    {
+     "q": "What is liquid surge?",
+     "a": "Movement of liquid in a partly filled tank that pushes the truck in the direction the liquid moves",
+     "w": [
+      "Rising pressure in the tank on hot days",
+      "Liquid leaking from a valve",
+      "Liquid freezing inside the tank"
+     ],
+     "e": "Surge can push a stopped truck forward into an intersection or make it hard to control on slippery roads."
+    },
+    {
+     "q": "What do baffles inside a tank control?",
+     "a": "Front-to-back surge, but not side-to-side surge",
+     "w": [
+      "Side-to-side surge only",
+      "All surge in every direction",
+      "Tank pressure"
+     ],
+     "e": "Baffles slow front-to-back liquid movement. Side-to-side surge still happens and can cause a rollover."
+    },
+    {
+     "q": "Why are smooth-bore tanks especially hard to drive?",
+     "a": "They have no baffles, so front-to-back surge is very strong",
+     "w": [
+      "They are always overweight",
+      "They have no brakes on the trailer",
+      "They can only carry gas"
+     ],
+     "e": "Smooth-bore tanks, often used for food products like milk, let liquid surge freely. Brake gently and allow extra distance."
+    },
+    {
+     "q": "What is outage?",
+     "a": "Room left in a tank for the liquid to expand",
+     "w": [
+      "The amount of liquid that leaked out",
+      "A tank that is out of service",
+      "The time a tank sits empty"
+     ],
+     "e": "Liquids expand as they warm up. Never fill a tank completely; leave outage for expansion."
+    },
+    {
+     "q": "Why are bulkheads used in tanks?",
+     "a": "To divide the tank into compartments",
+     "w": [
+      "To keep the tank cool",
+      "To measure liquid levels",
+      "To vent fumes"
+     ],
+     "e": "Bulkheads split the tank into separate compartments. Watch weight distribution when loading and unloading them."
+    },
+    {
+     "q": "Why do tankers have a high risk of rollover?",
+     "a": "They have a high center of gravity and the load can shift",
+     "w": [
+      "Tankers are lighter than other trucks",
+      "Tankers have smaller tires",
+      "Tank trailers have no suspension"
+     ],
+     "e": "Most of the weight sits high off the road, and moving liquid can shift that weight suddenly in curves."
+    },
+    {
+     "q": "How should you handle curves in a tank vehicle?",
+     "a": "Slow down before the curve, then accelerate slightly through it",
+     "w": [
+      "Brake in the middle of the curve",
+      "Take the curve at the posted speed",
+      "Coast through in neutral"
+     ],
+     "e": "Braking in a curve adds to surge and rollover risk. Slow down before you enter and keep steady power through."
+    },
+    {
+     "q": "When coming to a stop in a tanker, you should:",
+     "a": "Keep steady brake pressure and avoid releasing the brakes too soon",
+     "w": [
+      "Pump the brakes quickly",
+      "Release the brakes just before stopping",
+      "Stop as hard as possible"
+     ],
+     "e": "Releasing too early lets surge push the truck forward. Brake smoothly and early, with steady pressure."
+    },
+    {
+     "q": "Which load is generally the hardest to control because of surge?",
+     "a": "A partly filled tank",
+     "w": [
+      "A completely full tank",
+      "An empty, clean tank",
+      "A tank carrying solid cargo"
+     ],
+     "e": "A partial load has room for the liquid to move. That moving weight is what makes surge dangerous."
+    }
+   ]
+  },
+  {
+   "slug": "doubles-triples",
+   "name": "Doubles and Triples",
+   "real": "20 questions in most states",
+   "who": "For the T endorsement, needed to pull two or three trailers.",
+   "questions": [
+    {
+     "q": "Which trailer in a set of triples is most likely to turn over?",
+     "a": "The last trailer",
+     "w": [
+      "The first trailer",
+      "The middle trailer",
+      "All are equally likely"
+     ],
+     "e": "Rearward amplification, the crack-the-whip effect, is strongest at the back of the combination."
+    },
+    {
+     "q": "Where should the heaviest trailer go in a set of doubles?",
+     "a": "Directly behind the tractor",
+     "w": [
+      "At the very rear",
+      "It doesn't matter",
+      "Wherever the dolly fits best"
+     ],
+     "e": "Put the heavier trailer up front. A heavy rear trailer increases the risk of sway and rollover."
+    },
+    {
+     "q": "What is a converter dolly?",
+     "a": "A coupling device with one or two axles and a fifth wheel used to connect a second trailer",
+     "w": [
+      "A device that converts air brakes to hydraulic",
+      "A jack used to raise the landing gear",
+      "A cart for loading freight"
+     ],
+     "e": "The converter dolly turns a semi-trailer into a full trailer so it can be pulled behind another trailer."
+    },
+    {
+     "q": "Before coupling the second trailer, how do you keep it from moving?",
+     "a": "Make sure its spring brakes are set or chock the wheels",
+     "w": [
+      "Leave it unsecured so it lines up easily",
+      "Use the trailer hand valve",
+      "Back into it quickly"
+     ],
+     "e": "If the second trailer doesn't have spring brakes, charge its air tanks and disconnect the emergency line to set its brakes, or chock it."
+    },
+    {
+     "q": "After coupling doubles, how should the shut-off valves be set?",
+     "a": "Open on the first trailer, closed at the rear of the last trailer",
+     "w": [
+      "Closed on every trailer",
+      "Open on every trailer",
+      "Closed on the first trailer, open at the rear"
+     ],
+     "e": "Open valves let air flow through to every trailer. The valves at the very rear must be closed so air doesn't escape."
+    },
+    {
+     "q": "How can you check that air is flowing to all trailers?",
+     "a": "Open the emergency line shut-off valve at the back of the last trailer and listen for air escaping",
+     "w": [
+      "Watch the tractor's application gauge",
+      "Pull the trailer hand valve",
+      "Look at the glad hand colors"
+     ],
+     "e": "Air rushing out of the rear valve shows the whole system is charged. Close the valve again before driving."
+    },
+    {
+     "q": "Compared to a single trailer, doubles and triples need:",
+     "a": "More following distance and more space to change lanes",
+     "w": [
+      "Less following distance",
+      "The same following distance",
+      "No change in driving habits"
+     ],
+     "e": "Longer combinations take more distance to stop and are less stable. Leave more room in every direction."
+    },
+    {
+     "q": "What usually connects the converter dolly to the trailer in front of it?",
+     "a": "A pintle hook",
+     "w": [
+      "A fifth wheel",
+      "A kingpin",
+      "A ball hitch"
+     ],
+     "e": "The dolly's eye attaches to a pintle hook at the back of the trailer ahead."
+    },
+    {
+     "q": "Why should steering be extra smooth when pulling doubles or triples?",
+     "a": "Sudden movements are amplified at the rear trailer and can cause rollovers",
+     "w": [
+      "Doubles have weaker steering",
+      "Smooth steering saves fuel only",
+      "Sudden movements damage the dolly"
+     ],
+     "e": "A quick lane change that feels minor in the tractor can whip the last trailer hard enough to flip it."
+    },
+    {
+     "q": "When pulling doubles, you should check that the converter dolly air tank is:",
+     "a": "Drained of moisture and its petcock closed before driving",
+     "w": [
+      "Left open while driving",
+      "Disconnected from the system",
+      "Filled with water for weight"
+     ],
+     "e": "Drain moisture from the dolly tank, then close the petcock so the dolly brakes can work."
+    }
+   ]
+  },
+  {
+   "slug": "passenger",
+   "name": "Passenger Vehicles",
+   "real": "20 questions in most states",
+   "who": "For the P endorsement, needed to drive buses with 16 or more people including the driver.",
+   "questions": [
+    {
+     "q": "How much allowed hazardous material may a bus carry in total?",
+     "a": "No more than 500 pounds",
+     "w": [
+      "No more than 1,000 pounds",
+      "Any amount if it is labeled",
+      "No more than 2,000 pounds"
+     ],
+     "e": "Buses may carry limited amounts of allowed hazmat: no more than 500 pounds total and no more than 100 pounds of any one class."
+    },
+    {
+     "q": "Which of these is never allowed on a bus?",
+     "a": "Division 2.3 poison gas",
+     "w": [
+      "A labeled container of oxygen for a passenger",
+      "Small arms ammunition",
+      "A small amount of an allowed material properly packaged"
+     ],
+     "e": "Division 2.3 poison gas, liquid Class 6 poisons, tear gas and irritating materials are forbidden on buses."
+    },
+    {
+     "q": "What is the standee line?",
+     "a": "A line on the floor that passengers may not stand in front of",
+     "w": [
+      "A line passengers wait behind at the bus stop",
+      "The line where the driver must stop at railroad crossings",
+      "The line marking wheelchair space"
+     ],
+     "e": "No rider may stand forward of the standee line while the bus is moving, because they would block the driver's view."
+    },
+    {
+     "q": "At a railroad crossing, a bus must stop how far from the nearest rail?",
+     "a": "Between 15 and 50 feet",
+     "w": [
+      "Between 5 and 10 feet",
+      "Between 50 and 100 feet",
+      "100 feet exactly"
+     ],
+     "e": "Stop 15 to 50 feet from the tracks, open the forward door if it helps you see or hear, then cross without shifting gears."
+    },
+    {
+     "q": "A bus must stop at least how far before a drawbridge without a signal light or attendant?",
+     "a": "50 feet",
+     "w": [
+      "15 feet",
+      "100 feet",
+      "500 feet"
+     ],
+     "e": "Stop at least 50 feet before the draw and look to make sure it is completely closed before crossing."
+    },
+    {
+     "q": "Where should you discharge a disruptive passenger?",
+     "a": "At the next safe, well-lit stop",
+     "w": [
+      "Immediately, wherever the bus is",
+      "At the end of the route only",
+      "On the highway shoulder"
+     ],
+     "e": "Put them off at a safe, lighted place, like the next scheduled stop. Don't leave them in an unsafe spot."
+    },
+    {
+     "q": "Can you refuel a bus with passengers on board?",
+     "a": "Not in a closed building with riders aboard",
+     "w": [
+      "Yes, anywhere",
+      "Yes, but only with the engine running",
+      "Only at night"
+     ],
+     "e": "Never refuel in a closed building with passengers on board, and avoid refueling with riders aboard whenever you can."
+    },
+    {
+     "q": "Before driving, emergency exits on a bus should be:",
+     "a": "Checked and closed, with the handles working",
+     "w": [
+      "Left open for ventilation",
+      "Locked so passengers can't open them",
+      "Blocked by luggage so they don't rattle"
+     ],
+     "e": "Emergency exits must be closed while driving but able to open, and never blocked."
+    },
+    {
+     "q": "What should you never use in place of the parking brake on a transit bus?",
+     "a": "The brake-door interlock",
+     "w": [
+      "The parking brake",
+      "Wheel chocks",
+      "The emergency brake"
+     ],
+     "e": "The interlock holds the bus while the rear door is open, but it releases when the door closes. Always set the parking brake."
+    },
+    {
+     "q": "Where should baggage and freight be stored on a bus?",
+     "a": "Secured so the driver and passengers can move freely and exits aren't blocked",
+     "w": [
+      "In the aisle so it's easy to reach",
+      "In front of the standee line",
+      "On empty seats near the emergency exit"
+     ],
+     "e": "Aisles and exits must stay clear, and loose items can fly forward in a sudden stop."
+    }
+   ]
+  }
+ ]
+}

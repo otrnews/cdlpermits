@@ -1,0 +1,102 @@
+:root{
+  --sign:#2C3E50; --sign-deep:#1F2D3B; --blue:#0F5FF8; --blue-deep:#0B4CD0; --strip:#2980B9;
+  --white:#FFFFFF; --road:#F2F2F2; --ink:#1E2A36; --muted:#5A6672; --line:#D5DAE0; --caution:#F3C300;
+  --ok:#0A7A45; --ok-bg:#E3F3EA; --bad:#B42318; --bad-bg:#FBE7E5;
+  --font:"Fira Sans","Open Sans",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--road);color:var(--ink);font-family:var(--font);font-size:18px;line-height:1.55}
+a{color:var(--blue)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--caution);outline-offset:3px}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+
+/* Top bar */
+.strip{background:var(--strip);color:var(--white);text-align:center;font-size:15px;padding:8px 16px}
+.strip a{color:var(--white);font-weight:700}
+.top{background:var(--white);color:var(--ink);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:12px;padding-bottom:12px}
+.brand{color:var(--ink);text-decoration:none;font-weight:800;font-size:22px;letter-spacing:.01em;display:flex;align-items:center;gap:10px}
+.brand .shield{display:inline-grid;place-items:center;width:34px;height:36px;background:var(--blue);color:var(--white);border-radius:8px 8px 14px 14px;font-size:12px;font-weight:800}
+.brand .hl{color:var(--blue)}
+.top nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:16px}
+.top nav a:hover{text-decoration:underline}
+
+/* Guide-sign panel: the one signature element */
+.sign{background:var(--sign);color:var(--white);border-radius:14px;padding:8px}
+.sign-inner{border:3px solid var(--white);border-radius:9px;padding:28px 28px 26px}
+.hero{padding:36px 0 10px}
+.hero h1{font-size:clamp(34px,6vw,56px);line-height:1.02;margin:0 0 14px;font-weight:800;letter-spacing:-.01em}
+.hero p{margin:0;font-size:20px;max-width:34ch}
+
+.exits{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:18px}
+.exit{position:relative}
+.exit a{display:block;text-decoration:none;color:var(--white)}
+.exit .sign{transition:background .15s}
+.exit a:hover .sign{background:var(--sign-deep)}
+.exit .tab{position:absolute;top:-14px;right:22px;background:var(--sign);color:var(--white);border:3px solid var(--white);border-radius:6px;padding:2px 10px;font-weight:800;font-size:14px;letter-spacing:.04em}
+.exit h2{margin:0;font-size:28px;font-weight:800;line-height:1.1}
+.exit p{margin:6px 0 0;font-size:16px;opacity:.92}
+.exit .meta{margin-top:10px;font-size:15px;font-weight:600}
+.exit .best{display:inline-block;margin-left:8px;background:var(--caution);color:var(--ink);border-radius:4px;padding:0 6px;font-weight:800}
+
+section.info{padding:44px 0 10px}
+section.info h2{font-size:28px;margin:0 0 10px;font-weight:800}
+section.info p{max-width:62ch;margin:0 0 14px}
+
+.cta{margin:36px 0;background:var(--sign);color:var(--white);border-radius:14px;padding:26px 28px}
+.cta h2{margin:0 0 6px;font-size:26px;font-weight:800}
+.cta p{margin:0 0 16px;max-width:56ch}
+.btn{display:inline-block;font:inherit;font-weight:800;font-size:18px;border:0;border-radius:8px;padding:12px 20px;cursor:pointer;text-decoration:none}
+.btn-dark{background:var(--blue);color:var(--white)}
+.btn-dark:hover{background:var(--blue-deep)}
+.btn-sign{background:var(--blue);color:var(--white)}
+.btn-sign:hover{background:var(--blue-deep)}
+.btn-ghost{background:transparent;color:var(--blue);border:2px solid var(--blue)}
+
+footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 40px;font-size:15px;color:var(--muted)}
+footer p{margin:0 0 8px;max-width:70ch}
+
+/* Test page */
+.test-head{padding:30px 0 6px}
+.test-head h1{font-size:clamp(30px,5vw,44px);line-height:1.05;margin:0 0 10px;font-weight:800}
+.test-head p{margin:0;color:var(--muted);max-width:60ch}
+.quiz{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:24px;margin:22px 0}
+.lane{height:10px;background:#D8DDD9;border-radius:5px;overflow:hidden;position:relative}
+.lane span{display:block;height:100%;background:var(--blue);width:0;transition:width .25s}
+.count{font-size:15px;color:var(--muted);margin:10px 0 4px;font-weight:600}
+.quiz h2{font-size:24px;line-height:1.3;margin:6px 0 18px;font-weight:700}
+.opts{display:grid;gap:10px}
+.opt{text-align:left;font:inherit;font-size:18px;background:var(--white);color:var(--ink);border:2px solid var(--line);border-radius:10px;padding:14px 16px;cursor:pointer;line-height:1.35}
+.opt:hover:not(:disabled){border-color:var(--blue)}
+.opt:disabled{cursor:default}
+.opt.right{border-color:var(--ok);background:var(--ok-bg)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-bg)}
+.opt .mark{float:right;font-weight:800;margin-left:10px}
+.why{margin-top:16px;padding:14px 16px;border-left:5px solid var(--blue);background:#F2F6FE;border-radius:0 8px 8px 0}
+.why strong{display:block;margin-bottom:2px}
+.actions{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+.score{font-size:64px;font-weight:800;line-height:1;margin:6px 0}
+.verdict{font-size:22px;font-weight:800;margin:0 0 8px}
+.verdict.pass{color:var(--ok)} .verdict.fail{color:var(--bad)}
+.missed{margin:18px 0 0;padding:0;list-style:none}
+.missed li{border-top:1px solid var(--line);padding:12px 0}
+.missed .ans{color:var(--ok);font-weight:700}
+
+details.study{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:6px 22px;margin:22px 0}
+details.study summary{cursor:pointer;font-weight:800;font-size:20px;padding:14px 0}
+.study ol{padding-left:22px}
+.study li{margin:0 0 16px}
+.study .ans{color:var(--ok);font-weight:700}
+.study .exp{color:var(--muted);font-size:16px}
+.more{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0;padding:0;list-style:none}
+.more a{display:inline-block;background:var(--white);border:1px solid var(--line);border-radius:8px;padding:8px 12px;text-decoration:none;font-weight:600;font-size:16px}
+
+@media (max-width:560px){
+  body{font-size:17px}
+  .sign-inner{padding:22px 18px}
+  .quiz{padding:18px}
+  .quiz h2{font-size:21px}
+  .score{font-size:52px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
