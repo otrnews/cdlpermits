@@ -105,3 +105,68 @@ details.study summary{cursor:pointer;font-weight:800;font-size:20px;padding:14px
   .score{font-size:52px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* ---------- v2: engagement features ---------- */
+#confetti{position:fixed;inset:0;pointer-events:none;display:none;z-index:50}
+.sign-inner{position:relative}
+
+/* Yellow diamond: warning-sign motif for badges and question of the day */
+.diamond,.badge{display:grid;place-items:center;background:var(--caution);border:3px solid var(--ink);border-radius:6px;transform:rotate(45deg)}
+.diamond span,.badge span{transform:rotate(-45deg);font-weight:800;color:var(--ink)}
+.badge{position:absolute;top:18px;right:20px;width:34px;height:34px}
+.badge[hidden]{display:none}
+.badge span{font-size:18px}
+.badge.big{position:static;width:56px;height:56px}
+.badge.big span{font-size:28px}
+
+/* Progress dashboard */
+.dash{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin:20px 0 0}
+.dash-row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}
+.dash p{margin:10px 0 0;font-size:16px;color:var(--muted)}
+.streak{display:inline-block;background:#FFF4CC;color:var(--ink);border-radius:20px;padding:2px 10px;font-weight:700;font-size:15px;white-space:nowrap}
+
+/* Question of the day */
+.qotd{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;background:var(--white);border:3px solid var(--caution);border-radius:14px;padding:22px;margin:28px 0 8px}
+.qotd .diamond{width:52px;height:52px;margin:8px 6px 0}
+.qotd .diamond span{font-size:26px}
+.qotd h2{margin:0;font-size:24px;font-weight:800}
+.qotd-from{margin:2px 0 8px;font-size:15px;color:var(--muted);font-weight:600}
+.qotd-q{font-size:20px;font-weight:700;line-height:1.35;margin:0 0 14px}
+@media (max-width:560px){.qotd{grid-template-columns:1fr;gap:10px}.qotd .diamond{width:40px;height:40px;margin:6px}.qotd .diamond span{font-size:20px}}
+
+/* Mode picker */
+.menu-h{font-size:24px;margin:0 0 6px;font-weight:800}
+.modes{display:grid;gap:12px;margin-top:14px}
+.mode{display:block;text-align:left;font:inherit;background:var(--white);color:var(--ink);border:2px solid var(--line);border-left:8px solid var(--blue);border-radius:10px;padding:14px 16px;cursor:pointer}
+.mode:hover{border-color:var(--blue)}
+.mode strong{display:block;font-size:20px}
+.mode span{display:block;color:var(--muted);font-size:16px}
+.mode-warn{border-left-color:var(--caution)}
+
+/* Question screen */
+.qbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:10px}
+.pill{background:#E8EFFE;color:var(--blue-deep);border-radius:20px;padding:3px 12px;font-weight:700;font-size:14px}
+.say{font:inherit;font-size:15px;font-weight:600;background:none;border:1px solid var(--line);border-radius:20px;padding:4px 12px;cursor:pointer;color:var(--ink)}
+.opt{display:flex;align-items:flex-start;gap:12px}
+.opt .key{flex:none;display:inline-grid;place-items:center;width:28px;height:28px;border-radius:6px;background:var(--road);font-weight:800;font-size:15px}
+.opt .mark{margin-left:auto}
+.opt.right .key{background:var(--ok);color:var(--white)}
+.opt.wrong .key{background:var(--bad);color:var(--white)}
+.opt.picked{border-color:var(--blue);background:#E8EFFE}
+
+/* Results */
+.result{display:flex;align-items:center;gap:22px;margin-top:8px}
+.missed .yours{color:var(--bad);font-size:16px}
+.missed .exp{color:var(--muted);font-size:16px}
+
+/* Partner ads */
+.partners{margin:36px 0 10px}
+.partners h2,.more-h{font-size:24px;font-weight:800;margin:0 0 12px}
+.plist{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.pcard{display:flex;flex-direction:column;gap:4px;background:var(--white);border:1px solid var(--line);border-radius:12px;padding:16px;text-decoration:none;color:var(--ink)}
+.pcard:hover{border-color:var(--blue)}
+.ptag{align-self:flex-start;font-size:12px;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:0 6px}
+.pcard strong{font-size:20px}
+.pkind{font-size:14px;color:var(--muted);font-weight:600}
+.ptext{font-size:16px;flex:1}
+.pcta{margin-top:6px;font-weight:800;color:var(--blue)}

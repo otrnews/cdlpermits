@@ -1,60 +1,131 @@
-// Where the results screen sends people. Swap in your exact MyCDLCoach links here.
+// ===== Settings: where the results screen sends people =====
 var LINKS = {
   course: 'https://mycdlcoach.com',  // CDL Fast Track ($149) checkout or course page
   lounge: 'https://mycdlcoach.com'   // Free Driver's Lounge sign-up page
 };
-function track(url, result){return url+(url.indexOf('?')>-1?'&':'?')+'utm_source=cdlpermits&utm_medium=results&utm_campaign='+result;}
+var PASS = 80;
+// ===========================================================
 
+function track(url, tag){return url+(url.indexOf('?')>-1?'&':'?')+'utm_source=cdlpermits&utm_medium=results&utm_campaign='+tag;}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function shuffle(a){a=a.slice();for(var k=a.length-1;k>0;k--){var j=Math.floor(Math.random()*(k+1));var t=a[k];a[k]=a[j];a[j]=t;}return a;}
+function today(){var d=new Date();return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();}
+
+// ----- Saved progress (stays on this device) -----
+var Store={
+  get:function(){try{return JSON.parse(localStorage.getItem('cdlpermits')||'{}');}catch(e){return {};}},
+  set:function(s){try{localStorage.setItem('cdlpermits',JSON.stringify(s));}catch(e){}},
+  best:function(slug){return (this.get().best||{})[slug];},
+  saveBest:function(slug,p){var s=this.get();s.best=s.best||{};if(!(s.best[slug]>=p))s.best[slug]=p;this.set(s);},
+  missed:function(slug){return (this.get().missed||{})[slug]||[];},
+  setMissed:function(slug,arr){var s=this.get();s.missed=s.missed||{};s.missed[slug]=arr;this.set(s);},
+  studied:function(){var s=this.get(),t=today();var st=s.streak||{n:0,last:null};
+    if(st.last!==t){var y=new Date();y.setDate(y.getDate()-1);
+      var ys=y.getFullYear()+'-'+(y.getMonth()+1)+'-'+y.getDate();
+      st.n=(st.last===ys)?st.n+1:1;st.last=t;s.streak=st;this.set(s);}return st.n;},
+  streak:function(){var st=(this.get().streak)||{};if(!st.last)return 0;
+    var y=new Date();y.setDate(y.getDate()-1);var ys=y.getFullYear()+'-'+(y.getMonth()+1)+'-'+y.getDate();
+    return (st.last===today()||st.last===ys)?st.n:0;}
+};
+
+// ----- Read aloud (free, built into phones) -----
+function speak(text){try{speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(text);u.rate=.95;speechSynthesis.speak(u);}catch(e){}}
+var canSpeak='speechSynthesis' in window;
+
+// ----- Confetti for passing -----
+function confetti(){
+  if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var c=document.getElementById('confetti');if(!c)return;var x=c.getContext('2d');
+  c.width=innerWidth;c.height=innerHeight;c.style.display='block';
+  var cols=['#0F5FF8','#F3C300','#FFFFFF','#2980B9','#0A7A45'],ps=[];
+  for(var i=0;i<140;i++)ps.push({x:Math.random()*c.width,y:-20-Math.random()*c.height*.5,w:6+Math.random()*6,h:10+Math.random()*8,
+    vy:2+Math.random()*3,vx:-1.5+Math.random()*3,r:Math.random()*6,vr:-.2+Math.random()*.4,c:cols[i%cols.length]});
+  var t0=Date.now();
+  (function f(){x.clearRect(0,0,c.width,c.height);ps.forEach(function(p){p.x+=p.vx;p.y+=p.vy;p.r+=p.vr;
+    x.save();x.translate(p.x,p.y);x.rotate(p.r);x.fillStyle=p.c;x.fillRect(-p.w/2,-p.h/2,p.w,p.h);x.restore();});
+    if(Date.now()-t0<3500)requestAnimationFrame(f);else{x.clearRect(0,0,c.width,c.height);c.style.display='none';}})();
+}
+
+// ----- Share -----
+function share(text){
+  var url='https://cdlpermits.com'+location.pathname;
+  if(navigator.share){navigator.share({title:'CDL Permits',text:text,url:url}).catch(function(){});return;}
+  try{navigator.clipboard.writeText(text+' '+url);alert('Link copied. Paste it anywhere to share.');}catch(e){prompt('Copy this link:',url);}
+}
+
+// ===== Test page =====
 (function(){
-  var data = window.QUIZ; if(!data) return;
-  var box = document.getElementById('quiz');
-  var PASS = 80, qs, i, right, missed;
+  var data=window.QUIZ;if(!data)return;
+  var box=document.getElementById('quiz');
+  var qs,i,right,missed,mode,answers;
 
-  function shuffle(a){a=a.slice();for(var k=a.length-1;k>0;k--){var j=Math.floor(Math.random()*(k+1));var t=a[k];a[k]=a[j];a[j]=t;}return a;}
-  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-  function saveBest(p){try{var k='best:'+data.slug;var b=parseInt(localStorage.getItem(k)||'0',10);if(p>b)localStorage.setItem(k,String(p));}catch(e){}}
+  function menu(){
+    var m=Store.missed(data.slug),b=Store.best(data.slug);
+    var h='<h2 class="menu-h">How do you want to practice?</h2>'+
+      (b!=null?'<p class="count">Your best score: '+b+'%</p>':'')+
+      '<div class="modes">'+
+      '<button class="mode" type="button" data-m="practice"><strong>Practice mode</strong><span>See the right answer and why after every question.</span></button>'+
+      '<button class="mode" type="button" data-m="exam"><strong>Exam mode</strong><span>No hints until the end, just like the real test.</span></button>';
+    if(m.length)h+='<button class="mode mode-warn" type="button" data-m="missed"><strong>Fix my mistakes ('+m.length+')</strong><span>Retake only the questions you got wrong before.</span></button>';
+    h+='</div>';
+    box.innerHTML=h;
+    box.querySelectorAll('.mode').forEach(function(b){b.addEventListener('click',function(){start(b.getAttribute('data-m'));});});
+  }
 
-  function start(){qs=shuffle(data.questions);i=0;right=0;missed=[];show();}
+  function start(m){
+    mode=m;
+    var pool=data.questions;
+    if(m==='missed'){var set=Store.missed(data.slug);pool=pool.filter(function(q){return set.indexOf(q.q)>-1;});}
+    qs=shuffle(pool);i=0;right=0;missed=[];answers=[];show();
+    box.scrollIntoView({behavior:'smooth',block:'start'});
+  }
 
   function show(){
-    var q=qs[i];
-    var opts=shuffle([q.a].concat(q.w));
-    var pct=Math.round(i/qs.length*100);
-    var h='<div class="lane" aria-hidden="true"><span style="width:'+pct+'%"></span></div>'+
-      '<p class="count">Question '+(i+1)+' of '+qs.length+', '+right+' correct so far</p>'+
+    var q=qs[i],opts=shuffle([q.a].concat(q.w)),pct=Math.round(i/qs.length*100);
+    var label=mode==='exam'?'Exam mode':(mode==='missed'?'Fixing mistakes':'Practice mode');
+    var h='<div class="qbar"><span class="pill">'+label+'</span>'+
+      (canSpeak?'<button class="say" type="button" id="say" aria-label="Read the question aloud">🔊 Read aloud</button>':'')+'</div>'+
+      '<div class="lane" aria-hidden="true"><span style="width:'+pct+'%"></span></div>'+
+      '<p class="count">Question '+(i+1)+' of '+qs.length+(mode!=='exam'?', '+right+' correct so far':'')+'</p>'+
       '<h2 id="qtext">'+esc(q.q)+'</h2><div class="opts" role="group" aria-labelledby="qtext">';
-    opts.forEach(function(o){h+='<button class="opt" type="button">'+esc(o)+'</button>';});
+    opts.forEach(function(o,k){h+='<button class="opt" type="button"><span class="key">'+'ABCD'[k]+'</span>'+esc(o)+'</button>';});
     h+='</div><div id="after" aria-live="polite"></div>';
     box.innerHTML=h;
     var btns=box.querySelectorAll('.opt');
-    btns.forEach(function(b){b.addEventListener('click',function(){answer(b,btns,q);});});
-    btns[0].focus({preventScroll:true});
+    btns.forEach(function(b,k){b.addEventListener('click',function(){answer(b,btns,q,opts[k]);});});
+    var s=document.getElementById('say');
+    if(s)s.addEventListener('click',function(){speak(q.q+'. '+opts.map(function(o,k){return 'ABCD'[k]+'. '+o;}).join('. '));});
   }
 
-  function answer(b,btns,q){
-    var ok=b.textContent===q.a;
-    btns.forEach(function(x){
-      x.disabled=true;
-      if(x.textContent===q.a){x.classList.add('right');x.insertAdjacentHTML('afterbegin','<span class="mark">✓</span>');}
-    });
-    if(ok){right++;}else{b.classList.add('wrong');b.insertAdjacentHTML('afterbegin','<span class="mark">✗</span>');missed.push(q);}
-    var last=i===qs.length-1;
-    document.getElementById('after').innerHTML=
-      '<div class="why"><strong>'+(ok?'Correct.':'Not quite.')+'</strong>'+esc(q.e)+'</div>'+
+  function answer(b,btns,q,choice){
+    var ok=choice===q.a,last=i===qs.length-1;
+    btns.forEach(function(x){x.disabled=true;});
+    if(ok)right++;else missed.push(q);
+    answers.push({q:q,choice:choice,ok:ok});
+    if(mode==='exam'){b.classList.add('picked');setTimeout(function(){if(last)done();else{i++;show();}},250);return;}
+    btns.forEach(function(x){if(x.textContent.slice(1)===q.a){x.classList.add('right');x.insertAdjacentHTML('beforeend','<span class="mark">✓</span>');}});
+    if(!ok){b.classList.add('wrong');b.insertAdjacentHTML('beforeend','<span class="mark">✗</span>');}
+    document.getElementById('after').innerHTML='<div class="why"><strong>'+(ok?'Correct.':'Not quite.')+'</strong>'+esc(q.e)+'</div>'+
       '<div class="actions"><button class="btn btn-sign" type="button" id="next">'+(last?'See my score':'Next question')+'</button></div>';
     var n=document.getElementById('next');
-    n.addEventListener('click',function(){if(last){done();}else{i++;show();}});
+    n.addEventListener('click',function(){if(last)done();else{i++;show();}});
     n.focus({preventScroll:true});
   }
 
   function done(){
-    var p=Math.round(right/qs.length*100); saveBest(p);
-    var pass=p>=PASS;
+    var p=Math.round(right/qs.length*100),pass=p>=PASS,full=mode!=='missed';
+    if(full)Store.saveBest(data.slug,p);
+    // remember mistakes: add new ones, clear ones answered right
+    var set=Store.missed(data.slug);
+    answers.forEach(function(a){var at=set.indexOf(a.q.q);if(a.ok&&at>-1)set.splice(at,1);if(!a.ok&&at<0)set.push(a.q.q);});
+    Store.setMissed(data.slug,set);
+    var streak=Store.studied();
     var h='<div class="lane" aria-hidden="true"><span style="width:100%"></span></div>'+
-      '<p class="count">'+esc(data.name)+' practice test complete</p>'+
-      '<div class="score">'+p+'%</div>'+
-      '<p class="verdict '+(pass?'pass':'fail')+'">'+(pass?'You would pass.':'Not passing yet.')+'</p>'+
-      '<p>You got '+right+' of '+qs.length+' right. Most states require 80% to pass.</p>';
+      '<div class="result"><div class="score">'+p+'%</div>'+
+      (pass&&full?'<div class="badge big" aria-hidden="true"><span>✓</span></div>':'')+'</div>'+
+      '<p class="verdict '+(pass?'pass':'fail')+'">'+(pass?(full?'You passed '+esc(data.name)+'!':'Mistakes fixed!'):'Not passing yet.')+'</p>'+
+      '<p>You got '+right+' of '+qs.length+' right. Most states require 80% to pass.'+
+      (streak>1?' <span class="streak">🔥 '+streak+'-day study streak</span>':'')+'</p>';
     if(pass){
       h+='<div class="next"><h3>Your next step: ELDT theory</h3>'+
         '<p>Before your CDL skills test, federal rules require Entry-Level Driver Training theory from a registered provider. MyCDLCoach Fast Track is FMCSA-certified, 100% online, and most students finish in under a day. Your certificate is uploaded to the FMCSA the same day.</p>'+
@@ -65,25 +136,65 @@ function track(url, result){return url+(url.indexOf('?')>-1?'&':'?')+'utm_source
         '<p>Join the free MyCDLCoach Driver\'s Lounge. Ask working drivers about the questions that tripped you up, get study tips, and connect with people going through the same process.</p>'+
         '<a class="btn btn-sign" href="'+track(LINKS.lounge,'fail')+'">Join the free Driver\'s Lounge</a></div>';
     }
-    h+='<div class="actions"><button class="btn btn-ghost" type="button" id="again">Take it again</button>'+
+    h+='<div class="actions">'+
+      (Store.missed(data.slug).length?'<button class="btn btn-ghost" type="button" id="fix">Fix my mistakes ('+Store.missed(data.slug).length+')</button>':'')+
+      '<button class="btn btn-ghost" type="button" id="again">Take it again</button>'+
+      '<button class="btn btn-ghost" type="button" id="share">Share my score</button>'+
       '<a class="btn btn-ghost" href="/">Pick another test</a></div>';
-    if(missed.length){
+    var wrong=answers.filter(function(a){return !a.ok;});
+    if(wrong.length){
       h+='<h3>Review what you missed</h3><ul class="missed">';
-      missed.forEach(function(q){h+='<li><div>'+esc(q.q)+'</div><div class="ans">'+esc(q.a)+'</div></li>';});
+      wrong.forEach(function(a){h+='<li><div>'+esc(a.q.q)+'</div>'+
+        (mode==='exam'?'<div class="yours">Your answer: '+esc(a.choice)+'</div>':'')+
+        '<div class="ans">'+esc(a.q.a)+'</div><div class="exp">'+esc(a.q.e)+'</div></li>';});
       h+='</ul>';
     }
     box.innerHTML=h;
-    document.getElementById('again').addEventListener('click',start);
+    document.getElementById('again').addEventListener('click',menu);
+    var f=document.getElementById('fix');if(f)f.addEventListener('click',function(){start('missed');});
+    document.getElementById('share').addEventListener('click',function(){
+      share('I scored '+p+'% on the CDL '+data.name+' practice test. Can you beat it?');});
     box.scrollIntoView({behavior:'smooth',block:'start'});
+    if(pass)confetti();
   }
 
-  start();
+  menu();
 })();
 
-// Best scores on the home page
+// ===== Home page: progress, badges, question of the day =====
 (function(){
-  document.querySelectorAll('[data-best]').forEach(function(el){
-    try{var b=localStorage.getItem('best:'+el.getAttribute('data-best'));
-      if(b){el.textContent='Your best: '+b+'%';el.hidden=false;}}catch(e){}
+  if(!window.TESTS)return;
+  var s=Store.get(),best=s.best||{},passed=0,tried=0;
+  window.TESTS.forEach(function(slug){
+    var b=best[slug];if(b==null)return;tried++;
+    var el=document.querySelector('[data-best="'+slug+'"]');if(el){el.textContent='Best: '+b+'%';el.hidden=false;}
+    if(b>=PASS){passed++;var bd=document.querySelector('[data-badge="'+slug+'"]');if(bd)bd.hidden=false;}
   });
+  var st=Store.streak(),dash=document.getElementById('dash');
+  if(tried&&dash){
+    var pct=Math.round(passed/window.TESTS.length*100);
+    dash.innerHTML='<div class="dash-row"><strong>Your progress</strong>'+(st>0?'<span class="streak">🔥 '+st+'-day streak</span>':'')+'</div>'+
+      '<div class="lane" aria-hidden="true"><span style="width:'+pct+'%"></span></div>'+
+      '<p>You\'ve passed '+passed+' of '+window.TESTS.length+' tests. Progress is saved on this device.</p>';
+    dash.hidden=false;
+  }
+
+  var box=document.getElementById('qotd-box');if(!box||!window.ALLQ)return;
+  var d=new Date(),n=Math.floor(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/864e5);
+  var q=window.ALLQ[(n*7)%window.ALLQ.length],opts=shuffle([q.a].concat(q.w));
+  var done=(s.qotd===today());
+  var h='<p class="qotd-from">From the '+esc(q.n)+' test</p><p class="qotd-q" id="qq">'+esc(q.q)+'</p><div class="opts" role="group" aria-labelledby="qq">';
+  opts.forEach(function(o){h+='<button class="opt" type="button">'+esc(o)+'</button>';});
+  h+='</div><div id="qotd-after" aria-live="polite"></div>';
+  box.innerHTML=h;
+  var btns=box.querySelectorAll('.opt');
+  function reveal(choice){
+    btns.forEach(function(x){x.disabled=true;if(x.textContent===q.a)x.classList.add('right');});
+    if(choice&&choice.textContent!==q.a)choice.classList.add('wrong');
+    var ok=!choice||choice.textContent===q.a;
+    document.getElementById('qotd-after').innerHTML='<div class="why"><strong>'+(choice?(ok?'Correct!':'Not quite.'):'Today\'s answer:')+'</strong>'+esc(q.e)+'</div>'+
+      '<div class="actions"><a class="btn btn-sign" href="/'+q.t+'">Practice more '+esc(q.n)+'</a></div>';
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){var s2=Store.get();s2.qotd=today();Store.set(s2);Store.studied();reveal(b);});});
+  if(done)reveal(null);
 })();
