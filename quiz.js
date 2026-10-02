@@ -96,12 +96,12 @@ function share(text){
     box.querySelectorAll('.mode').forEach(function(b){b.addEventListener('click',function(){start(b.getAttribute('data-m'));});});
   }
 
-  function start(m){
+  function start(m,stay){
     mode=m;
     var pool=data.questions;
     if(m==='missed'){var set=Store.missed(data.slug);pool=pool.filter(function(q){return set.indexOf(q.q)>-1;});}
     qs=shuffle(pool);if(data.limit&&m!=='missed')qs=qs.slice(0,data.limit);i=0;right=0;missed=[];answers=[];show();
-    box.scrollIntoView({behavior:'smooth',block:'start'});
+    if(!stay)box.scrollIntoView({behavior:'smooth',block:'start'});
   }
 
   function show(){
@@ -138,7 +138,9 @@ function share(text){
 
   function done(){
     var p=Math.round(right/qs.length*100),pass=p>=PASS,full=mode!=='missed';
-    if(full)Store.saveBest(data.slug,p);
+    var L=data.lesson;
+    if(L&&pass){var st=Store.get();st.lessons=st.lessons||{};st.lessons[L.slug]=true;Store.set(st);}
+    if(full&&!L)Store.saveBest(data.slug,p);
     // remember mistakes: add new ones, clear ones answered right
     var set=Store.missed(data.slug);
     answers.forEach(function(a){var at=set.indexOf(a.q.q);if(a.ok&&at>-1)set.splice(at,1);if(!a.ok&&at<0)set.push(a.q.q);});
@@ -150,7 +152,10 @@ function share(text){
       '<p class="verdict '+(pass?'pass':'fail')+'">'+(pass?(full?S.passed(esc(data.name)):S.fixed):S.notYet)+'</p>'+
       '<p>'+S.got(right,qs.length)+
       (streak>1?' <span class="streak">🔥 '+streak+(ES?' ':'')+S.streak+'</span>':'')+'</p>';
-    if(pass){
+    if(L){
+      h+=pass?'<div class="next"><h3>Lesson complete!</h3><p>'+(L.nextTitle?'Up next: '+esc(L.nextTitle)+'.':'That was the last lesson. Go get your certificate.')+'</p><a class="btn btn-sign" href="'+L.next+'">'+(L.nextTitle?'Start the next lesson':'Get my certificate')+'</a></div>'
+        :'<div class="next"><h3>Score 80% to complete this lesson</h3><p>Review the lesson above, then try the check again. The questions you missed are listed below.</p></div>';
+    }else if(pass){
       h+='<div class="next"><img class="shield-img" src="https://otrnews.com/partners/mycdlcoach-shield.webp" alt="MyCDLCoach" width="44" height="44"><h3>'+S.passH+'</h3>'+
         '<p>'+S.passP+'</p>'+
         '<a class="btn btn-sign" href="'+track(LINKS.course,'pass')+'">'+S.passB+'</a>'+
@@ -174,7 +179,7 @@ function share(text){
       h+='</ul>';
     }
     box.innerHTML=h;
-    document.getElementById('again').addEventListener('click',menu);
+    document.getElementById('again').addEventListener('click',function(){if(data.lesson)start('practice');else menu();});
     var f=document.getElementById('fix');if(f)f.addEventListener('click',function(){start('missed');});
     document.getElementById('share').addEventListener('click',function(){
       share(S.shareT(p,data.name));});
@@ -182,7 +187,7 @@ function share(text){
     if(pass)confetti();
   }
 
-  menu();
+  if(data.lesson)start('practice',true);else menu();
 })();
 
 // ===== Home page: progress, badges, question of the day =====
@@ -221,4 +226,22 @@ function share(text){
   }
   btns.forEach(function(b){b.addEventListener('click',function(){var s2=Store.get();s2.qotd=today();Store.set(s2);Store.studied();reveal(b);});});
   if(done)reveal(null);
+})();
+
+// ===== Course page: progress and certificate =====
+(function(){
+  if(!window.LESSONS)return;
+  var done=(Store.get().lessons)||{},n=0;
+  window.LESSONS.forEach(function(sl){if(done[sl]){n++;var a=document.querySelector('[data-lesson="'+sl+'"] .ldone');if(a)a.hidden=false;}});
+  var pr=document.getElementById('cprog');
+  if(n&&pr){pr.innerHTML='<div class="dash-row"><strong>Your progress</strong><span>'+n+' of '+window.LESSONS.length+' lessons</span></div><div class="lane" aria-hidden="true"><span style="width:'+Math.round(n/window.LESSONS.length*100)+'%"></span></div>';pr.hidden=false;}
+  if(n===window.LESSONS.length){
+    var w=document.getElementById('certwrap');w.hidden=false;
+    var inp=document.getElementById('certname'),out=document.getElementById('certout');
+    document.getElementById('certdate').textContent=new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
+    var st=Store.get();if(st.name){inp.value=st.name;out.textContent=st.name;}
+    inp.addEventListener('input',function(){out.textContent=inp.value||'Your name';var s2=Store.get();s2.name=inp.value;Store.set(s2);});
+    document.getElementById('certprint').addEventListener('click',function(){window.print();});
+    if(!st.certShown){confetti();st.certShown=1;Store.set(st);}
+  }
 })();

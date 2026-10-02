@@ -49,7 +49,7 @@ def head(title, desc, path, lang="en"):
     es = lang == "es"
     strip = ('¿Aprobó su permiso? <a href="{u}?{m}&utm_medium=strip">Obtenga su certificado de teoría ELDT con MyCDLCoach</a>' if es
              else 'Passed your permit? <a href="{u}?{m}&utm_medium=strip">Get your ELDT theory certificate with MyCDLCoach</a>').format(u=MYCDLCOACH, m=UTM)
-    nav = '<a href="/">English</a>' if es else '<a href="/examen-cdl-en-espanol" lang="es">Español</a><a href="/#tests">All tests</a>'
+    nav = '<a href="/">English</a>' if es else '<a href="/free-cdl-course">Course</a><a href="/#tests">Tests</a><a href="/examen-cdl-en-espanol" lang="es">Español</a>'
     return f"""<!doctype html>
 <html lang="{lang}"><head>
 <meta charset="utf-8">
@@ -112,7 +112,7 @@ def foot(lang="en"):
 <footer><div class="wrap">
 {txt}
 <p>Trucking news: <a href="{OTRNEWS}">OTR News</a>. Questions or corrections: <a href="mailto:{CONTACT}">{CONTACT}</a></p>
-<p><a href="/states">CDL practice tests by state</a> &nbsp; <a href="/examen-cdl-en-espanol" lang="es">Examen CDL en español</a></p>
+<p><a href="/free-cdl-course">Free CDL course</a> &nbsp; <a href="/states">CDL practice tests by state</a> &nbsp; <a href="/examen-cdl-en-espanol" lang="es">Examen CDL en español</a></p>
 <p>A free study tool from <a href="https://www.mycdlcoach.com">MyCDLCoach</a>. &copy; {YEAR} CDL Permits</p>
 </div></footer>
 <canvas id="confetti" aria-hidden="true"></canvas>
@@ -133,6 +133,7 @@ def faq_ld(pairs):
         "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in pairs]}) + "</script>"
 
 pages = []
+LESSON_FOR = {"general-knowledge": "cdl-basics", "air-brakes": "air-brakes", "combination-vehicles": "combination-vehicles", "hazmat": "endorsements", "tanker": "endorsements", "doubles-triples": "endorsements", "passenger": "endorsements", "school-bus": "endorsements"}
 GK = next(t for t in tests if t["slug"] == "general-knowledge")
 
 # ---------- Home ----------
@@ -146,6 +147,7 @@ h += f"""<div class="hero"><div class="sign"><div class="sign-inner">
 <div id="dash" class="dash" hidden></div>
 <section class="qotd" id="qotd" aria-labelledby="qotd-h"><div class="diamond" aria-hidden="true"><span>?</span></div>
 <div class="qotd-body"><h2 id="qotd-h">Question of the day</h2><div id="qotd-box"><noscript>Turn on JavaScript to answer today's question.</noscript></div></div></section>
+<a class="course-banner" href="/free-cdl-course"><span class="cb-num">12</span><span><strong>New to CDL? Start the free course.</strong> 12 short lessons, each with a quick quiz. Earn a certificate when you finish.</span></a>
 <ul class="exits" id="tests">"""
 for n, t in enumerate(tests, 1):
     h += f"""<li class="exit"><a href="/{t['slug']}"><span class="tab">EXIT {n}</span><div class="sign"><div class="sign-inner">
@@ -181,7 +183,8 @@ for t in tests:
     desc = f"Free CDL {t['name']} practice test: {qn} questions with answers explained. Practice mode, exam mode and missed-question review. {t['who']}"
     p = head(title, desc, f"/{t['slug']}")
     p += f"""<div class="test-head"><h1>CDL {e(t['name'])} practice test</h1>
-<p>{e(t['who'])} The real test has {e(t['real'])}.</p></div>
+<p>{e(t['who'])} The real test has {e(t['real'])}.</p>
+<p class="studyfirst">Want to learn it first? <a href="/cdl-course-{LESSON_FOR.get(t['slug'],'cdl-basics')}">Take the free lesson</a></p></div>
 <div class="quiz" id="quiz"><noscript>Turn on JavaScript to take the test, or study every question below.</noscript></div>"""
     p += study_list(t["questions"], f"Study all {qn} questions with answers")
     p += '<h2 class="more-h">Other practice tests</h2><ul class="more">'
@@ -221,6 +224,55 @@ for name, agency in STATES:
                  (f"Who issues CDL permits in {name}?", f"CDL permits in {name} are issued by {agency}.")])
     p += f"<script>window.QUIZ={js({'slug': 'general-knowledge', 'name': 'General Knowledge', 'limit': 50, 'questions': GK['questions']})};</script>" + foot()
     pages.append((sl + ".html", p, f"/{sl}"))
+
+
+# ---------- Free course ----------
+LESSONS = json.load(open("courses.json", encoding="utf-8"))
+ALLQS = [q for t in tests for q in t["questions"]]
+def find_q(prefix): return next(q for q in ALLQS if q["q"].startswith(prefix))
+total_min = sum(L["min"] for L in LESSONS)
+c = head(f"Free CDL Course ({YEAR}) | 12 Lessons With Quizzes", f"Free online CDL permit course: {len(LESSONS)} short lessons with quizzes, from license classes to air brakes and endorsements. Earn a certificate. No sign-up.", "/free-cdl-course")
+c += f"""<div class="test-head"><h1>Free CDL permit course</h1>
+<p>{len(LESSONS)} short lessons, about {total_min} minutes in all. Each one ends with a quick quiz; score 80% to complete it. Your progress saves on this device.</p></div>
+<div class="dash" id="cprog" hidden></div>
+<ol class="lessons">"""
+for i, L in enumerate(LESSONS, 1):
+    c += f"""<li><a href="/cdl-course-{L['slug']}" data-lesson="{L['slug']}"><span class="lnum">{i}</span><span class="ltxt"><strong>{e(L['title'])}</strong><span>{e(L['summary'])} {L['min']} min.</span></span><span class="ldone" hidden aria-label="Completed">✓</span></a></li>"""
+c += """</ol>
+<section class="cert-wrap" id="certwrap" hidden>
+<h2>You finished the course!</h2>
+<p>Type your name to print or save your certificate.</p>
+<input id="certname" type="text" placeholder="Your full name" autocomplete="name">
+<div class="cert" id="cert"><div class="cert-inner">
+<div class="diamond" aria-hidden="true"><span>✓</span></div>
+<p class="cert-k">Certificate of completion</p>
+<p class="cert-name" id="certout">Your name</p>
+<p>has completed the 12-lesson CDL Permit Prep Course at cdlpermits.com</p>
+<p class="cert-date" id="certdate"></p>
+<p class="cert-note">This is a study certificate. It is not an ELDT training certificate.</p>
+</div></div>
+<button class="btn btn-sign" type="button" id="certprint">Print or save as PDF</button>
+</section>"""
+c += f"<script>window.LESSONS={js([L['slug'] for L in LESSONS])};</script>"
+c += cta() + partners() + foot()
+pages.append(("free-cdl-course.html", c, "/free-cdl-course"))
+for i, L in enumerate(LESSONS):
+    nxt = LESSONS[i + 1] if i + 1 < len(LESSONS) else None
+    prv = LESSONS[i - 1] if i > 0 else None
+    p = head(f"{L['title']} | Free CDL Course Lesson {i+1}", L["summary"], f"/cdl-course-{L['slug']}")
+    p += f"""<nav class="crumb"><a href="/free-cdl-course">Free CDL course</a> &rsaquo; Lesson {i+1} of {len(LESSONS)}</nav>
+<div class="lane lesson-lane" aria-hidden="true"><span style="width:{round(i/len(LESSONS)*100)}%"></span></div>
+<article class="lesson"><h1>{e(L['title'])}</h1><p class="lmeta">Lesson {i+1} of {len(LESSONS)}. About {L['min']} minutes.</p>"""
+    p += "".join(f"<p>{para}</p>" for para in L["body"])
+    p += '<aside class="keys"><h2>Remember this</h2><ul>' + "".join(f"<li>{e(k)}</li>" for k in L["keys"]) + "</ul></aside></article>"
+    p += '<h2 class="more-h" id="check">Lesson check</h2><div class="quiz" id="quiz"></div>'
+    p += '<div class="lnav">' + (f'<a class="btn btn-ghost" href="/cdl-course-{prv["slug"]}">Previous lesson</a>' if prv else '') + \
+         (f'<a class="btn btn-ghost" href="/cdl-course-{nxt["slug"]}">Next lesson</a>' if nxt else '<a class="btn btn-ghost" href="/free-cdl-course">Back to the course</a>') + '</div>'
+    p += cta() + partners()
+    quiz = {"slug": "lesson-" + L["slug"], "name": f"Lesson {i+1}", "questions": [find_q(x) for x in L["quiz"]],
+            "lesson": {"slug": L["slug"], "next": ("/cdl-course-" + nxt["slug"]) if nxt else "/free-cdl-course", "nextTitle": nxt["title"] if nxt else None}}
+    p += f"<script>window.QUIZ={js(quiz)};</script>" + foot()
+    pages.append((f"cdl-course-{L['slug']}.html", p, f"/cdl-course-{L['slug']}"))
 
 # ---------- Spanish ----------
 es = json.load(open("questions_es.json", encoding="utf-8"))
