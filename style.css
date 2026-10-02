@@ -245,3 +245,12 @@ ul.states{margin-top:16px}
 .ebook-txt strong{font-size:20px;line-height:1.25;padding-right:34px}
 .ebook-price{color:var(--muted);font-size:16px;margin-bottom:6px}
 .ebook .btn{font-size:16px;padding:10px 16px}
+
+/* ---------- v6: smaller ads, simpler footer ---------- */
+.ebook{padding:14px}
+.ebook-in{grid-template-columns:84px 1fr;gap:14px}
+.ebook-cover img{width:84px;height:110px;object-fit:cover}
+.ebook-txt strong{font-size:17px}
+.ebook-price{font-size:15px}
+footer p{font-size:14px}
+.flinks{display:flex;flex-wrap:wrap;gap:6px 18px}

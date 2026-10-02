@@ -156,12 +156,12 @@ function share(text){
       h+=pass?'<div class="next"><h3>Lesson complete!</h3><p>'+(L.nextTitle?'Up next: '+esc(L.nextTitle)+'.':'That was the last lesson. Go get your certificate.')+'</p><a class="btn btn-sign" href="'+L.next+'">'+(L.nextTitle?'Start the next lesson':'Get my certificate')+'</a></div>'
         :'<div class="next"><h3>Score 80% to complete this lesson</h3><p>Review the lesson above, then try the check again. The questions you missed are listed below.</p></div>';
     }else if(pass){
-      h+='<div class="next"><img class="shield-img" src="https://otrnews.com/partners/mycdlcoach-shield.webp" alt="MyCDLCoach" width="44" height="44"><h3>'+S.passH+'</h3>'+
+      h+='<div class="next"><img class="shield-img" src="/mycdlcoach-shield.webp" alt="MyCDLCoach" width="44" height="44"><h3>'+S.passH+'</h3>'+
         '<p>'+S.passP+'</p>'+
         '<a class="btn btn-sign" href="'+track(LINKS.course,'pass')+'">'+S.passB+'</a>'+
         '<p class="alt">'+S.notReady+'<a href="'+track(LINKS.lounge,'pass')+'">'+S.lounge+'</a></p></div>';
     }else{
-      h+='<div class="next"><img class="shield-img" src="https://otrnews.com/partners/mycdlcoach-shield.webp" alt="MyCDLCoach" width="44" height="44"><h3>'+S.failH+'</h3>'+
+      h+='<div class="next"><img class="shield-img" src="/mycdlcoach-shield.webp" alt="MyCDLCoach" width="44" height="44"><h3>'+S.failH+'</h3>'+
         '<p>'+S.failP+'</p>'+
         '<a class="btn btn-sign" href="'+track(LINKS.lounge,'fail')+'">'+S.lounge+'</a></div>';
     }

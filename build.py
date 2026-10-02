@@ -6,15 +6,13 @@ import json, html, datetime
 SITE = "https://cdlpermits.com"
 MYCDLCOACH = "https://www.mycdlcoach.com/theory-and-endorsements"
 LOUNGE = "https://www.mycdlcoach.com/offers/DzKSWbj5/checkout"
-SHIELD = "https://otrnews.com/partners/mycdlcoach-shield.webp"
-OTRNEWS = "https://otrnews.com"
-CONTACT = "news@otrnews.com"
-# Ads (same affiliate links and images as OTR News)
+SHIELD = "/mycdlcoach-shield.webp"
+# Ads (affiliate links; images are stored in this repo)
 ADS = [
-    {"name": "Truck Parking Club", "text": "Reserve a safe truck parking spot ahead of time, or earn money listing your own yard.", "cta": "Find parking", "url": "https://truckparkingclubcomllc.sjv.io/c/6864035/2019579/25053?trafsrc=partner_api", "img": "https://otrnews.com/partners/partner-tpc.webp"},
-    {"name": "Roadside Masters", "text": "24/7 nationwide roadside assistance for trucks, so a breakdown doesn't leave you stuck.", "cta": "Sign up your truck", "url": "https://www.roadsidemasters.com/signup-truck.php?r=MYCDLCOACH", "img": "https://otrnews.com/partners/partner-roadside.webp"},
+    {"name": "Truck Parking Club", "text": "Reserve a safe truck parking spot ahead of time, or earn money listing your own yard.", "cta": "Find parking", "url": "https://truckparkingclubcomllc.sjv.io/c/6864035/2019579/25053?trafsrc=partner_api", "img": "/partner-tpc.webp"},
+    {"name": "Roadside Masters", "text": "24/7 nationwide roadside assistance for trucks, so a breakdown doesn't leave you stuck.", "cta": "Sign up your truck", "url": "https://www.roadsidemasters.com/signup-truck.php?r=MYCDLCOACH", "img": "/partner-roadside.webp"},
     {"name": "DAT Load Board", "text": "Looking for freight once you're driving? Get 10% off a DAT load board subscription.", "cta": "Try DAT", "url": "https://www.dat.com/power/0002438644", "img": "https://www.dat.com/wp-content/uploads/media/images/affiliates/Affiliate_banner_black_blue_O1.png"},
-    {"name": "LodoShop", "text": "Big brands, bigger savings. Discount deals on everyday gear, tools and household goods.", "cta": "Shop deals", "url": "https://lodoshop.com?utm_source=cdlpermits&utm_medium=ad", "img": "https://otrnews.com/partners/partner-lodoshop.webp"},
+    {"name": "LodoShop", "text": "Big brands, bigger savings. Discount deals on everyday gear, tools and household goods.", "cta": "Shop deals", "url": "https://lodoshop.com?utm_source=cdlpermits&utm_medium=ad", "img": "/partner-lodoshop.webp"},
 ]
 # MyCDLCoach ebooks shown as ads on matching pages (edit ebooks.json to change titles, prices or links)
 EBOOKS = json.load(open("ebooks.json", encoding="utf-8"))
@@ -81,7 +79,7 @@ def head(title, desc, path, lang="en"):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/style.css?v=7">
 </head><body>
 <div class="strip">{strip}</div>
 <header class="top"><div class="wrap">
@@ -105,7 +103,7 @@ def ebook_ad(key="default"):
         return ""
     sep = "&" if "?" in bk["url"] else "?"
     url = f'{bk["url"]}{sep}{UTM}&utm_medium=ebook-ad&utm_campaign={key.replace(":", "-")}'
-    cover = f'<img src="{e(bk["cover"])}" alt="" loading="lazy">' if bk["cover"] else ""
+    cover = f'<img src="{e(bk["cover"])}" alt="" width="84" height="110" loading="lazy">' if bk["cover"] else ""
     return f"""<aside class="ebook"><span class="ptag">Ad</span><a href="{e(url)}" target="_blank" rel="noopener" class="ebook-in">
 <span class="ebook-cover">{cover}</span><span class="ebook-txt"><span class="ebook-from">From MyCDLCoach</span><strong>{e(bk["title"])}</strong>
 <span class="ebook-price">{e(bk["price"])}, instant download</span><span class="btn btn-sign">Get the guide</span></span></a></aside>"""
@@ -128,20 +126,18 @@ def cta(lang="en"):
 
 def foot(lang="en"):
     if lang == "es":
-        txt = f"""<p>CDL Permits es un sitio de estudio gratuito. No está afiliado con la FMCSA ni con ningún DMV estatal. Las preguntas se basan en el manual federal modelo de la CDL; estudie también el manual de su estado.</p>
-<p>CDL Permits es parte de la red MyCDLCoach, junto con OTR News. Algunos anuncios promueven productos de nuestra propia red; otros son enlaces de afiliado y podemos ganar una comisión si se registra, sin costo para usted.</p>"""
+        txt = """<p>Exámenes de práctica CDL gratis de <a href="https://www.mycdlcoach.com">MyCDLCoach</a>. No está afiliado con la FMCSA ni con ningún DMV estatal. Algunos enlaces son anuncios o enlaces de afiliado.</p>
+<p class="flinks"><a href="/examen-cdl-en-espanol">Exámenes en español</a><a href="/free-cdl-course">Curso gratis (inglés)</a><a href="/">English</a></p>"""
     else:
-        txt = f"""<p>CDL Permits is a free study site. It is not affiliated with the FMCSA or any state DMV. Questions are based on the federal model CDL manual; always study your own state's CDL manual too, since rules and question counts vary.</p>
-<p>CDL Permits is part of the MyCDLCoach network, along with OTR News. Some ads promote our own network's products and services; others are affiliate links, and we may earn a commission if you sign up, at no cost to you.</p>"""
+        txt = """<p>Free CDL practice tests from <a href="https://www.mycdlcoach.com">MyCDLCoach</a>. Not affiliated with the FMCSA or any state DMV. Some links are ads or affiliate links.</p>
+<p class="flinks"><a href="/free-cdl-course">Free CDL course</a><a href="/states">Tests by state</a><a href="/examen-cdl-en-espanol" lang="es">Español</a></p>"""
     return f"""</main>
 <footer><div class="wrap">
 {txt}
-<p>Trucking news: <a href="{OTRNEWS}">OTR News</a>. Questions or corrections: <a href="mailto:{CONTACT}">{CONTACT}</a></p>
-<p><a href="/free-cdl-course">Free CDL course</a> &nbsp; <a href="/states">CDL practice tests by state</a> &nbsp; <a href="/examen-cdl-en-espanol" lang="es">Examen CDL en español</a></p>
-<p>A free study tool from <a href="https://www.mycdlcoach.com">MyCDLCoach</a>. &copy; {YEAR} CDL Permits</p>
+<p>&copy; {YEAR} CDL Permits</p>
 </div></footer>
 <canvas id="confetti" aria-hidden="true"></canvas>
-<script src="/quiz.js" defer></script>
+<script src="/quiz.js?v=7" defer></script>
 </body></html>"""
 
 def js(obj):
