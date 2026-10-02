@@ -275,16 +275,27 @@ for i, L in enumerate(LESSONS):
     pages.append((f"cdl-course-{L['slug']}.html", p, f"/cdl-course-{L['slug']}"))
 
 # ---------- Spanish ----------
-es = json.load(open("questions_es.json", encoding="utf-8"))
-p = head(f"Examen de Práctica CDL en Español ({YEAR}) | Gratis", "Examen de práctica CDL gratis en español: conocimientos generales, con respuestas explicadas. Sin registrarse.", "/examen-cdl-en-espanol", "es")
-p += f"""<div class="test-head"><h1>Examen de práctica CDL en español</h1>
-<p>Conocimientos Generales, el examen que todos presentan para el permiso CDL. {len(es['questions'])} preguntas con la respuesta explicada. Gratis, sin registrarse.</p>
+es_tests = json.load(open("questions_es.json", encoding="utf-8"))["tests"]
+es_count = sum(len(t["questions"]) for t in es_tests)
+INTRO = {"examen-cdl-en-espanol": "Conocimientos Generales es el examen que todos presentan para el permiso CDL.",
+         "examen-cdl-frenos-de-aire": "Frenos de Aire es necesario para manejar casi todos los camiones y autobuses.",
+         "examen-cdl-vehiculos-combinados": "Vehículos Combinados es necesario para la CDL Clase A (tráileres)."}
+for t in es_tests:
+    qn = len(t["questions"]); path = "/" + t["slug"]
+    title = (f"Examen de Práctica CDL en Español ({YEAR}) | Gratis" if t["slug"] == "examen-cdl-en-espanol"
+             else f"Examen CDL de {t['name']} en Español ({YEAR}) | Gratis")
+    p = head(title, f"Examen de práctica CDL gratis en español: {t['name']}, {qn} preguntas con respuestas explicadas. Sin registrarse.", path, "es")
+    p += f"""<div class="test-head"><h1>Examen de práctica CDL en español: {e(t['name'])}</h1>
+<p>{INTRO.get(t['slug'], '')} {qn} preguntas con la respuesta explicada. Gratis, sin registrarse.</p>
 <p>Muchos estados ofrecen el examen de conocimientos en español. Confirme con la oficina de licencias de su estado.</p></div>
 <div class="quiz" id="quiz"></div>"""
-p += study_list(es["questions"], f"Estudie las {len(es['questions'])} preguntas con respuestas")
-p += cta("es") + partners("Herramientas para conductores", "es")
-p += f"<script>window.QUIZ={js(es)};</script>" + foot("es")
-pages.append(("examen-cdl-en-espanol.html", p, "/examen-cdl-en-espanol"))
+    p += study_list(t["questions"], f"Estudie las {qn} preguntas con respuestas")
+    p += '<h2 class="more-h">Otros exámenes en español</h2><ul class="more">'
+    p += "".join(f'<li><a href="/{o["slug"]}">{e(o["name"])}</a></li>' for o in es_tests if o is not t)
+    p += f'<li><a href="/{t["en"]}" lang="en">English version</a></li></ul>'
+    p += cta("es") + partners("Herramientas para conductores", "es")
+    p += f"<script>window.QUIZ={js({'slug': t['slug'], 'name': t['name'], 'questions': t['questions']})};</script>" + foot("es")
+    pages.append((t["slug"] + ".html", p, path))
 
 for fn, html_, _ in pages:
     open(fn, "w", encoding="utf-8").write(html_)
@@ -351,4 +362,4 @@ sm += "".join(f"<url><loc>{SITE}{u}</loc><lastmod>{today}</lastmod></url>\n" for
 open("sitemap.xml", "w").write(sm)
 open("robots.txt", "w").write(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
 open("CNAME", "w").write("cdlpermits.com\n")
-print("Built", len(pages), "pages,", len(allq), "English +", len(es["questions"]), "Spanish questions")
+print("Built", len(pages), "pages,", len(allq), "English +", es_count, "Spanish questions")

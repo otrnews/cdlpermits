@@ -1,42 +1,1725 @@
-{"slug":"es-conocimientos-generales","name":"Conocimientos Generales","questions":[
-{"q":"Maneja un camión de 40 pies a menos de 40 mph. ¿Cuál es la distancia mínima de seguimiento?","a":"4 segundos","w":["2 segundos","3 segundos","6 segundos"],"e":"A menos de 40 mph, deje al menos un segundo por cada 10 pies de largo del vehículo. 40 pies son 4 segundos."},
-{"q":"Maneja un camión de 40 pies a 55 mph. ¿Cuál es la distancia mínima de seguimiento?","a":"5 segundos","w":["4 segundos","3 segundos","8 segundos"],"e":"A más de 40 mph, sume un segundo a la regla de un segundo por cada 10 pies. 4 más 1 son 5 segundos."},
-{"q":"¿De qué tres partes se compone la distancia total de frenado?","a":"Distancia de percepción, de reacción y de frenado","w":["Distancia de reacción, de frenado y de rodaje libre","Distancia de seguimiento, de reacción y de frenado","Distancia de percepción, de giro y de frenado"],"e":"Es la distancia que recorre mientras ve el peligro, reacciona y frena hasta detenerse."},
-{"q":"¿Cuánto tarda un conductor alerta en reaccionar después de ver un peligro?","a":"Unos tres cuartos de segundo","w":["Un cuarto de segundo","Unos dos segundos","Unos cuatro segundos"],"e":"El conductor alerta promedio tarda unos 3/4 de segundo en reaccionar."},
-{"q":"Si duplica su velocidad, su distancia de frenado aumenta unas:","a":"Cuatro veces","w":["Dos veces","Tres veces","Se queda igual"],"e":"La distancia de frenado crece con el cuadrado de la velocidad. Al doble de velocidad, necesita unas cuatro veces la distancia."},
-{"q":"¿Por qué un camión vacío a veces necesita más distancia para detenerse que uno cargado?","a":"Los frenos, llantas y resortes están hechos para cargas pesadas, así que tiene menos tracción","w":["Los camiones vacíos son más ligeros, así que el motor tiene que trabajar más para frenarlos","Por ley, los camiones vacíos tienen frenos más débiles","No es cierto; un camión vacío siempre frena en menos distancia"],"e":"Un camión vacío puede bloquear las ruedas y patinar con más facilidad."},
-{"q":"El hidroplaneo puede ocurrir a velocidades tan bajas como:","a":"30 mph","w":["45 mph","55 mph","65 mph"],"e":"Con suficiente agua en el camino, las llantas pueden perder contacto con el pavimento a 30 mph."},
-{"q":"¿Qué tan lejos adelante debe mirar mientras maneja?","a":"De 12 a 15 segundos adelante","w":["De 3 a 5 segundos adelante","De 5 a 8 segundos adelante","30 segundos adelante"],"e":"Mirar 12 a 15 segundos adelante le da tiempo para detectar peligros. En carretera, eso es como un cuarto de milla."},
-{"q":"Se detiene en un camino de dos carriles. ¿Dónde coloca el triángulo de advertencia trasero?","a":"Unos 100 pies detrás del vehículo","w":["Unos 10 pies detrás del vehículo","Unos 50 pies detrás del vehículo","Unos 500 pies detrás del vehículo"],"e":"Coloque uno a menos de 10 pies del vehículo del lado del tráfico, uno a 100 pies detrás y otro a 100 pies adelante."},
-{"q":"Se detiene en una carretera dividida o de un solo sentido. ¿Dónde van los dispositivos de advertencia?","a":"A 10, 100 y 200 pies detrás del vehículo","w":["A 10 pies detrás, 100 pies detrás y 100 pies adelante","A 50, 100 y 150 pies detrás del vehículo","Los tres justo detrás de la defensa"],"e":"El tráfico solo viene por detrás, así que los tres van detrás: a 10, 100 y 200 pies."},
-{"q":"¿Cuál es la profundidad mínima del dibujo en las llantas del eje delantero (de dirección)?","a":"4/32 de pulgada","w":["2/32 de pulgada","1/32 de pulgada","6/32 de pulgada"],"e":"Las llantas delanteras necesitan al menos 4/32 de pulgada. Las demás, al menos 2/32."},
-{"q":"¿Cuál es la causa más común de los derrapes graves?","a":"Manejar demasiado rápido para las condiciones","w":["Llantas con presión de aire desigual en el eje motriz","Amortiguadores gastados","Girar el volante muy despacio"],"e":"La mayoría de los derrapes graves vienen de ir muy rápido para el estado del camino."},
-{"q":"Sus ruedas motrices empiezan a patinar. ¿Qué debe hacer primero?","a":"Quitar el pie del acelerador y dejar de frenar","w":["Frenar fuerte y girar el volante en contra del derrape","Acelerar para salir del derrape","Poner el camión en neutral"],"e":"Deje que las ruedas vuelvan a girar: deje de frenar, suelte el acelerador y luego dirija hacia donde quiere ir."},
-{"q":"Su velocidad segura cuesta abajo es 40 mph. Con el frenado intermitente (snub), ¿cuándo frena?","a":"A 45 mph, bajando hasta 35 mph","w":["A 40 mph, bajando hasta 30 mph","A 50 mph, bajando hasta 40 mph","Mantenga los frenos ligeramente todo el camino"],"e":"Cuando llegue a 5 mph sobre su velocidad segura, frene firme hasta 5 mph por debajo y suelte. Repita."},
-{"q":"¿Cuándo debe elegir una velocidad baja para una pendiente larga?","a":"Antes de empezar a bajar","w":["A mitad de la bajada","Cuando los frenos empiecen a fallar","Al llegar abajo"],"e":"Cambiar de velocidad en una pendiente empinada puede ser difícil o imposible. Elija la velocidad baja antes de bajar."},
-{"q":"¿Cuál es el límite legal de alcohol en la sangre para un conductor de vehículo comercial?","a":"0.04%","w":["0.08%","0.02%","0.10%"],"e":"La ley federal fija el límite en 0.04% para conductores comerciales, la mitad del límite normal para autos."},
-{"q":"¿Qué clase de extintor se usa en incendios eléctricos?","a":"Clase C","w":["Clase A","Clase B","Clase D"],"e":"La clase C es para incendios eléctricos y la clase B para líquidos inflamables. La mayoría de los camiones llevan un extintor B:C."},
-{"q":"¿Cuándo nunca debe quitar la tapa del radiador?","a":"Cuando el motor está caliente","w":["Cuando el motor está frío","Después de estar estacionado toda la noche","Al revisar el anticongelante en una parada"],"e":"El sistema de enfriamiento está bajo presión cuando está caliente y puede rociar líquido hirviendo."},
-{"q":"¿Cuántos amarres necesita como mínimo cualquier carga en plataforma?","a":"Dos, con al menos uno por cada 10 pies de carga","w":["Uno, con al menos uno por cada 20 pies de carga","Uno, si está bien apretado","Cuatro, sin importar el largo"],"e":"Necesita al menos un amarre por cada 10 pies y nunca menos de dos."},
-{"q":"Después de empezar el viaje, ¿cuándo debe revisar la carga por primera vez?","a":"Dentro de las primeras 50 millas","w":["Dentro de las primeras 150 millas","Solo al final del día","Dentro de las primeras 5 millas"],"e":"Revísela dentro de las primeras 50 millas y luego cada 3 horas o 150 millas, lo que ocurra primero."},
-{"q":"En un espejo convexo (curvo), los objetos se ven:","a":"Más pequeños y más lejos de lo que están","w":["Más grandes y más cerca de lo que están","Exactamente como son","Al revés"],"e":"Los espejos convexos muestran más área, pero hacen que las cosas parezcan más pequeñas y lejanas."},
-{"q":"De noche, debe usar luces bajas cuando un vehículo que viene de frente está a menos de:","a":"500 pies","w":["100 pies","1,000 pies","1 milla"],"e":"Baje las luces a 500 pies de un vehículo que viene de frente, y también cuando sigue a otro vehículo."},
-{"q":"Al cruzar vías del tren, nunca debe:","a":"Cambiar de velocidad sobre las vías","w":["Mirar a ambos lados","Encender las luces intermitentes","Bajar la ventana para escuchar"],"e":"Elija una velocidad que le permita cruzar por completo antes de empezar."},
-{"q":"Al dar vuelta a la derecha, debe:","a":"Seguir derecho hasta que la parte trasera libre la banqueta, y luego girar","w":["Abrirse a la izquierda primero y luego girar bruscamente","Girar lo más cerrado posible desde el carril izquierdo","Usar el acotamiento para dar la vuelta"],"e":"Mantenga la parte trasera cerca de la banqueta para que ningún auto se meta por la derecha."},
-{"q":"Al retroceder, es más seguro hacerlo hacia:","a":"El lado del conductor","w":["El lado del pasajero","Cualquier lado, da igual","Hacia donde ya apunta el remolque"],"e":"Retroceder hacia el lado del conductor le permite ver la parte trasera por la ventana. Use un ayudante cuando pueda."},
-{"q":"¿Qué vehículo requiere una CDL Clase A?","a":"Una combinación de más de 26,000 lbs que remolca una unidad de más de 10,000 lbs","w":["Un camión sencillo de más de 26,000 lbs que no remolca nada","Cualquier vehículo hecho para 16 personas o más","Una pickup que remolca menos de 10,000 lbs"],"e":"La Clase A cubre combinaciones de 26,001 lbs o más donde la unidad remolcada pesa más de 10,000 lbs."},
-{"q":"¿Cuánto tiempo debe tener su permiso (CLP) antes de presentar el examen de manejo?","a":"Al menos 14 días","w":["Al menos 7 días","Al menos 30 días","Al menos 90 días"],"e":"La ley federal exige tener el permiso al menos 14 días antes del examen práctico."},
-{"q":"¿Cuál es la edad mínima para manejar un vehículo comercial entre estados?","a":"21 años","w":["18 años","19 años","25 años"],"e":"Puede obtener la CDL a los 18 para manejar dentro del estado, pero para cruzar estados necesita tener 21."},
-{"q":"El certificado médico del DOT es válido por un máximo de:","a":"24 meses","w":["12 meses","36 meses","5 años"],"e":"El certificado médico dura hasta 2 años. Algunas condiciones requieren periodos más cortos."},
-{"q":"Si tiene cualquier cantidad de alcohol en el cuerpo, aunque sea menos de 0.04%, usted:","a":"Queda fuera de servicio por 24 horas","w":["Puede seguir manejando si es menos de 0.02%","Solo recibe una advertencia","Queda descalificado por 10 años"],"e":"Cualquier cantidad detectable de alcohol pone al conductor comercial fuera de servicio por 24 horas."},
-{"q":"¿Dónde debe sostener el volante?","a":"Con firmeza, con ambas manos en lados opuestos","w":["Con una mano arriba y la otra lista para cambiar","Con una mano mientras cambia de velocidad","Con ambas manos en la parte de abajo"],"e":"Dos manos en lados opuestos le dan más control si pega con una banqueta o un bache."},
-{"q":"¿Qué debe hacer con el retardador en caminos mojados, con hielo o nieve?","a":"Apagarlo","w":["Ponerlo en su nivel más alto","Usarlo en lugar de los frenos","Usarlo solo en curvas"],"e":"Los retardadores pueden hacer que las ruedas motrices patinen en caminos resbalosos."},
-{"q":"¿Cuándo debe reducir la velocidad para una curva?","a":"Antes de entrar a la curva","w":["A mitad de la curva","Al salir de la curva","Solo si la curva tiene velocidad marcada"],"e":"Frenar dentro de la curva puede bloquear las ruedas o causar un derrape."},
-{"q":"¿Qué debe hacer con el celular mientras maneja un vehículo comercial?","a":"No sostenerlo; solo se permite usarlo con manos libres","w":["Mandar mensajes solo en los semáforos","Usarlo con una mano en el volante","Usarlo libremente en la carretera"],"e":"Las reglas federales prohíben escribir mensajes y sostener el celular mientras maneja un vehículo comercial."},
-{"q":"¿Cuál es la mejor forma de combatir el cansancio al manejar?","a":"Detenerse en un lugar seguro y dormir","w":["Tomar café y seguir manejando","Bajar la ventana y subir el radio","Manejar más rápido para terminar antes"],"e":"Solo dormir quita el cansancio. El café y el aire fresco no lo arreglan."},
-{"q":"Si su camión se incendia, ¿dónde debe estacionarse?","a":"En un área abierta, lejos de edificios, árboles y otros vehículos","w":["En la gasolinera más cercana, donde hay ayuda","Debajo de un puente para cubrirse","En medio del camino para bloquear el tráfico"],"e":"Salga del camino en un área abierta. Nunca entre a una gasolinera."},
-{"q":"¿Quién es responsable de revisar la carga de su vehículo?","a":"Usted, el conductor, aunque otra persona la haya cargado","w":["Solo el remitente que cargó y selló el remolque","Solo quien la cargó","Solo quien la recibe"],"e":"El conductor debe revisar la carga y saber que está bien asegurada, aunque otros la hayan cargado."},
-{"q":"Si su vehículo tiene frenos ABS, ¿cómo frena en una emergencia?","a":"Frena firme y constante, y deja que el ABS trabaje","w":["Bombea los frenos rápidamente hasta detenerse","Frena suave y gira fuerte","Pone neutral y frena"],"e":"El ABS evita que las ruedas se bloqueen. Frene normal y firme; no bombee el pedal."},
-{"q":"Si un vehículo que viene de frente se mete a su carril, lo mejor suele ser:","a":"Girar hacia la derecha","w":["Girar hacia la izquierda","Detenerse en su carril","Acelerar"],"e":"Girar a la derecha evita un choque de frente y lo aleja del carril contrario."},
-{"q":"¿Qué significa 'manejar más allá de sus luces'?","a":"Ir tan rápido que no puede detenerse dentro de lo que iluminan sus faros","w":["Usar luces altas cuando hay un vehículo a menos de 500 pies","Manejar con un faro fundido","Hacer cambio de luces a otros conductores"],"e":"De noche, maneje a una velocidad que le permita detenerse dentro del área que iluminan sus faros."}
-]}
+{
+ "tests": [
+  {
+   "slug": "examen-cdl-en-espanol",
+   "name": "Conocimientos Generales",
+   "en": "general-knowledge",
+   "questions": [
+    {
+     "q": "Maneja un camión de 40 pies a menos de 40 mph. ¿Cuál es la distancia mínima de seguimiento?",
+     "a": "4 segundos",
+     "w": [
+      "2 segundos",
+      "3 segundos",
+      "6 segundos"
+     ],
+     "e": "A menos de 40 mph, deje al menos un segundo por cada 10 pies de largo del vehículo. 40 pies son 4 segundos."
+    },
+    {
+     "q": "Maneja un camión de 40 pies a 55 mph. ¿Cuál es la distancia mínima de seguimiento?",
+     "a": "5 segundos",
+     "w": [
+      "4 segundos",
+      "3 segundos",
+      "8 segundos"
+     ],
+     "e": "A más de 40 mph, sume un segundo a la regla de un segundo por cada 10 pies. 4 más 1 son 5 segundos."
+    },
+    {
+     "q": "¿De qué tres partes se compone la distancia total de frenado?",
+     "a": "Distancia de percepción, de reacción y de frenado",
+     "w": [
+      "Distancia de reacción, de frenado y de rodaje libre",
+      "Distancia de seguimiento, de reacción y de frenado",
+      "Distancia de percepción, de giro y de frenado"
+     ],
+     "e": "Es la distancia que recorre mientras ve el peligro, reacciona y frena hasta detenerse."
+    },
+    {
+     "q": "¿Cuánto tarda un conductor alerta en reaccionar después de ver un peligro?",
+     "a": "Unos tres cuartos de segundo",
+     "w": [
+      "Un cuarto de segundo",
+      "Unos dos segundos",
+      "Unos cuatro segundos"
+     ],
+     "e": "El conductor alerta promedio tarda unos 3/4 de segundo en reaccionar."
+    },
+    {
+     "q": "Si duplica su velocidad, su distancia de frenado aumenta unas:",
+     "a": "Cuatro veces",
+     "w": [
+      "Dos veces",
+      "Tres veces",
+      "Se queda igual"
+     ],
+     "e": "La distancia de frenado crece con el cuadrado de la velocidad. Al doble de velocidad, necesita unas cuatro veces la distancia."
+    },
+    {
+     "q": "¿Por qué un camión vacío a veces necesita más distancia para detenerse que uno cargado?",
+     "a": "Los frenos, llantas y resortes están hechos para cargas pesadas, así que tiene menos tracción",
+     "w": [
+      "Los camiones vacíos son más ligeros, así que el motor tiene que trabajar más para frenarlos",
+      "Por ley, los camiones vacíos tienen frenos más débiles",
+      "No es cierto; un camión vacío siempre frena en menos distancia"
+     ],
+     "e": "Un camión vacío puede bloquear las ruedas y patinar con más facilidad."
+    },
+    {
+     "q": "El hidroplaneo puede ocurrir a velocidades tan bajas como:",
+     "a": "30 mph",
+     "w": [
+      "45 mph",
+      "55 mph",
+      "65 mph"
+     ],
+     "e": "Con suficiente agua en el camino, las llantas pueden perder contacto con el pavimento a 30 mph."
+    },
+    {
+     "q": "¿Qué tan lejos adelante debe mirar mientras maneja?",
+     "a": "De 12 a 15 segundos adelante",
+     "w": [
+      "De 3 a 5 segundos adelante",
+      "De 5 a 8 segundos adelante",
+      "30 segundos adelante"
+     ],
+     "e": "Mirar 12 a 15 segundos adelante le da tiempo para detectar peligros. En carretera, eso es como un cuarto de milla."
+    },
+    {
+     "q": "Se detiene en un camino de dos carriles. ¿Dónde coloca el triángulo de advertencia trasero?",
+     "a": "Unos 100 pies detrás del vehículo",
+     "w": [
+      "Unos 10 pies detrás del vehículo",
+      "Unos 50 pies detrás del vehículo",
+      "Unos 500 pies detrás del vehículo"
+     ],
+     "e": "Coloque uno a menos de 10 pies del vehículo del lado del tráfico, uno a 100 pies detrás y otro a 100 pies adelante."
+    },
+    {
+     "q": "Se detiene en una carretera dividida o de un solo sentido. ¿Dónde van los dispositivos de advertencia?",
+     "a": "A 10, 100 y 200 pies detrás del vehículo",
+     "w": [
+      "A 10 pies detrás, 100 pies detrás y 100 pies adelante",
+      "A 50, 100 y 150 pies detrás del vehículo",
+      "Los tres justo detrás de la defensa"
+     ],
+     "e": "El tráfico solo viene por detrás, así que los tres van detrás: a 10, 100 y 200 pies."
+    },
+    {
+     "q": "¿Cuál es la profundidad mínima del dibujo en las llantas del eje delantero (de dirección)?",
+     "a": "4/32 de pulgada",
+     "w": [
+      "2/32 de pulgada",
+      "1/32 de pulgada",
+      "6/32 de pulgada"
+     ],
+     "e": "Las llantas delanteras necesitan al menos 4/32 de pulgada. Las demás, al menos 2/32."
+    },
+    {
+     "q": "¿Cuál es la causa más común de los derrapes graves?",
+     "a": "Manejar demasiado rápido para las condiciones",
+     "w": [
+      "Llantas con presión de aire desigual en el eje motriz",
+      "Amortiguadores gastados",
+      "Girar el volante muy despacio"
+     ],
+     "e": "La mayoría de los derrapes graves vienen de ir muy rápido para el estado del camino."
+    },
+    {
+     "q": "Sus ruedas motrices empiezan a patinar. ¿Qué debe hacer primero?",
+     "a": "Quitar el pie del acelerador y dejar de frenar",
+     "w": [
+      "Frenar fuerte y girar el volante en contra del derrape",
+      "Acelerar para salir del derrape",
+      "Poner el camión en neutral"
+     ],
+     "e": "Deje que las ruedas vuelvan a girar: deje de frenar, suelte el acelerador y luego dirija hacia donde quiere ir."
+    },
+    {
+     "q": "Su velocidad segura cuesta abajo es 40 mph. Con el frenado intermitente (snub), ¿cuándo frena?",
+     "a": "A 45 mph, bajando hasta 35 mph",
+     "w": [
+      "A 40 mph, bajando hasta 30 mph",
+      "A 50 mph, bajando hasta 40 mph",
+      "Mantenga los frenos ligeramente todo el camino"
+     ],
+     "e": "Cuando llegue a 5 mph sobre su velocidad segura, frene firme hasta 5 mph por debajo y suelte. Repita."
+    },
+    {
+     "q": "¿Cuándo debe elegir una velocidad baja para una pendiente larga?",
+     "a": "Antes de empezar a bajar",
+     "w": [
+      "A mitad de la bajada",
+      "Cuando los frenos empiecen a fallar",
+      "Al llegar abajo"
+     ],
+     "e": "Cambiar de velocidad en una pendiente empinada puede ser difícil o imposible. Elija la velocidad baja antes de bajar."
+    },
+    {
+     "q": "¿Cuál es el límite legal de alcohol en la sangre para un conductor de vehículo comercial?",
+     "a": "0.04%",
+     "w": [
+      "0.08%",
+      "0.02%",
+      "0.10%"
+     ],
+     "e": "La ley federal fija el límite en 0.04% para conductores comerciales, la mitad del límite normal para autos."
+    },
+    {
+     "q": "¿Qué clase de extintor se usa en incendios eléctricos?",
+     "a": "Clase C",
+     "w": [
+      "Clase A",
+      "Clase B",
+      "Clase D"
+     ],
+     "e": "La clase C es para incendios eléctricos y la clase B para líquidos inflamables. La mayoría de los camiones llevan un extintor B:C."
+    },
+    {
+     "q": "¿Cuándo nunca debe quitar la tapa del radiador?",
+     "a": "Cuando el motor está caliente",
+     "w": [
+      "Cuando el motor está frío",
+      "Después de estar estacionado toda la noche",
+      "Al revisar el anticongelante en una parada"
+     ],
+     "e": "El sistema de enfriamiento está bajo presión cuando está caliente y puede rociar líquido hirviendo."
+    },
+    {
+     "q": "¿Cuántos amarres necesita como mínimo cualquier carga en plataforma?",
+     "a": "Dos, con al menos uno por cada 10 pies de carga",
+     "w": [
+      "Uno, con al menos uno por cada 20 pies de carga",
+      "Uno, si está bien apretado",
+      "Cuatro, sin importar el largo"
+     ],
+     "e": "Necesita al menos un amarre por cada 10 pies y nunca menos de dos."
+    },
+    {
+     "q": "Después de empezar el viaje, ¿cuándo debe revisar la carga por primera vez?",
+     "a": "Dentro de las primeras 50 millas",
+     "w": [
+      "Dentro de las primeras 150 millas",
+      "Solo al final del día",
+      "Dentro de las primeras 5 millas"
+     ],
+     "e": "Revísela dentro de las primeras 50 millas y luego cada 3 horas o 150 millas, lo que ocurra primero."
+    },
+    {
+     "q": "En un espejo convexo (curvo), los objetos se ven:",
+     "a": "Más pequeños y más lejos de lo que están",
+     "w": [
+      "Más grandes y más cerca de lo que están",
+      "Exactamente como son",
+      "Al revés"
+     ],
+     "e": "Los espejos convexos muestran más área, pero hacen que las cosas parezcan más pequeñas y lejanas."
+    },
+    {
+     "q": "De noche, debe usar luces bajas cuando un vehículo que viene de frente está a menos de:",
+     "a": "500 pies",
+     "w": [
+      "100 pies",
+      "1,000 pies",
+      "1 milla"
+     ],
+     "e": "Baje las luces a 500 pies de un vehículo que viene de frente, y también cuando sigue a otro vehículo."
+    },
+    {
+     "q": "Al cruzar vías del tren, nunca debe:",
+     "a": "Cambiar de velocidad sobre las vías",
+     "w": [
+      "Mirar a ambos lados",
+      "Encender las luces intermitentes",
+      "Bajar la ventana para escuchar"
+     ],
+     "e": "Elija una velocidad que le permita cruzar por completo antes de empezar."
+    },
+    {
+     "q": "Al dar vuelta a la derecha, debe:",
+     "a": "Seguir derecho hasta que la parte trasera libre la banqueta, y luego girar",
+     "w": [
+      "Abrirse a la izquierda primero y luego girar bruscamente",
+      "Girar lo más cerrado posible desde el carril izquierdo",
+      "Usar el acotamiento para dar la vuelta"
+     ],
+     "e": "Mantenga la parte trasera cerca de la banqueta para que ningún auto se meta por la derecha."
+    },
+    {
+     "q": "Al retroceder, es más seguro hacerlo hacia:",
+     "a": "El lado del conductor",
+     "w": [
+      "El lado del pasajero",
+      "Cualquier lado, da igual",
+      "Hacia donde ya apunta el remolque"
+     ],
+     "e": "Retroceder hacia el lado del conductor le permite ver la parte trasera por la ventana. Use un ayudante cuando pueda."
+    },
+    {
+     "q": "¿Qué vehículo requiere una CDL Clase A?",
+     "a": "Una combinación de más de 26,000 lbs que remolca una unidad de más de 10,000 lbs",
+     "w": [
+      "Un camión sencillo de más de 26,000 lbs que no remolca nada",
+      "Cualquier vehículo hecho para 16 personas o más",
+      "Una pickup que remolca menos de 10,000 lbs"
+     ],
+     "e": "La Clase A cubre combinaciones de 26,001 lbs o más donde la unidad remolcada pesa más de 10,000 lbs."
+    },
+    {
+     "q": "¿Cuánto tiempo debe tener su permiso (CLP) antes de presentar el examen de manejo?",
+     "a": "Al menos 14 días",
+     "w": [
+      "Al menos 7 días",
+      "Al menos 30 días",
+      "Al menos 90 días"
+     ],
+     "e": "La ley federal exige tener el permiso al menos 14 días antes del examen práctico."
+    },
+    {
+     "q": "¿Cuál es la edad mínima para manejar un vehículo comercial entre estados?",
+     "a": "21 años",
+     "w": [
+      "18 años",
+      "19 años",
+      "25 años"
+     ],
+     "e": "Puede obtener la CDL a los 18 para manejar dentro del estado, pero para cruzar estados necesita tener 21."
+    },
+    {
+     "q": "El certificado médico del DOT es válido por un máximo de:",
+     "a": "24 meses",
+     "w": [
+      "12 meses",
+      "36 meses",
+      "5 años"
+     ],
+     "e": "El certificado médico dura hasta 2 años. Algunas condiciones requieren periodos más cortos."
+    },
+    {
+     "q": "Si tiene cualquier cantidad de alcohol en el cuerpo, aunque sea menos de 0.04%, usted:",
+     "a": "Queda fuera de servicio por 24 horas",
+     "w": [
+      "Puede seguir manejando si es menos de 0.02%",
+      "Solo recibe una advertencia",
+      "Queda descalificado por 10 años"
+     ],
+     "e": "Cualquier cantidad detectable de alcohol pone al conductor comercial fuera de servicio por 24 horas."
+    },
+    {
+     "q": "¿Dónde debe sostener el volante?",
+     "a": "Con firmeza, con ambas manos en lados opuestos",
+     "w": [
+      "Con una mano arriba y la otra lista para cambiar",
+      "Con una mano mientras cambia de velocidad",
+      "Con ambas manos en la parte de abajo"
+     ],
+     "e": "Dos manos en lados opuestos le dan más control si pega con una banqueta o un bache."
+    },
+    {
+     "q": "¿Qué debe hacer con el retardador en caminos mojados, con hielo o nieve?",
+     "a": "Apagarlo",
+     "w": [
+      "Ponerlo en su nivel más alto",
+      "Usarlo en lugar de los frenos",
+      "Usarlo solo en curvas"
+     ],
+     "e": "Los retardadores pueden hacer que las ruedas motrices patinen en caminos resbalosos."
+    },
+    {
+     "q": "¿Cuándo debe reducir la velocidad para una curva?",
+     "a": "Antes de entrar a la curva",
+     "w": [
+      "A mitad de la curva",
+      "Al salir de la curva",
+      "Solo si la curva tiene velocidad marcada"
+     ],
+     "e": "Frenar dentro de la curva puede bloquear las ruedas o causar un derrape."
+    },
+    {
+     "q": "¿Qué debe hacer con el celular mientras maneja un vehículo comercial?",
+     "a": "No sostenerlo; solo se permite usarlo con manos libres",
+     "w": [
+      "Mandar mensajes solo en los semáforos",
+      "Usarlo con una mano en el volante",
+      "Usarlo libremente en la carretera"
+     ],
+     "e": "Las reglas federales prohíben escribir mensajes y sostener el celular mientras maneja un vehículo comercial."
+    },
+    {
+     "q": "¿Cuál es la mejor forma de combatir el cansancio al manejar?",
+     "a": "Detenerse en un lugar seguro y dormir",
+     "w": [
+      "Tomar café y seguir manejando",
+      "Bajar la ventana y subir el radio",
+      "Manejar más rápido para terminar antes"
+     ],
+     "e": "Solo dormir quita el cansancio. El café y el aire fresco no lo arreglan."
+    },
+    {
+     "q": "Si su camión se incendia, ¿dónde debe estacionarse?",
+     "a": "En un área abierta, lejos de edificios, árboles y otros vehículos",
+     "w": [
+      "En la gasolinera más cercana, donde hay ayuda",
+      "Debajo de un puente para cubrirse",
+      "En medio del camino para bloquear el tráfico"
+     ],
+     "e": "Salga del camino en un área abierta. Nunca entre a una gasolinera."
+    },
+    {
+     "q": "¿Quién es responsable de revisar la carga de su vehículo?",
+     "a": "Usted, el conductor, aunque otra persona la haya cargado",
+     "w": [
+      "Solo el remitente que cargó y selló el remolque",
+      "Solo quien la cargó",
+      "Solo quien la recibe"
+     ],
+     "e": "El conductor debe revisar la carga y saber que está bien asegurada, aunque otros la hayan cargado."
+    },
+    {
+     "q": "Si su vehículo tiene frenos ABS, ¿cómo frena en una emergencia?",
+     "a": "Frena firme y constante, y deja que el ABS trabaje",
+     "w": [
+      "Bombea los frenos rápidamente hasta detenerse",
+      "Frena suave y gira fuerte",
+      "Pone neutral y frena"
+     ],
+     "e": "El ABS evita que las ruedas se bloqueen. Frene normal y firme; no bombee el pedal."
+    },
+    {
+     "q": "Si un vehículo que viene de frente se mete a su carril, lo mejor suele ser:",
+     "a": "Girar hacia la derecha",
+     "w": [
+      "Girar hacia la izquierda",
+      "Detenerse en su carril",
+      "Acelerar"
+     ],
+     "e": "Girar a la derecha evita un choque de frente y lo aleja del carril contrario."
+    },
+    {
+     "q": "¿Qué significa 'manejar más allá de sus luces'?",
+     "a": "Ir tan rápido que no puede detenerse dentro de lo que iluminan sus faros",
+     "w": [
+      "Usar luces altas cuando hay un vehículo a menos de 500 pies",
+      "Manejar con un faro fundido",
+      "Hacer cambio de luces a otros conductores"
+     ],
+     "e": "De noche, maneje a una velocidad que le permita detenerse dentro del área que iluminan sus faros."
+    },
+    {
+     "q": "El juego libre del volante es excesivo si es mayor de unos:",
+     "a": "10 grados (unas 2 pulgadas en un volante de 20 pulgadas)",
+     "w": [
+      "5 grados (como 1 pulgada en un volante de 20 pulgadas)",
+      "25 grados",
+      "45 grados"
+     ],
+     "e": "Más de 10 grados de juego, unas 2 pulgadas en el borde de un volante de 20 pulgadas, hace difícil controlar el vehículo."
+    },
+    {
+     "q": "En la inspección previa, ¿cuántas hojas faltantes en un muelle de hojas dejan el vehículo fuera de servicio?",
+     "a": "Una cuarta parte o más de las hojas",
+     "w": [
+      "Cualquier hoja",
+      "La mitad de las hojas",
+      "Solo si faltan todas"
+     ],
+     "e": "Un muelle al que le falta una cuarta parte o más de sus hojas deja el vehículo fuera de servicio."
+    },
+    {
+     "q": "En una emergencia, ¿por qué esquivar con el volante suele ser mejor que frenar?",
+     "a": "Normalmente puede girar para evitar un obstáculo más rápido de lo que puede detenerse",
+     "w": [
+      "En la mayoría de los estados no se permite frenar fuerte en una emergencia",
+      "Los frenos no se pueden usar en emergencias",
+      "Detenerse siempre causa una tijera (jackknife)"
+     ],
+     "e": "Los camiones pesados necesitan mucha distancia para detenerse. Un giro rápido muchas veces evita el peligro en menos espacio."
+    },
+    {
+     "q": "Si tiene que salirse del camino para evitar un choque, debe:",
+     "a": "Evitar frenar hasta bajar a unas 20 mph, y mantener un lado de las ruedas en el pavimento si puede",
+     "w": [
+      "Frenar fuerte de inmediato y regresar al pavimento lo más rápido posible a su velocidad actual",
+      "Regresar al camino con un giro brusco a toda velocidad",
+      "Poner neutral y dejar que el vehículo se detenga solo"
+     ],
+     "e": "Frenar fuerte en un acotamiento blando puede causar un derrape. Baje la velocidad poco a poco."
+    },
+    {
+     "q": "¿Qué vehículo requiere una CDL Clase B?",
+     "a": "Un vehículo sencillo de más de 26,000 lbs que remolca 10,000 lbs o menos",
+     "w": [
+      "Una combinación que remolca un remolque de más de 10,000 lbs",
+      "Cualquier vehículo con frenos de aire, de cualquier peso",
+      "Una combinación de más de 26,000 lbs que remolca más de 10,000 lbs"
+     ],
+     "e": "La Clase B cubre vehículos sencillos pesados (26,001 lbs o más) que remolcan 10,000 lbs o menos."
+    },
+    {
+     "q": "La CDL Clase C es para vehículos que no son Clase A ni B pero que:",
+     "a": "Llevan 16 personas o más contando al conductor, o materiales peligrosos con letreros",
+     "w": [
+      "Pesan entre 10,001 y 26,000 lbs y llevan cualquier tipo de carga",
+      "Tienen tres ejes o más, sin importar lo que lleven",
+      "Se usan solo para trabajo agrícola dentro de 150 millas"
+     ],
+     "e": "La Clase C cubre vehículos más pequeños que llevan 16 personas o más (contando al conductor) o materiales peligrosos con letreros."
+    },
+    {
+     "q": "Cuando maneja con permiso (CLP), ¿dónde debe sentarse el conductor con CDL que lo supervisa?",
+     "a": "En el asiento delantero, a su lado",
+     "w": [
+      "En cualquier lugar del vehículo",
+      "En la litera",
+      "En otro vehículo detrás de usted"
+     ],
+     "e": "Quien tiene permiso debe ir acompañado de un conductor con CDL de la clase correcta, sentado a su lado en el asiento delantero."
+    },
+    {
+     "q": "Dos infracciones graves de tránsito en un vehículo comercial dentro de 3 años lo descalifican por al menos:",
+     "a": "60 días",
+     "w": [
+      "10 días",
+      "120 días",
+      "1 año"
+     ],
+     "e": "Dos infracciones graves en 3 años significan al menos 60 días de descalificación. Tres significan al menos 120 días."
+    },
+    {
+     "q": "Una primera condena por manejar bajo los efectos del alcohol en un vehículo comercial lo descalifica por al menos:",
+     "a": "1 año",
+     "w": [
+      "60 días",
+      "6 meses",
+      "10 años"
+     ],
+     "e": "La primera infracción significa al menos 1 año de descalificación, o 3 años si llevaba materiales peligrosos con letreros."
+    },
+    {
+     "q": "Después de una condena de tránsito (que no sea de estacionamiento), ¿en cuánto tiempo debe avisar a su empleador?",
+     "a": "Dentro de 30 días",
+     "w": [
+      "Dentro de 1 año",
+      "Dentro de 90 días",
+      "Solo en su próximo examen médico"
+     ],
+     "e": "Reporte cualquier condena de tránsito en cualquier vehículo, excepto de estacionamiento, a su empleador dentro de 30 días."
+    },
+    {
+     "q": "Si le suspenden o revocan la licencia, debe avisar a su empleador:",
+     "a": "Antes de que termine el siguiente día hábil",
+     "w": [
+      "Dentro de 30 días",
+      "Dentro de 60 días",
+      "Solo si manejaba un vehículo comercial"
+     ],
+     "e": "Debe avisar antes de que termine el día hábil siguiente a recibir el aviso de suspensión, revocación o descalificación."
+    },
+    {
+     "q": "¿Cuántas licencias de conducir comerciales puede tener?",
+     "a": "Solo una",
+     "w": [
+      "Una por cada estado donde maneje",
+      "Dos, una para cada clase",
+      "Las que pida su empleador"
+     ],
+     "e": "Tener más de una licencia es ilegal. Un tribunal puede multarlo y debe devolver las licencias de más."
+    },
+    {
+     "q": "¿Qué equipo de emergencia debe llevar un camión?",
+     "a": "Un extintor, fusibles de repuesto (si no tiene breakers) y dispositivos de advertencia",
+     "w": [
+      "Un botiquín, una linterna, tres bengalas y una llanta de repuesto completa",
+      "Una cadena de remolque, un gato y cables para pasar corriente",
+      "Un botiquín, una linterna y bengalas solamente"
+     ],
+     "e": "Los camiones deben llevar un extintor, fusibles eléctricos de repuesto (si no usan breakers) y tres triángulos reflectantes."
+    },
+    {
+     "q": "¿Se permiten llantas recauchutadas o regrabadas en las ruedas delanteras de un autobús?",
+     "a": "No, están prohibidas en las ruedas delanteras de un autobús",
+     "w": [
+      "Sí, si tienen al menos 4/32 de pulgada de dibujo",
+      "Sí, pero solo en autobuses escolares",
+      "Solo si las dos llantas delanteras son iguales"
+     ],
+     "e": "Las llantas recauchutadas y regrabadas no se permiten en las ruedas delanteras de un autobús."
+    },
+    {
+     "q": "Marcas de óxido alrededor de las tuercas de la rueda pueden significar que:",
+     "a": "Las tuercas están flojas",
+     "w": [
+      "Las llantas tienen demasiado aire",
+      "Los frenos están desajustados",
+      "Los baleros de la rueda son nuevos"
+     ],
+     "e": "Las marcas de óxido alrededor de las tuercas son señal de que pueden estar flojas. Revíselas antes de manejar."
+    },
+    {
+     "q": "¿Por qué es peligrosa una fuga en el sistema de escape?",
+     "a": "Pueden entrar gases venenosos a la cabina o a la litera",
+     "w": [
+      "Hace que el motor trabaje demasiado frío",
+      "Baja la presión de aire de los frenos",
+      "Hace que las llantas se gasten más rápido"
+     ],
+     "e": "Las piezas de escape rotas o con fugas pueden dejar entrar monóxido de carbono a la cabina o la litera."
+    },
+    {
+     "q": "Antes de retroceder, ¿qué es lo más seguro?",
+     "a": "Bajarse y caminar alrededor para revisar el área",
+     "w": [
+      "Tocar el claxon dos veces y retroceder rápido",
+      "Confiar solo en los espejos",
+      "Pedir al pasajero que mire desde la cabina"
+     ],
+     "e": "Bajarse a mirar es la mejor forma de ver lo que hay detrás. Retroceda despacio y use un ayudante si puede."
+    },
+    {
+     "q": "Cuando hay dos carriles para dar vuelta a la izquierda, ¿cuál debe usar?",
+     "a": "El de la derecha de los dos carriles de vuelta",
+     "w": [
+      "El de la izquierda de los dos carriles de vuelta",
+      "El que tenga menos tráfico",
+      "El del centro, ocupando los dos"
+     ],
+     "e": "Usar el carril exterior (el de la derecha) le da espacio para abrirse sin cerrarle el paso al otro carril."
+    },
+    {
+     "q": "En una vuelta a la izquierda, ¿cuándo debe empezar a girar?",
+     "a": "Cuando llegue al centro de la intersección",
+     "w": [
+      "En cuanto entre a la intersección",
+      "Antes de llegar al paso peatonal",
+      "Después de pasar el centro de la intersección"
+     ],
+     "e": "Si empieza muy pronto, el remolque puede cortar la esquina y pegarle a los autos que esperan."
+    },
+    {
+     "q": "¿Debe hacerle señas a otros conductores para que lo rebasen?",
+     "a": "No, podría causar un choque y lo podrían culpar",
+     "w": [
+      "Sí, es cortés porque no pueden ver alrededor de su camión",
+      "Sí, pero solo en caminos de dos carriles",
+      "Solo de noche, cuando lo pueden ver"
+     ],
+     "e": "Hacer señas para que rebasen es riesgoso porque puede que el camino no esté libre."
+    },
+    {
+     "q": "¿Por qué los cruces de tren elevados pueden ser un problema para los camiones?",
+     "a": "Las unidades bajas pueden quedarse atoradas sobre las vías",
+     "w": [
+      "Dañan la dirección de todos los camiones",
+      "Causan fugas de aire en las líneas de freno",
+      "El golpe puede desconectar las líneas de aire del remolque"
+     ],
+     "e": "Las lowboys, portaautos y unidades similares pueden atorarse. No cruce si puede quedar atorado."
+    },
+    {
+     "q": "¿Más o menos qué distancia necesita un tren de carga para detenerse?",
+     "a": "Una milla o más",
+     "w": [
+      "Unos 100 pies",
+      "Unos 300 pies",
+      "Como el largo de una cancha de fútbol americano"
+     ],
+     "e": "Los trenes no pueden frenar rápido. Nunca intente ganarle a un tren."
+    },
+    {
+     "q": "¿Qué le quita la borrachera a una persona después de beber?",
+     "a": "Solo el tiempo",
+     "w": [
+      "El café",
+      "Un baño de agua fría",
+      "El aire fresco y el ejercicio"
+     ],
+     "e": "El cuerpo necesita tiempo para eliminar el alcohol. Nada más lo acelera."
+    },
+    {
+     "q": "En clima caluroso, ¿cada cuánto debe revisar las llantas?",
+     "a": "Cada 2 horas o cada 100 millas",
+     "w": [
+      "Una vez al día",
+      "Solo al empezar el viaje",
+      "Cada 500 millas"
+     ],
+     "e": "El calor sube la presión y la temperatura de las llantas."
+    },
+    {
+     "q": "¿Qué debe hacer si los frenos se mojan al pasar por agua profunda?",
+     "a": "Manejar despacio frenando ligeramente para secarlos",
+     "w": [
+      "Bombear los frenos fuerte varias veces estando detenido",
+      "Detenerse y esperar una hora",
+      "Manejar rápido para que se sequen"
+     ],
+     "e": "Frenar ligeramente mientras avanza despacio genera calor que seca los frenos."
+    },
+    {
+     "q": "El hielo negro es peligroso porque:",
+     "a": "Es tan delgado que el camino solo parece mojado",
+     "w": [
+      "Solo se forma en zonas soleadas",
+      "Solo se forma a mitad del verano",
+      "Hace que el camino se vea blanco"
+     ],
+     "e": "El hielo negro es una capa delgada y transparente."
+    },
+    {
+     "q": "¿Cuál de estas es señal de posible hielo negro?",
+     "a": "Se forma hielo en los brazos de los espejos o la antena",
+     "w": [
+      "El camino se ve seco y con polvo",
+      "Las llantas hacen más ruido de lo normal",
+      "Sale vapor del motor"
+     ],
+     "e": "Cuando se forma hielo en partes del camión, probablemente el camino también se está congelando."
+    },
+    {
+     "q": "Si tiene que manejar con neblina, debe:",
+     "a": "Bajar la velocidad y usar luces bajas y antiniebla",
+     "w": [
+      "Usar luces altas para que lo vean",
+      "Mantener su velocidad normal y seguir las luces de adelante",
+      "Manejar por el acotamiento"
+     ],
+     "e": "Las luces altas rebotan en la neblina y hacen más difícil ver."
+    },
+    {
+     "q": "Al combatir un incendio, ¿dónde debe pararse?",
+     "a": "Con el viento a su espalda (a favor del viento)",
+     "w": [
+      "Con el viento de frente, donde llega el humo",
+      "Directamente frente al fuego",
+      "Del otro lado del camión"
+     ],
+     "e": "Párese de modo que el humo y las llamas se alejen de usted."
+    },
+    {
+     "q": "En la escena de un choque, ¿qué debe hacer primero?",
+     "a": "Proteger el área para que no empeore",
+     "w": [
+      "Mover a los heridos a un lado del camino",
+      "Llamar a su despachador y esperar instrucciones",
+      "Tomar fotos para el seguro"
+     ],
+     "e": "Primero proteja la escena con intermitentes y triángulos, luego avise a las autoridades y atienda a los heridos."
+    },
+    {
+     "q": "¿Debe mover a una persona gravemente herida en un choque?",
+     "a": "No, a menos que haya peligro, como un incendio",
+     "w": [
+      "Sí, siempre hay que sacarla del camino",
+      "Sí, hay que sentarla para que respire",
+      "Solo si ella lo pide"
+     ],
+     "e": "Mover a un herido puede empeorar sus lesiones."
+    },
+    {
+     "q": "¿Qué es el GVWR?",
+     "a": "El peso máximo cargado para el que está clasificado un vehículo sencillo",
+     "w": [
+      "El peso total del camión y la carga en una báscula",
+      "El peso que soporta un solo eje",
+      "El peso total de todos los camiones de una flotilla"
+     ],
+     "e": "Es el peso máximo cargado que indica el fabricante para un vehículo sencillo."
+    },
+    {
+     "q": "¿Por qué es peligroso un centro de gravedad alto?",
+     "a": "Es más probable que el vehículo se vuelque",
+     "w": [
+      "Hace la dirección demasiado dura",
+      "Solo reduce el rendimiento de combustible",
+      "Hace que los frenos se calienten"
+     ],
+     "e": "La carga pesada acomodada alto sube el centro de gravedad y hace más probable una volcadura."
+    },
+    {
+     "q": "¿Para qué sirve el protector de cabina (headache rack)?",
+     "a": "Lo protege de que la carga se deslice hacia adelante en un choque",
+     "w": [
+      "Sostiene la llanta de repuesto y las cadenas detrás de la cabina",
+      "Sostiene el remolque cuando está desenganchado",
+      "Bloquea el viento del remolque"
+     ],
+     "e": "Un protector fuerte evita que la carga entre a la cabina en un frenón."
+    },
+    {
+     "q": "Lleva una carga sellada que no puede revisar. ¿Qué debe hacer de todos modos?",
+     "a": "Asegurarse de no pasar los límites de peso",
+     "w": [
+      "Abrirla para revisar la carga",
+      "Rechazar la carga",
+      "Nada, el remitente es responsable"
+     ],
+     "e": "Sigue siendo responsable de no pasar los límites de peso total y por eje."
+    },
+    {
+     "q": "¿Para qué se usan los bloqueos (blocking)?",
+     "a": "Para que la carga no se deslice hacia adelante, atrás o a los lados",
+     "w": [
+      "Para levantar el remolque al cargar",
+      "Para que las llantas no se congelen",
+      "Para que el remolque no ruede cuando está estacionado"
+     ],
+     "e": "Los bloqueos se ajustan a la carga y se aseguran a la plataforma para que no se mueva."
+    },
+    {
+     "q": "¿Por qué debe cubrir la carga?",
+     "a": "Para proteger a la gente de la carga que se caiga y proteger la carga del clima",
+     "w": [
+      "Para que el camión sea más aerodinámico y ahorre combustible en viajes largos",
+      "Porque baja el peso del vehículo",
+      "Para mantener fresca la carga en días calurosos"
+     ],
+     "e": "Las lonas evitan que la carga vuele o se caiga al camino y la protegen del clima."
+    },
+    {
+     "q": "Para manejar un vehículo con letreros de materiales peligrosos, necesita:",
+     "a": "Un endoso de materiales peligrosos en su CDL",
+     "w": [
+      "Solo una CDL Clase A",
+      "Solo una nota del remitente",
+      "Una placa especial"
+     ],
+     "e": "Cualquier vehículo que requiere letreros de materiales peligrosos necesita un conductor con el endoso H."
+    },
+    {
+     "q": "¿Cuándo debe encender las intermitentes después de detenerse en el camino?",
+     "a": "De inmediato",
+     "w": [
+      "Después de poner los triángulos",
+      "Solo de noche",
+      "Solo si llega la policía"
+     ],
+     "e": "Encienda las intermitentes al detenerse y ponga los dispositivos de advertencia dentro de 10 minutos."
+    },
+    {
+     "q": "Cuando se detiene en el acotamiento, ¿en cuánto tiempo debe poner los dispositivos de advertencia?",
+     "a": "Dentro de 10 minutos",
+     "w": [
+      "Dentro de 30 minutos",
+      "Dentro de 1 hora",
+      "Solo si se queda toda la noche"
+     ],
+     "e": "Póngalos lo antes posible y dentro de 10 minutos."
+    },
+    {
+     "q": "Antes de entrar a una zona de construcción, debe:",
+     "a": "Bajar la velocidad y estar atento a trabajadores y cambios de carril",
+     "w": [
+      "Acelerar para pasar menos tiempo cerca de los trabajadores",
+      "Cambiar de carril las veces que haga falta",
+      "Irse al acotamiento hasta que termine la zona"
+     ],
+     "e": "Las zonas de construcción tienen carriles angostos, frenones y trabajadores cerca del tráfico."
+    },
+    {
+     "q": "¿Cómo debe manejar a un conductor agresivo?",
+     "a": "Mantener la calma, darle espacio y no provocarlo",
+     "w": [
+      "Frenarle de golpe para que se aleje",
+      "Acelerar y quedarse adelante para que no se meta",
+      "Hacerle señas de que es peligroso"
+     ],
+     "e": "No lo mire a los ojos ni lo rete. Déjelo ir."
+    },
+    {
+     "q": "¿Por qué debe revisar los espejos con frecuencia?",
+     "a": "Para saber dónde están los otros vehículos y revisar su carga",
+     "w": [
+      "Sobre todo para ver si lo sigue la policía o un inspector",
+      "Los espejos solo se usan para retroceder",
+      "Para revisar que funcionen los faros"
+     ],
+     "e": "Revise los espejos seguido y antes de cambiar de carril, dar vuelta o incorporarse."
+    },
+    {
+     "q": "¿Qué debe hacer antes de cambiar de carril?",
+     "a": "Revisar los espejos varias veces y poner la direccional",
+     "w": [
+      "Poner la direccional una vez y cambiarse rápido para no detener el tráfico",
+      "Tocar el claxon para avisar a los de al lado",
+      "Voltear sobre el hombro una vez"
+     ],
+     "e": "Revise los espejos más de una vez y señale con tiempo; los vehículos pueden entrar a sus puntos ciegos."
+    },
+    {
+     "q": "¿Dónde están los puntos ciegos más grandes de un camión?",
+     "a": "Justo detrás y a lo largo del lado derecho",
+     "w": [
+      "Solo justo enfrente del cofre",
+      "Solo a lo largo del lado izquierdo",
+      "Con buenos espejos no hay puntos ciegos"
+     ],
+     "e": "Los camiones tienen puntos ciegos grandes detrás y a la derecha, y también cerca del frente y junto a la cabina."
+    },
+    {
+     "q": "El doble embrague (double clutching) significa:",
+     "a": "Soltar el embrague en neutral entre cambios para igualar la velocidad del motor",
+     "w": [
+      "Pisar el embrague dos veces rápido para detener el camión sin frenar",
+      "Usar los dos pies en el pedal del embrague",
+      "Cambiar de velocidad sin usar el embrague"
+     ],
+     "e": "Pise el embrague, pase a neutral, suelte, iguale la velocidad del motor, pise otra vez y meta el siguiente cambio."
+    },
+    {
+     "q": "Si empieza a salirse del camino por sueño, debe:",
+     "a": "Dejar de manejar en cuanto pueda hacerlo con seguridad y descansar",
+     "w": [
+      "Tomar una bebida energética y seguir hasta su parada",
+      "Subir el volumen del radio y seguir manejando",
+      "Abrir la ventana y continuar"
+     ],
+     "e": "Salirse del carril es señal de cansancio."
+    },
+    {
+     "q": "De noche, ¿qué luces debe usar cuando sigue a otro vehículo?",
+     "a": "Luces bajas",
+     "w": [
+      "Luces altas",
+      "Luces de estacionamiento",
+      "Solo luces antiniebla"
+     ],
+     "e": "Use luces bajas para no deslumbrar al conductor de adelante por sus espejos."
+    },
+    {
+     "q": "Antes de manejar en invierno, ¿qué debe revisar?",
+     "a": "Anticongelante, desempañador, limpiaparabrisas y cadenas",
+     "w": [
+      "Aire acondicionado, sello del quemacocos y asientos con calefacción",
+      "Solo la presión de las llantas y el claxon",
+      "Solo el radio y las luces interiores"
+     ],
+     "e": "En invierno revise anticongelante, desempañadores, limpiadores, líquido, llantas y cadenas."
+    },
+    {
+     "q": "¿Cuándo se deben usar las rampas de escape?",
+     "a": "Si le fallan los frenos en una bajada",
+     "w": [
+      "Para tomar un descanso",
+      "Nunca, porque dañan el camión",
+      "Solo si se lo indica un policía"
+     ],
+     "e": "Las rampas de escape detienen vehículos sin frenos de forma segura."
+    },
+    {
+     "q": "¿Por qué debe revisar la carga después de un descanso?",
+     "a": "La carga se puede mover o los amarres aflojarse al manejar",
+     "w": [
+      "Alguien pudo haber agregado carga",
+      "El peso de la carga cambia con la temperatura",
+      "La carga se hace más pesada cuando baja la temperatura"
+     ],
+     "e": "Revise los amarres dentro de las primeras 50 millas, cada 3 horas o 150 millas, y después de los descansos."
+    },
+    {
+     "q": "En una bajada larga, ¿cuál es el uso correcto de los frenos?",
+     "a": "Usar una velocidad baja y el freno de motor, y frenar firme por momentos cortos",
+     "w": [
+      "Mantener los frenos ligeramente pisados toda la bajada para que no se calienten",
+      "Poner neutral para ahorrar combustible y frenar cuando haga falta",
+      "Frenar fuerte solo al final"
+     ],
+     "e": "El freno de motor hace la mayor parte del trabajo. Frenar firme y corto evita que los frenos se calienten."
+    },
+    {
+     "q": "¿Qué causa el desvanecimiento de los frenos (brake fade)?",
+     "a": "Que los frenos se calienten por usarlos demasiado",
+     "w": [
+      "Manejar muy despacio en terreno plano",
+      "Demasiada presión de aire",
+      "Usar el freno de motor en bajadas largas"
+     ],
+     "e": "Los frenos calientes pierden fuerza. Usar la velocidad baja correcta en las bajadas lo evita."
+    },
+    {
+     "q": "¿Cuáles son las causas más comunes de incendios en vehículos?",
+     "a": "Choques, llantas bajas, cortos eléctricos, fugas de combustible y la carga",
+     "w": [
+      "El frío y la nieve",
+      "Manejar de noche con los faros y el radio encendidos muchas horas",
+      "Usar el aire acondicionado"
+     ],
+     "e": "Después de un choque, el combustible derramado, llantas bajas, cortos, fugas y carga inflamable causan incendios."
+    },
+    {
+     "q": "¿Cuál de estas es señal de que un conductor puede estar intoxicado?",
+     "a": "Zigzaguear, ir muy lento o muy rápido, o detenerse sin razón",
+     "w": [
+      "Usar la direccional con tiempo y mantener velocidad constante en su carril",
+      "Manejar con las luces encendidas de día",
+      "Guardar una distancia segura"
+     ],
+     "e": "Dele mucho espacio a los conductores que se salen del carril o cambian de velocidad sin razón."
+    },
+    {
+     "q": "En la inspección previa, ¿cuál es el primer paso del método de siete pasos?",
+     "a": "Vista general: acercarse y buscar daños, fugas y si está inclinado",
+     "w": [
+      "Encender el motor y revisar los medidores de aceite y aire",
+      "Revisar las luces",
+      "Revisar los frenos"
+     ],
+     "e": "Empiece acercándose al vehículo y buscando daños, fugas de líquidos e inclinación."
+    },
+    {
+     "q": "¿Con cuál de estos problemas es inseguro manejar una llanta?",
+     "a": "Cortes que dejan ver la cuerda o las capas",
+     "w": [
+      "Pequeños raspones en las letras del costado",
+      "Un logo del costado un poco gastado",
+      "Un poco de tierra pegada"
+     ],
+     "e": "Los cortes que dejan ver las capas, los bultos y las fugas hacen insegura una llanta."
+    },
+    {
+     "q": "Mezclar llantas radiales y convencionales (bias-ply) en el mismo eje:",
+     "a": "No está permitido",
+     "w": [
+      "Se permite si son del mismo tamaño",
+      "Se permite solo en el eje motriz",
+      "Se recomienda para mejor tracción"
+     ],
+     "e": "Las llantas radiales y convencionales no se deben usar juntas en el mismo eje."
+    },
+    {
+     "q": "¿Cuál es la razón principal para mirar el camino de 12 a 15 segundos adelante?",
+     "a": "Ver los peligros a tiempo y tener tiempo para reaccionar",
+     "w": [
+      "Leer los letreros antes que otros conductores",
+      "Que los ojos no se cansen",
+      "Saber qué tan lejos está la próxima salida"
+     ],
+     "e": "Mirar lejos le da tiempo para bajar la velocidad o cambiar de carril con suavidad."
+    },
+    {
+     "q": "Si alguien viene pegado detrás de usted, debe:",
+     "a": "Aumentar la distancia con el vehículo de adelante",
+     "w": [
+      "Darle unos toques al freno para que se aleje",
+      "Frenar de golpe para que se aleje",
+      "Encender las intermitentes y detenerse"
+     ],
+     "e": "Más espacio adelante le permite frenar poco a poco, y es menos probable que le peguen."
+    }
+   ]
+  },
+  {
+   "slug": "examen-cdl-frenos-de-aire",
+   "name": "Frenos de Aire",
+   "en": "air-brakes",
+   "questions": [
+    {
+     "q": "¿A qué presión aproximada el gobernador detiene el compresor de aire (cut-out)?",
+     "a": "125 psi",
+     "w": [
+      "60 psi",
+      "100 psi",
+      "150 psi"
+     ],
+     "e": "El gobernador detiene el compresor a unos 125 psi y lo vuelve a encender (cut-in) cerca de 100 psi."
+    },
+    {
+     "q": "¿A qué presión aproximada el gobernador deja que el compresor vuelva a bombear (cut-in)?",
+     "a": "100 psi",
+     "w": [
+      "60 psi",
+      "80 psi",
+      "125 psi"
+     ],
+     "e": "El cut-in es de unos 100 psi. Si es mucho más alto o bajo, el gobernador necesita servicio."
+    },
+    {
+     "q": "La alarma de baja presión de aire debe activarse antes de que la presión baje de:",
+     "a": "60 psi",
+     "w": [
+      "20 psi",
+      "45 psi",
+      "100 psi"
+     ],
+     "e": "La luz, el zumbador o el wig wag deben activarse antes de que la presión baje de 60 psi."
+    },
+    {
+     "q": "En la mayoría de los vehículos, los frenos de resorte se aplican solos cuando la presión baja a:",
+     "a": "Entre 20 y 45 psi",
+     "w": [
+      "Entre 60 y 80 psi",
+      "Entre 100 y 125 psi",
+      "Exactamente 0 psi"
+     ],
+     "e": "Los frenos de resorte se mantienen sueltos con aire. Entre 20 y 45 psi, los resortes aplican los frenos."
+    },
+    {
+     "q": "Con el motor apagado y los frenos sueltos, un vehículo sencillo no debe perder más de:",
+     "a": "2 psi en un minuto",
+     "w": [
+      "3 psi en un minuto",
+      "5 psi en un minuto",
+      "10 psi en un minuto"
+     ],
+     "e": "El límite es 2 psi por minuto para un vehículo sencillo y 3 psi para una combinación."
+    },
+    {
+     "q": "Con el motor apagado y el pedal de freno pisado, un vehículo sencillo no debe perder más de:",
+     "a": "3 psi en un minuto",
+     "w": [
+      "1 psi en un minuto",
+      "6 psi en un minuto",
+      "10 psi en un minuto"
+     ],
+     "e": "Con el freno aplicado, menos de 3 psi por minuto en un vehículo sencillo y 4 psi en una combinación."
+    },
+    {
+     "q": "En un sistema de aire doble, ¿cuánto debe tardar la presión en subir de 85 a 100 psi en ralentí rápido?",
+     "a": "45 segundos o menos",
+     "w": [
+      "2 minutos o menos",
+      "5 minutos o menos",
+      "10 segundos o menos"
+     ],
+     "e": "Si tarda más, hay un problema con el compresor o una fuga."
+    },
+    {
+     "q": "¿A qué presión suele abrirse la válvula de seguridad?",
+     "a": "150 psi",
+     "w": [
+      "60 psi",
+      "100 psi",
+      "200 psi"
+     ],
+     "e": "La válvula de seguridad protege los tanques del exceso de presión. Suele abrir a 150 psi."
+    },
+    {
+     "q": "¿Por qué se drenan los tanques de aire?",
+     "a": "Para sacar el agua y el aceite del compresor que se acumulan",
+     "w": [
+      "Para probar la alarma de baja presión",
+      "Para bajar la presión y que el compresor no se caliente al arrancar",
+      "Para agregar anticongelante a las líneas de freno"
+     ],
+     "e": "El agua y el aceite pueden congelarse o dañar el sistema. Drene los tanques sin drenaje automático al final del día."
+    },
+    {
+     "q": "¿Cuál es el tipo de freno de base más común en camiones con frenos de aire?",
+     "a": "Frenos de tambor de leva en S (S-cam)",
+     "w": [
+      "Frenos de disco",
+      "Frenos de tambor tipo cuña",
+      "Frenos de banda"
+     ],
+     "e": "La leva en forma de S empuja las balatas contra el tambor."
+    },
+    {
+     "q": "Con el freno de estacionamiento suelto y el motor apagado, ¿cuánto debe moverse un ajustador manual (slack adjuster) al jalarlo con la mano?",
+     "a": "No más de una pulgada donde se une la varilla",
+     "w": [
+      "Al menos 3 pulgadas",
+      "Unas 6 pulgadas",
+      "No debe moverse nada en ninguna condición"
+     ],
+     "e": "Si se mueve más de una pulgada, probablemente hay que ajustar los frenos."
+    },
+    {
+     "q": "Las grietas en un tambor de freno son un defecto si:",
+     "a": "Son más largas que la mitad del ancho del área de fricción",
+     "w": [
+      "Tienen cualquier largo",
+      "Son más largas que todo el ancho del tambor",
+      "Solo si se ve luz a través de ellas"
+     ],
+     "e": "Los tambores no deben tener grietas más largas que la mitad del ancho del área de fricción."
+    },
+    {
+     "q": "¿Por qué los frenos de aire tardan más en detener el vehículo que los hidráulicos?",
+     "a": "El aire tarda en llegar por las líneas a los frenos (retraso de frenado)",
+     "w": [
+      "Los frenos de aire solo funcionan en los ejes traseros y tienen menos fuerza",
+      "Las balatas son más pequeñas que las hidráulicas",
+      "Hay que bombear el pedal"
+     ],
+     "e": "El retraso es de medio segundo. A 55 mph suma unos 32 pies a la distancia de frenado."
+    },
+    {
+     "q": "¿De qué color y forma es la perilla del freno de estacionamiento?",
+     "a": "Amarilla y en forma de diamante",
+     "w": [
+      "Azul y redonda",
+      "Roja y de ocho lados (octágono)",
+      "Verde y cuadrada"
+     ],
+     "e": "La perilla del freno de estacionamiento es un diamante amarillo. La roja de ocho lados es el suministro de aire del remolque."
+    },
+    {
+     "q": "¿Cuándo debe evitar usar los frenos de estacionamiento?",
+     "a": "Cuando los frenos están muy calientes o muy fríos y mojados",
+     "w": [
+      "Siempre que se estacione en una loma, rampa o pendiente",
+      "Cuando se estaciona por menos de una hora",
+      "Cuando la presión es mayor de 100 psi"
+     ],
+     "e": "Los tambores calientes se pueden dañar y los frenos mojados se pueden congelar. Use calzas."
+    },
+    {
+     "q": "¿Para qué sirve el evaporador de alcohol?",
+     "a": "Para reducir el riesgo de hielo en las válvulas y líneas de freno en clima frío",
+     "w": [
+      "Para calentar la cabina en clima frío",
+      "Para medir el alcohol del conductor",
+      "Para limpiar aceite y tierra del compresor antes de llegar a los tanques"
+     ],
+     "e": "Pone alcohol en el sistema de aire para que la humedad no se congele."
+    },
+    {
+     "q": "Se enciende la alarma de baja presión mientras maneja. ¿Qué debe hacer?",
+     "a": "Detenerse y estacionarse con seguridad lo antes posible",
+     "w": [
+      "Seguir manejando hasta la terminal",
+      "Bombear el pedal de freno para subir la presión",
+      "Poner neutral y rodar"
+     ],
+     "e": "Con baja presión puede perder el frenado o los frenos de resorte pueden aplicarse de golpe."
+    },
+    {
+     "q": "En un sistema de aire doble, el sistema primario normalmente opera los frenos de:",
+     "a": "El eje o ejes traseros",
+     "w": [
+      "Solo el eje delantero",
+      "Solo el remolque",
+      "Todos los ejes a la vez"
+     ],
+     "e": "Normalmente el primario opera los frenos traseros y el secundario los delanteros."
+    },
+    {
+     "q": "¿Cómo prueba que los frenos de resorte se aplican solos?",
+     "a": "Bombeando el pedal para bajar el aire hasta que salte la perilla, entre 20 y 45 psi",
+     "w": [
+      "Drenando todos los tanques y tratando de avanzar en velocidad baja",
+      "Jalando la perilla roja del remolque a 5 mph y sintiendo si frena",
+      "Apagando y encendiendo la ignición tres veces"
+     ],
+     "e": "Al bombear el pedal baja la presión. La perilla debe saltar entre 20 y 45 psi en la mayoría de los vehículos."
+    },
+    {
+     "q": "Los camiones y autobuses con frenos de aire fabricados a partir del 1 de marzo de 1998 deben tener:",
+     "a": "Frenos antibloqueo (ABS)",
+     "w": [
+      "Frenos de disco en todos los ejes",
+      "Drenaje automático de tanques",
+      "Dos compresores"
+     ],
+     "e": "Las reglas federales exigen ABS en esos vehículos. Los tractores lo necesitaron un año antes."
+    },
+    {
+     "q": "¿Qué mueve al compresor de aire?",
+     "a": "El motor, por medio de engranes o una banda",
+     "w": [
+      "Una batería aparte",
+      "La línea eléctrica del remolque",
+      "El pedal del conductor"
+     ],
+     "e": "El compresor funciona con el motor, por engranes o banda."
+    },
+    {
+     "q": "¿Por qué los sistemas de frenos de aire tienen tanques?",
+     "a": "Para guardar aire suficiente para varias frenadas si el compresor deja de funcionar",
+     "w": [
+      "Para guardar agua para el sistema de enfriamiento",
+      "Para guardar combustible para el compresor",
+      "Para guardar agua y aceite para que no lleguen a las líneas"
+     ],
+     "e": "Los tanques guardan aire comprimido para que pueda frenar varias veces aunque falle el compresor."
+    },
+    {
+     "q": "¿Qué muestra el manómetro de presión de suministro?",
+     "a": "Cuánta presión de aire hay en los tanques",
+     "w": [
+      "Cuánto aire se aplica a los frenos",
+      "La presión del aceite del motor",
+      "La presión de las llantas"
+     ],
+     "e": "Muestra la presión de los tanques. En sistemas dobles hay una aguja o manómetro para cada mitad."
+    },
+    {
+     "q": "¿Qué muestra el manómetro de presión de aplicación?",
+     "a": "Cuánta presión de aire está aplicando a los frenos",
+     "w": [
+      "La presión del aceite del motor",
+      "La presión de aire de las llantas",
+      "Cuánta presión queda en los tanques de aire"
+     ],
+     "e": "Si necesita más presión para mantener la misma velocidad, los frenos pueden estar perdiendo fuerza."
+    },
+    {
+     "q": "¿Qué pasa cuando pisa el pedal de freno más fuerte?",
+     "a": "Se aplica más presión de aire a los frenos",
+     "w": [
+      "Se aplica el freno de estacionamiento",
+      "Se apaga el compresor",
+      "El compresor acelera para agregar aire"
+     ],
+     "e": "La válvula del pedal controla el aire. Más fuerza, más aire y más frenado."
+    },
+    {
+     "q": "¿Por qué no debe bombear los frenos de aire sin necesidad?",
+     "a": "Desperdicia aire y la presión puede bajar demasiado",
+     "w": [
+      "Gasta las balatas más rápido",
+      "Calienta el compresor",
+      "Deja encendidas las luces de freno"
+     ],
+     "e": "Cada frenada usa aire. Bombear lo saca más rápido de lo que el compresor lo repone."
+    },
+    {
+     "q": "¿Qué mantiene sueltos los frenos de resorte mientras maneja?",
+     "a": "La presión de aire",
+     "w": [
+      "El líquido hidráulico",
+      "La electricidad",
+      "Un seguro mecánico"
+     ],
+     "e": "Los frenos de resorte se sostienen con aire. Sin aire, los resortes aplican los frenos."
+    },
+    {
+     "q": "¿Por qué no debe pisar el pedal de freno con los frenos de resorte aplicados?",
+     "a": "La fuerza combinada de los resortes y el aire puede dañar los frenos",
+     "w": [
+      "Hace que se encienda la alarma de baja presión",
+      "Suelta los frenos de resorte y el vehículo puede rodar",
+      "Apaga el compresor"
+     ],
+     "e": "Pisar el pedal con los frenos de resorte puestos puede sobrecargar las piezas."
+    },
+    {
+     "q": "¿Se deben usar los frenos delanteros en caminos resbalosos en camiones modernos?",
+     "a": "Sí, los frenos delanteros sirven en cualquier condición",
+     "w": [
+      "Solo a menos de 20 mph",
+      "No, los frenos delanteros causan derrapes",
+      "Solo en caminos secos"
+     ],
+     "e": "Las pruebas muestran que frenar con las ruedas delanteras no causa derrapes con facilidad."
+    },
+    {
+     "q": "Si los ajustadores automáticos están desajustados, normalmente significa que:",
+     "a": "Hay una falla mecánica que hay que reparar",
+     "w": [
+      "Solo necesitan un ajuste manual rápido",
+      "Hay que drenar los tanques",
+      "Nada, es normal"
+     ],
+     "e": "Los ajustadores automáticos no deberían necesitar ajuste manual. Si están desajustados, hay que reparar los frenos."
+    },
+    {
+     "q": "¿Cómo funciona el frenado intermitente (stab braking)?",
+     "a": "Frena a fondo, suelta cuando las ruedas se bloquean y vuelve a frenar cuando ruedan",
+     "w": [
+      "Usa solo la válvula manual del remolque hasta detenerse",
+      "Mantiene el pedal ligeramente pisado todo el tiempo",
+      "Bombea los frenos suave y rápido hasta detenerse"
+     ],
+     "e": "Es para vehículos sin ABS. Las ruedas pueden tardar hasta un segundo en volver a rodar."
+    },
+    {
+     "q": "¿Cuáles son los tres sistemas de los frenos de aire?",
+     "a": "Frenos de servicio, de estacionamiento y de emergencia",
+     "w": [
+      "Frenos delanteros, traseros y del remolque",
+      "Frenos de aire, aceite y agua",
+      "Motor primario, secundario y de respaldo"
+     ],
+     "e": "Los de servicio frenan normalmente, los de estacionamiento detienen el vehículo y los de emergencia lo paran si falla el de servicio."
+    },
+    {
+     "q": "¿Por qué el agua en los tanques es peligrosa en invierno?",
+     "a": "Se puede congelar y hacer que fallen los frenos",
+     "w": [
+      "Oxida los tanques en una noche",
+      "Baja la temperatura del motor",
+      "Sube demasiado la presión"
+     ],
+     "e": "En frío, el agua se puede congelar en válvulas y líneas."
+    },
+    {
+     "q": "¿Cómo prueba el freno de estacionamiento?",
+     "a": "Lo aplica y luego jala suavemente contra él en velocidad baja",
+     "w": [
+      "Drena los tanques y mira el manómetro",
+      "Bombea el pedal hasta que salte la perilla",
+      "Maneja a 30 mph y jala la perilla"
+     ],
+     "e": "Con el freno puesto, el vehículo no debe moverse al intentar avanzar suavemente."
+    },
+    {
+     "q": "¿Cómo prueba los frenos de servicio?",
+     "a": "A unas 5 mph, pisa el pedal con firmeza",
+     "w": [
+      "A velocidad de carretera, frena fuerte",
+      "Jala la perilla de estacionamiento mientras avanza",
+      "Bombea el pedal estando estacionado"
+     ],
+     "e": "Si se jala a un lado o tarda en detenerse, hay un problema."
+    },
+    {
+     "q": "¿Qué pasa si la presión de aire baja demasiado mientras maneja?",
+     "a": "Los frenos de resorte se pueden aplicar de golpe",
+     "w": [
+      "Los frenos dejan de funcionar sin aviso",
+      "El motor se apaga",
+      "El compresor acelera"
+     ],
+     "e": "Los frenos de resorte se aplican cuando la presión baja lo suficiente, y pueden detener el vehículo de golpe."
+    },
+    {
+     "q": "Los frenos de resorte solo son tan buenos como:",
+     "a": "El ajuste de los frenos",
+     "w": [
+      "El compresor de aire",
+      "La presión de las llantas",
+      "La potencia del motor"
+     ],
+     "e": "Si los frenos están mal ajustados, no detendrán bien el vehículo."
+    },
+    {
+     "q": "¿Para qué sirve el secador de aire o el evaporador de alcohol en climas fríos?",
+     "a": "Para que la humedad no se congele en el sistema de aire",
+     "w": [
+      "Para bajar la presión de aire en la noche",
+      "Para inflar las llantas",
+      "Para enfriar los frenos en bajadas largas"
+     ],
+     "e": "Los dos evitan que la humedad se congele en el sistema de frenos."
+    },
+    {
+     "q": "¿Cada cuánto debe revisar que funcione la alarma de baja presión?",
+     "a": "Cada vez que hace la inspección previa al viaje",
+     "w": [
+      "Solo después de drenar los tanques",
+      "Solo cuando se enciende la luz",
+      "Una vez al mes, o cuando se le da servicio a los frenos"
+     ],
+     "e": "Revisar la alarma de baja presión es parte de cada inspección previa."
+    },
+    {
+     "q": "En un sistema de aire doble, el sistema secundario normalmente opera los frenos de:",
+     "a": "El eje delantero",
+     "w": [
+      "Los ejes traseros",
+      "Solo el remolque",
+      "Ningún eje; es un tanque de respaldo"
+     ],
+     "e": "Normalmente el primario opera los frenos traseros y el secundario los delanteros."
+    }
+   ]
+  },
+  {
+   "slug": "examen-cdl-vehiculos-combinados",
+   "name": "Vehículos Combinados",
+   "en": "combination-vehicles",
+   "questions": [
+    {
+     "q": "¿Qué es el efecto 'latigazo' (crack-the-whip)?",
+     "a": "La amplificación hacia atrás: un volantazo puede volcar el remolque",
+     "w": [
+      "Cuando la quinta rueda se desengancha",
+      "Cuando los frenos del remolque se bloquean antes que los del tractor y el remolque se desliza",
+      "Cuando el conductor acelera demasiado el motor"
+     ],
+     "e": "Los movimientos bruscos se amplifican hacia atrás. El remolque puede volcarse aunque el tractor no."
+    },
+    {
+     "q": "¿De qué color es la conexión (glad hand) de la línea de emergencia o suministro?",
+     "a": "Roja",
+     "w": [
+      "Azul",
+      "Amarilla",
+      "Negra"
+     ],
+     "e": "La línea de emergencia o suministro es roja. La de servicio es azul."
+    },
+    {
+     "q": "¿De qué color es la conexión (glad hand) de la línea de servicio?",
+     "a": "Azul",
+     "w": [
+      "Roja",
+      "Verde",
+      "Amarilla"
+     ],
+     "e": "La línea azul de servicio lleva el aire que controla el pedal o la válvula manual para frenar el remolque."
+    },
+    {
+     "q": "¿Cómo es el control de suministro de aire del remolque?",
+     "a": "Una perilla roja de ocho lados",
+     "w": [
+      "Una perilla amarilla en forma de diamante",
+      "Una perilla azul y redonda",
+      "Un interruptor verde"
+     ],
+     "e": "Empújela para dar aire al remolque. Jálela para cortar el aire y aplicar los frenos de emergencia del remolque."
+    },
+    {
+     "q": "¿Qué pasa si la línea de emergencia se rompe o se desconecta al manejar?",
+     "a": "Se aplican los frenos de emergencia del remolque",
+     "w": [
+      "Los frenos del remolque dejan de funcionar",
+      "No pasa nada hasta que pise el pedal",
+      "Se sueltan los frenos del tractor"
+     ],
+     "e": "Al perder presión en la línea de emergencia, se aplican los frenos de resorte del remolque."
+    },
+    {
+     "q": "La válvula de protección del tractor se cierra sola cuando la presión baja a:",
+     "a": "Entre 20 y 45 psi",
+     "w": [
+      "Entre 60 y 80 psi",
+      "Exactamente 100 psi",
+      "Menos de 10 psi"
+     ],
+     "e": "La válvula mantiene el aire en el tractor si las líneas del remolque se rompen o tienen fugas grandes."
+    },
+    {
+     "q": "¿Debe usar la válvula manual del remolque (trolley valve) para estacionarse?",
+     "a": "No, use los frenos de estacionamiento",
+     "w": [
+      "Sí, sostiene mejor que los frenos de estacionamiento",
+      "Sí, pero solo en lomas",
+      "Solo de noche"
+     ],
+     "e": "La válvula manual usa aire de servicio que se puede escapar y dejar rodar el remolque."
+    },
+    {
+     "q": "Al enganchar, ¿a qué altura debe estar el remolque comparado con la quinta rueda?",
+     "a": "Lo bastante bajo para que se levante un poco cuando el tractor entra debajo",
+     "w": [
+      "Varias pulgadas más alto que la quinta rueda, para que el perno rey entre sin resistencia",
+      "Exactamente al nivel del chasis",
+      "Lo más bajo que permitan las patas"
+     ],
+     "e": "Si está muy alto puede no enganchar bien. Que la quinta rueda lo levante un poco al entrar."
+    },
+    {
+     "q": "Después de enganchar, ¿qué debe ver al revisar la quinta rueda?",
+     "a": "Ningún espacio entre la parte superior e inferior, y las mordazas cerradas en el cuello del perno rey",
+     "w": [
+      "Un pequeño espacio entre las partes para que el remolque gire en las curvas",
+      "Las mordazas cerradas en la cabeza del perno rey",
+      "La palanca de liberación jalada hasta afuera"
+     ],
+     "e": "Un espacio significa que el remolque va mal enganchado. Las mordazas deben cerrar en el cuello del perno, no en la cabeza."
+    },
+    {
+     "q": "¿Cómo prueba que el enganche está seguro?",
+     "a": "Con los frenos del remolque puestos, jala suavemente hacia adelante en velocidad baja",
+     "w": [
+      "Suelta los frenos del remolque y avanza rápido en velocidad alta",
+      "Avanza a velocidad y frena fuerte",
+      "Revisa que las líneas de aire estén conectadas"
+     ],
+     "e": "Un jalón suave contra los frenos del remolque confirma que el perno rey está asegurado."
+    },
+    {
+     "q": "Antes de arrancar después de enganchar, las patas del remolque deben estar:",
+     "a": "Totalmente subidas, con la manivela asegurada",
+     "w": [
+      "Bajadas hasta tocar el camino",
+      "Quitadas del remolque",
+      "Subidas a la mitad, para que libren el camino pero estén listas"
+     ],
+     "e": "Las patas a medio subir se pueden atorar en vías del tren u otros objetos."
+    },
+    {
+     "q": "En una vuelta, las ruedas del remolque siguen un camino:",
+     "a": "Más corto que el de las ruedas del tractor (off-tracking)",
+     "w": [
+      "Igual al de las ruedas del tractor",
+      "Más amplio que el del tractor, así que el remolque se abre",
+      "Al azar, según la velocidad"
+     ],
+     "e": "Las ruedas traseras cortan por dentro del camino de las delanteras; por eso hay que abrirse en las vueltas."
+    },
+    {
+     "q": "El remolque empieza a abrirse en una tijera (jackknife). ¿Qué debe hacer?",
+     "a": "Soltar los frenos para que las ruedas vuelvan a agarrar",
+     "w": [
+      "Frenar más fuerte",
+      "Usar el freno manual del remolque para enderezarlo",
+      "Acelerar de golpe"
+     ],
+     "e": "La tijera del remolque suele venir de ruedas bloqueadas. Al soltar los frenos recuperan tracción."
+    },
+    {
+     "q": "Comparado con un camión vacío, ¿cuántas veces más probable es que uno totalmente cargado se vuelque en un choque?",
+     "a": "Unas 10 veces más",
+     "w": [
+      "Unas 2 veces más",
+      "Igual de probable",
+      "Menos probable, porque pesa más"
+     ],
+     "e": "El centro de gravedad alto de un remolque cargado hace mucho más probable una volcadura."
+    },
+    {
+     "q": "¿Qué afirmación sobre combinaciones y volcaduras es correcta?",
+     "a": "Mantener la carga baja y girar con suavidad reduce el riesgo de volcadura",
+     "w": [
+      "Poner la carga pesada arriba da más estabilidad",
+      "Las volcaduras solo pasan a velocidad de carretera",
+      "Las volcaduras solo les pasan a remolques vacíos"
+     ],
+     "e": "Mantenga la carga lo más cerca posible del piso y evite cambios de carril o vueltas bruscas."
+    },
+    {
+     "q": "Al retroceder con remolque, ¿hacia dónde gira el volante?",
+     "a": "Al lado contrario de donde quiere que vaya el remolque",
+     "w": [
+      "Derecho, y luego un giro brusco al final",
+      "Derecho, y deja que el remolque encuentre su camino",
+      "Siempre al mismo lado al que quiere que vaya el remolque"
+     ],
+     "e": "Al retroceder con remolque, gire el volante al lado contrario de donde quiere mover el remolque."
+    },
+    {
+     "q": "Cuando el remolque empieza a girar al retroceder, debe:",
+     "a": "Girar el volante al otro lado para seguir al remolque",
+     "w": [
+      "Soltar el volante para que se centre",
+      "Seguir girando al mismo lado para cerrar la vuelta",
+      "Acelerar para terminar rápido"
+     ],
+     "e": "Cuando el remolque empieza a girar, sígalo girando el volante hacia la curva."
+    },
+    {
+     "q": "Antes de entrar debajo de un remolque, la quinta rueda debe estar:",
+     "a": "Inclinada hacia la parte trasera del tractor, con las mordazas abiertas",
+     "w": [
+      "Nivelada con el chasis, con las mordazas cerradas y aseguradas",
+      "Inclinada hacia adelante, con las mordazas cerradas",
+      "Quitada del tractor"
+     ],
+     "e": "La placa debe estar engrasada, inclinada hacia atrás y con las mordazas abiertas."
+    },
+    {
+     "q": "Antes de entrar debajo de un remolque, ¿qué debe hacer con el remolque?",
+     "a": "Asegurarse de que sus frenos estén puestos o las ruedas calzadas",
+     "w": [
+      "Soltar los frenos del remolque para que se deslice sobre la quinta rueda",
+      "Bajar el remolque hasta el piso",
+      "Desconectar las luces del remolque"
+     ],
+     "e": "El remolque no debe rodar mientras usted entra debajo. Use sus frenos de resorte o calzas."
+    },
+    {
+     "q": "Después de retroceder hasta que la quinta rueda apenas toque el remolque, ¿qué sigue?",
+     "a": "Poner el freno de estacionamiento, conectar las líneas de aire y cargar aire al remolque",
+     "w": [
+      "Entrar debajo rápido hasta el fondo",
+      "Subir las patas por completo y luego entrar",
+      "Desconectar el cable eléctrico"
+     ],
+     "e": "Conecte las líneas y dé aire al remolque antes de entrar debajo, para probar sus frenos."
+    },
+    {
+     "q": "Al desenganchar, ¿por qué debe quitar presión a las mordazas de la quinta rueda?",
+     "a": "Para que sea más fácil jalar la palanca de liberación",
+     "w": [
+      "Para que el remolque baje solo",
+      "Para probar los frenos del remolque",
+      "Para drenar los tanques de aire"
+     ],
+     "e": "Retroceder un poco y poner los frenos quita presión a las mordazas para que la palanca se suelte fácil."
+    },
+    {
+     "q": "Si las líneas de aire están cruzadas en un remolque viejo sin frenos de resorte, ¿qué puede pasar?",
+     "a": "Podría arrancar sin frenos en el remolque",
+     "w": [
+      "No funcionarían las luces del remolque",
+      "La quinta rueda no se cerraría",
+      "Nada, las líneas son intercambiables"
+     ],
+     "e": "Con las líneas cruzadas el aire va al lugar equivocado y quizá no lo note hasta que necesite frenar."
+    },
+    {
+     "q": "¿Para qué sirven los sellos de hule en las conexiones (glad hands)?",
+     "a": "Para evitar fugas de aire en la conexión",
+     "w": [
+      "Para sostener el cable eléctrico",
+      "Para cerrar la quinta rueda",
+      "Para que no entre tierra a los frenos"
+     ],
+     "e": "Los sellos evitan fugas donde se unen las conexiones. Revise que estén limpios y sin grietas."
+    },
+    {
+     "q": "Un derrape del remolque normalmente ocurre cuando:",
+     "a": "Se bloquean las ruedas del remolque",
+     "w": [
+      "El tractor acelera muy despacio",
+      "La quinta rueda está engrasada",
+      "El remolque es muy ligero"
+     ],
+     "e": "Las ruedas bloqueadas pierden tracción y el remolque se abre."
+    },
+    {
+     "q": "Para ayudar a evitar una tijera (jackknife), debe:",
+     "a": "Evitar frenar fuerte en curvas o caminos resbalosos",
+     "w": [
+      "Usar el freno manual del remolque para detenerse",
+      "Tomar las curvas más rápido",
+      "Frenar siempre solo con el freno del remolque"
+     ],
+     "e": "Frene con suavidad y antes de las curvas."
+    },
+    {
+     "q": "Las combinaciones más largas hacen off-tracking:",
+     "a": "Más que las más cortas",
+     "w": [
+      "Menos que las más cortas",
+      "Igual que un auto",
+      "Solo al retroceder"
+     ],
+     "e": "Mientras más largo el vehículo, más cortan por dentro las ruedas traseras en una vuelta."
+    },
+    {
+     "q": "Después de enganchar, ¿qué debe revisar en el frente del remolque?",
+     "a": "Que el cable eléctrico y las líneas de aire no estén enredados ni se vayan a prensar",
+     "w": [
+      "Que las patas del remolque sigan apoyadas en el piso",
+      "Que las llantas del remolque sean nuevas",
+      "Que la carga esté descargada"
+     ],
+     "e": "Asegure las líneas y el cable para que no se atoren ni se aplasten al dar vuelta."
+    },
+    {
+     "q": "¿Cuándo debe subir las patas del remolque después de enganchar?",
+     "a": "Después de confirmar que el enganche está seguro y las líneas conectadas",
+     "w": [
+      "Solo después de las primeras 50 millas",
+      "Antes de entrar debajo, para que no rocen el tractor",
+      "Nunca; déjelas abajo"
+     ],
+     "e": "Suba las patas por completo cuando confirme el enganche. Nunca maneje con ellas a medio subir."
+    },
+    {
+     "q": "¿Para qué sirve el seguro de la palanca de la quinta rueda?",
+     "a": "Para mantener la palanca cerrada y que el remolque no se suelte",
+     "w": [
+      "Para controlar las luces del remolque",
+      "Para controlar los frenos del remolque",
+      "Para sostener las líneas de aire y el cable eléctrico al manejar"
+     ],
+     "e": "Asegúrese de que el seguro esté puesto sobre la palanca después de enganchar."
+    },
+    {
+     "q": "¿Se usa la válvula manual del remolque para probar sus frenos?",
+     "a": "Sí, se usa para probar los frenos del remolque, no para estacionarse",
+     "w": [
+      "No, nunca se debe tocar salvo en una emergencia",
+      "Sí, y también para estacionarse",
+      "Solo a velocidad de carretera"
+     ],
+     "e": "La válvula manual es para probar los frenos del remolque. No la use al manejar ni para estacionarse."
+    }
+   ]
+  }
+ ]
+}

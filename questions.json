@@ -182,7 +182,7 @@
      "w": [
       "Brake hard right away, then steer back onto the pavement as quickly as you can at your current speed",
       "Turn sharply back onto the road at full speed",
-      "Brake hard right away and steer back onto the road as soon as you leave it"
+      "Shift into neutral and coast until the vehicle stops on its own"
      ],
      "e": "Hard braking on a soft shoulder can cause a skid. Slow down gradually and keep one side on the pavement if possible."
     },
@@ -290,7 +290,7 @@
      "q": "When making a right turn, you should:",
      "a": "Go straight ahead until the rear clears the curb, then turn, keeping the rear close to the curb",
      "w": [
-      "Swing wide to the left before turning",
+      "Use the shoulder to make the turn",
       "Turn as sharply as possible from the left lane",
       "Swing wide to the left first, then turn sharply so the trailer clears the curb"
      ],
@@ -310,7 +310,7 @@
      "q": "Which vehicle requires a Class A CDL?",
      "a": "A combination over 26,000 lbs GCWR towing a unit over 10,000 lbs",
      "w": [
-      "A single truck over 26,000 lbs towing nothing",
+      "A pickup towing a trailer under 10,000 lbs",
       "Any vehicle built to carry 16 or more people",
       "A single truck over 26,000 lbs GVWR that isn't towing anything"
      ],
@@ -330,7 +330,7 @@
      "q": "A Class C CDL is for vehicles that are not Class A or B but:",
      "a": "Carry 16 or more people including the driver, or carry placarded hazmat",
      "w": [
-      "Weigh between 10,001 and 26,000 lbs with any cargo",
+      "Have three or more axles, no matter what they carry",
       "Weigh between 10,001 and 26,000 lbs and carry any kind of cargo",
       "Are used only for farm work within 150 miles"
      ],
@@ -442,7 +442,7 @@
      "w": [
       "A first aid kit, flashlight and road flares only",
       "A first aid kit, a flashlight, three road flares and a full-size spare tire",
-      "A first aid kit, flashlight, road flares and a spare tire"
+      "A tow chain, a jack and a set of jumper cables"
      ],
      "e": "Trucks must carry a fire extinguisher, spare electrical fuses (unless they use circuit breakers) and three reflective warning triangles."
     },
@@ -540,7 +540,7 @@
      "q": "What does 'overdriving your headlights' mean?",
      "a": "Driving so fast you can't stop within the distance your headlights show",
      "w": [
-      "Using high beams when you should use low beams",
+      "Driving with one headlight out",
       "Using high beams when another vehicle is within 500 feet of you",
       "Flashing your headlights at other drivers"
      ],
@@ -680,7 +680,7 @@
      "q": "At a crash scene, what should you do first?",
      "a": "Protect the area so it doesn't get worse",
      "w": [
-      "Move the injured people",
+      "Call your dispatcher and wait for instructions",
       "Move the injured people to the side of the road",
       "Take photos for insurance"
      ],
@@ -752,7 +752,7 @@
      "w": [
       "Raising the trailer for loading",
       "Keeping the tires from freezing",
-      "Lifting the trailer off the ground during loading"
+      "Keeping the trailer from rolling while it's parked"
      ],
      "e": "Blocking is shaped to fit snugly against cargo and is secured to the deck so the cargo can't shift."
     },
@@ -762,7 +762,7 @@
      "w": [
       "To make the truck more aerodynamic and save fuel on long trips",
       "Because it lowers the vehicle's weight",
-      "To make the truck more aerodynamic"
+      "To keep the cargo cool on hot days"
      ],
      "e": "Covers keep cargo from blowing or spilling onto the road and shield it from weather."
     },
@@ -800,7 +800,7 @@
      "q": "Before entering a work zone, you should:",
      "a": "Slow down and watch for workers and lane shifts",
      "w": [
-      "Speed up to clear it quickly",
+      "Move to the shoulder until the zone ends",
       "Change lanes as many times as needed",
       "Speed up so you spend less time near workers"
      ],
@@ -822,7 +822,7 @@
      "w": [
       "Mostly to see whether police or inspectors are behind you",
       "Mirrors are only needed when backing",
-      "Mainly to see if police are following you"
+      "To check that your headlights are working"
      ],
      "e": "Check mirrors often, and before changing lanes, turning or merging, to track traffic and watch your load."
     },
@@ -830,7 +830,7 @@
      "q": "What should you do before changing lanes?",
      "a": "Check your mirrors several times and signal",
      "w": [
-      "Signal and move over right away",
+      "Honk so drivers beside you know you're coming",
       "Signal once and move over right away so you don't hold up traffic",
       "Look over your shoulder once"
      ],
@@ -850,7 +850,7 @@
      "q": "Double clutching means:",
      "a": "Releasing the clutch in neutral between gears to match engine speed",
      "w": [
-      "Pressing the clutch twice to stop",
+      "Using both feet on the clutch pedal at once",
       "Pressing the clutch twice quickly to stop the truck without using the brakes",
       "Shifting without the clutch at all"
      ],
@@ -861,7 +861,7 @@
      "a": "Stop driving as soon as you safely can and rest",
      "w": [
       "Drink an energy drink and keep driving to your stop",
-      "Drink an energy drink and keep going",
+      "Turn the radio up loud and keep driving",
       "Open the window and continue"
      ],
      "e": "Drifting is a warning sign of fatigue. Get off the road and rest."
@@ -880,9 +880,9 @@
      "q": "Before driving in winter, what should you check?",
      "a": "Coolant level, defroster, wipers and tire chains",
      "w": [
-      "Air conditioning and sunroof",
+      "Only the tire pressure and the horn",
       "Air conditioning, sunroof seal and seat heaters",
-      "Only the tire pressure"
+      "Only the radio and interior lights"
      ],
      "e": "Winter checks include coolant and antifreeze, defrosters, wipers, washer fluid, tires and chains."
     },
@@ -910,7 +910,7 @@
      "q": "When going down a long grade, what's the proper use of brakes?",
      "a": "Use the low gear and engine braking, and brake firmly in short applications",
      "w": [
-      "Ride the brakes lightly all the way down",
+      "Shift into neutral to save fuel and brake as needed",
       "Ride the brakes lightly the whole way down so they never get too hot",
       "Brake hard at the bottom only"
      ],
@@ -922,7 +922,7 @@
      "w": [
       "Driving too slowly on flat roads",
       "Too much air pressure",
-      "Driving too slowly"
+      "Using the engine brake on long grades"
      ],
      "e": "Hot brakes lose their stopping power. Using the right low gear on grades prevents fade."
     },
@@ -950,7 +950,7 @@
      "q": "Which of these is a sign a driver may be impaired?",
      "a": "Weaving, driving too slowly or too fast, or stopping without reason",
      "w": [
-      "Using turn signals properly",
+      "Driving with headlights on during the day",
       "Using turn signals early and keeping a steady speed in their lane",
       "Keeping a safe following distance"
      ],
@@ -1108,9 +1108,9 @@
      "q": "Why are air tanks drained?",
      "a": "To remove water and compressor oil that collect in them",
      "w": [
-      "To lower the pressure before driving",
+      "To test the low air pressure warning",
       "To lower the pressure so the compressor doesn't overheat on startup",
-      "To lower the air pressure before driving"
+      "To add antifreeze to the brake lines"
      ],
      "e": "Water and oil in the tanks can freeze or damage the system. Tanks without automatic drains should be drained at the end of each day."
     },
@@ -1118,7 +1118,7 @@
      "q": "What is the most common type of foundation brake on air-brake trucks?",
      "a": "S-cam drum brakes",
      "w": [
-      "Wedge brakes",
+      "Disc brakes",
       "Wedge-type drum brakes",
       "Band brakes"
      ],
@@ -1149,7 +1149,7 @@
      "a": "Air takes time to flow through the lines to the brakes (brake lag)",
      "w": [
       "Air brakes only work on the rear axles, so they have less stopping power",
-      "Air brakes only work on the rear axles",
+      "The brake shoes are smaller than hydraulic ones",
       "Air brakes require you to pump the pedal"
      ],
      "e": "Brake lag is about half a second. At 55 mph that adds roughly 32 feet to your stopping distance."
@@ -1158,7 +1158,7 @@
      "q": "What color and shape is the parking brake control knob?",
      "a": "Yellow and diamond-shaped",
      "w": [
-      "Red and eight-sided",
+      "Blue and round",
       "Red and eight-sided (octagon)",
       "Green and square"
      ],
@@ -1169,7 +1169,7 @@
      "a": "When the brakes are very hot or very cold and wet",
      "w": [
       "Any time you park on a hill, a ramp or any kind of slope",
-      "Any time you park on a hill or a slope",
+      "When parking for less than an hour",
       "When the air pressure is above 100 psi"
      ],
      "e": "Hot drums can be damaged when parking brakes apply, and wet brakes can freeze to the drums in cold weather. Use wheel chocks instead."
@@ -1178,7 +1178,7 @@
      "q": "What is an alcohol evaporator for?",
      "a": "To reduce the risk of ice in brake valves and lines in cold weather",
      "w": [
-      "To clean oil from the tanks",
+      "To warm the cab in cold weather",
       "To test a driver's blood alcohol",
       "To clean oil and dirt out of the compressor before it reaches the tanks"
      ],
@@ -1210,7 +1210,7 @@
      "w": [
       "Drain the air tanks completely, then try to drive forward in low gear",
       "Pull the red trailer air supply knob while moving at about 5 mph and feel for the brakes to grab",
-      "Drain all the tanks completely"
+      "Turn the ignition off and on three times"
      ],
      "e": "Pumping the pedal drops pressure. The parking brake valve should pop out in the 20-45 psi range on most vehicles."
     },
@@ -1258,7 +1258,7 @@
      "q": "What does the application pressure gauge show?",
      "a": "How much air pressure you're applying to the brakes",
      "w": [
-      "How much air is left in the tanks",
+      "The engine's oil pressure",
       "The air pressure in the tires",
       "How much air pressure is left in the air tanks"
      ],
@@ -1298,7 +1298,7 @@
      "q": "Why shouldn't you push the brake pedal while the spring brakes are on?",
      "a": "The combined force of the springs and air can damage the brakes",
      "w": [
-      "It releases the parking brake",
+      "It makes the low-air warning come on",
       "It releases the spring brakes and lets the vehicle roll",
       "It turns off the compressor"
      ],
@@ -1308,7 +1308,7 @@
      "q": "Should front-wheel brakes be used on slippery roads in modern trucks?",
      "a": "Yes, front brakes are good in all conditions",
      "w": [
-      "No, they cause front-wheel skids",
+      "Only below 20 mph",
       "No, front brakes cause front-wheel skids",
       "Only on dry roads"
      ],
@@ -1328,8 +1328,8 @@
      "q": "How does stab braking work?",
      "a": "Brake all the way, release when wheels lock, reapply when they roll again",
      "w": [
-      "Apply the brakes lightly and steadily",
-      "Pump the brakes as fast as you can",
+      "Use only the trailer hand valve until you stop",
+      "Hold the pedal down lightly the whole time",
       "Pump the brakes lightly and quickly until the vehicle comes to a stop"
      ],
      "e": "Stab braking is for vehicles without ABS. It can take up to a second for wheels to start rolling after you release."
@@ -1358,7 +1358,7 @@
      "q": "How do you test the parking brake?",
      "a": "Set it, then gently pull against it in a low gear",
      "w": [
-      "Pump the brake pedal",
+      "Drain the tanks and watch the gauge",
       "Pump the brake pedal until the knob pops out",
       "Drive at 30 mph and pull the knob"
      ],
@@ -1398,7 +1398,7 @@
      "q": "What is the purpose of the air dryer or alcohol evaporator in cold climates?",
      "a": "To keep moisture from freezing in the air system",
      "w": [
-      "To cool the brakes on long grades",
+      "To lower the air pressure at night",
       "To add air to the tires",
       "To cool the brakes on long downhill grades"
      ],
@@ -1408,7 +1408,7 @@
      "q": "Before driving, how many times should you check the air system's warning signal works?",
      "a": "Each time you do your pre-trip inspection",
      "w": [
-      "Once a month, or after repairs",
+      "Only after the air tanks are drained",
       "Only when the light comes on",
       "Once a month, or any time the brakes are serviced"
      ],
@@ -1436,7 +1436,7 @@
      "q": "What is the 'crack-the-whip' effect?",
      "a": "Rearward amplification, where a quick steering move can tip over the trailer",
      "w": [
-      "When the trailer brakes lock before the tractor's",
+      "When the fifth wheel comes unlocked",
       "When the trailer brakes lock up before the tractor's and the trailer slides",
       "When the driver over-revs the engine"
      ],
@@ -1508,7 +1508,7 @@
      "w": [
       "Several inches higher than the fifth wheel, so the kingpin slides on without resistance",
       "Exactly level with the top of the frame",
-      "Several inches higher than the fifth wheel so it slides on easily"
+      "As low as the landing gear will go"
      ],
      "e": "If the trailer is too high it may not couple right. Set it so the fifth wheel lifts it slightly as you back under."
     },
@@ -1518,7 +1518,7 @@
      "w": [
       "A small gap between the upper and lower fifth wheel, so the trailer can pivot freely in turns",
       "The jaws locked around the head of the kingpin",
-      "A small gap between the upper and lower fifth wheel so the trailer can pivot"
+      "The release arm pulled all the way out"
      ],
      "e": "A gap means the trailer is riding on the jaws or is high-coupled. The jaws must close around the kingpin shank, not the head."
     },
@@ -1536,8 +1536,8 @@
      "q": "Before driving away after coupling, the landing gear should be:",
      "a": "Fully raised, with the crank handle secured",
      "w": [
-      "Raised halfway, so it can't drag",
-      "Left down for stability",
+      "Lowered until the pads touch the road",
+      "Removed from the trailer",
       "Raised about halfway so it clears the road but is ready to use"
      ],
      "e": "Landing gear left partly down can catch on railroad tracks or other objects."
@@ -1548,7 +1548,7 @@
      "w": [
       "The same as the tractor wheels",
       "Wider than the tractor wheels' path, so the trailer swings out",
-      "Wider than the path of the tractor wheels"
+      "Random, depending on speed"
      ],
      "e": "Off-tracking means the rear wheels cut inside the path of the front wheels, which is why you need to turn wide."
     },
@@ -1586,7 +1586,7 @@
      "q": "When backing a trailer, which way do you turn the steering wheel?",
      "a": "The opposite direction from where you want the trailer to go",
      "w": [
-      "The same direction you want the trailer to go",
+      "Straight, then a sharp turn at the end",
       "Straight, and let the trailer find its way",
       "The same direction you want the trailer to go, every time"
      ],
@@ -1596,7 +1596,7 @@
      "q": "Once the trailer starts turning while backing, you should:",
      "a": "Turn the wheel the other way to follow the trailer",
      "w": [
-      "Keep turning the wheel the same way",
+      "Let go of the wheel and let it center",
       "Keep turning the wheel the same way to tighten the turn",
       "Speed up to finish quickly"
      ],
@@ -1608,7 +1608,7 @@
      "w": [
       "Level with the frame, with the locking jaws closed and latched",
       "Tilted forward, with the jaws closed",
-      "Level, with the jaws closed and locked"
+      "Removed from the tractor"
      ],
      "e": "The fifth wheel plate should be greased, tilted down toward the rear and the jaws open and ready."
     },
@@ -1628,7 +1628,7 @@
      "w": [
       "Back all the way under quickly",
       "Raise the landing gear fully, then back under",
-      "Raise the landing gear all the way, then back fully under the trailer"
+      "Unhook the electrical cord"
      ],
      "e": "Connect the air lines and supply air to the trailer before backing under, so you can test the trailer brakes."
     },
@@ -1638,7 +1638,7 @@
      "w": [
       "So the trailer lowers itself",
       "To test the trailer brakes",
-      "So the trailer lowers itself onto the ground"
+      "To drain the air tanks"
      ],
      "e": "Backing up gently and setting the brakes takes pressure off the jaws so the locking lever releases easily."
     },
@@ -1697,8 +1697,8 @@
      "a": "That the electrical cord and air lines aren't tangled and won't be pinched",
      "w": [
       "That the trailer's landing gear pads are still resting on the ground",
-      "That the trailer's landing gear is on the ground",
-      "That the landing gear is on the ground"
+      "That the trailer's tires are new",
+      "That the cargo is unloaded"
      ],
      "e": "Make sure lines and the cord are secured so they won't snag or be crushed when you turn."
     },
@@ -1706,9 +1706,9 @@
      "q": "When should you raise the landing gear after coupling?",
      "a": "After you confirm the coupling is secure and the lines are connected",
      "w": [
-      "Before backing under the trailer",
+      "Only after the first 50 miles",
       "Before you back under the trailer, so the pads won't scrape the tractor",
-      "Before you back under the trailer, so it won't scrape"
+      "Never; leave it down"
      ],
      "e": "Raise the landing gear fully once coupling is confirmed. Never drive with it partly raised."
     },
@@ -1716,7 +1716,7 @@
      "q": "What is the safety catch on the fifth wheel locking lever for?",
      "a": "To keep the lever locked so the trailer can't come loose",
      "w": [
-      "To hold the air lines in place",
+      "To set the trailer lights",
       "To control the trailer brakes",
       "To hold the air lines and electrical cord in place while driving"
      ],
@@ -1754,7 +1754,7 @@
      "q": "Where must hazmat shipping papers be while you drive?",
      "a": "In the driver's door pouch or within your reach with your seat belt on",
      "w": [
-      "Locked in the glove box, where they can't get lost or damaged",
+      "In the sleeper berth",
       "Locked in the glove box, where they can't get lost or damaged in a crash",
       "In the trailer with the cargo"
      ],
@@ -1954,7 +1954,7 @@
      "q": "A vehicle with explosives is 'attended' when the driver is:",
      "a": "Awake, not in the sleeper, and within 100 feet with a clear view of it",
      "w": [
-      "In the sleeper berth, as long as the doors are locked",
+      "Inside a building nearby",
       "Asleep in the sleeper berth",
       "In the sleeper berth of that vehicle, as long as the doors are locked"
      ],
@@ -2034,7 +2034,7 @@
      "q": "Should you try to put out a hazmat fire?",
      "a": "Not unless you are trained and have the right equipment",
      "w": [
-      "Yes, always use water on any hazmat fire",
+      "Yes, but only at night",
       "Yes, use any fire extinguisher you have",
       "Yes, always use water first, since it works on any hazmat fire"
      ],
@@ -2052,8 +2052,8 @@
      "q": "When is a tank endorsement required?",
      "a": "When hauling liquid or gas in a tank of 119+ gallons, or tanks totaling 1,000+ gallons",
      "w": [
-      "Only when hauling hazardous materials",
-      "Only when hauling hazardous liquids in a tank of any size",
+      "Any time the truck has a fuel tank",
+      "Only for tanks over 5,000 gallons",
       "Only when hauling hazardous liquids, in a tank of any size, permanently attached to the truck"
      ],
      "e": "The N endorsement is required for individual tanks of 119+ gallons or a total of 1,000+ gallons that are permanently or temporarily attached."
@@ -2063,7 +2063,7 @@
      "a": "Liquid moving in a partly filled tank and pushing the truck in the direction it moves",
      "w": [
       "Rising pressure in the tank on hot days",
-      "Pressure building up inside the tank on hot days",
+      "Liquid leaking from a valve",
       "Pressure building up inside a full tank on hot days, which can force open the vents"
      ],
      "e": "Surge can push a stopped truck forward into an intersection or make it hard to control on slippery roads."
@@ -2072,7 +2072,7 @@
      "q": "What do baffles inside a tank control?",
      "a": "Front-to-back surge, but not side-to-side surge",
      "w": [
-      "Side-to-side surge only",
+      "Tank pressure",
       "All surge in every direction",
       "Side-to-side surge, but not front-to-back surge"
      ],
@@ -2083,8 +2083,8 @@
      "a": "They have no baffles, so front-to-back surge is very strong",
      "w": [
       "They have no brakes on the trailer axles, only on the tractor",
-      "They have no brakes on the trailer",
-      "They have no brakes on the trailer axles"
+      "They are always overweight",
+      "They can only carry gas"
      ],
      "e": "Smooth-bore tanks, often used for food products like milk, let liquid surge freely. Brake gently and allow extra distance."
     },
@@ -2112,7 +2112,7 @@
      "q": "Why do tankers have a high risk of rollover?",
      "a": "They have a high center of gravity and the load can shift",
      "w": [
-      "Tankers are lighter than other trucks",
+      "Tankers have smaller tires",
       "Tankers are lighter than other trucks and catch more wind",
       "Tank trailers have no suspension"
      ],
@@ -2133,7 +2133,7 @@
      "a": "Keep steady brake pressure and avoid releasing the brakes too soon",
      "w": [
       "Release the brakes just before you stop so the liquid settles",
-      "Release the brakes just before stopping",
+      "Pump the brakes quickly",
       "Stop as hard as possible"
      ],
      "e": "Releasing too early lets surge push the truck forward. Brake smoothly and early, with steady pressure."
@@ -2152,7 +2152,7 @@
      "q": "You notice a leak in your tank. What should you do?",
      "a": "Don't drive; a leaking tank is illegal to drive",
      "w": [
-      "Drive slowly to the next stop",
+      "Add more liquid to the tank",
       "Drive faster to reach the receiver",
       "Drive slowly to the next stop and report it to the shipper"
      ],
@@ -2163,7 +2163,7 @@
      "a": "The weight limit is reached before the tank is full",
      "w": [
       "The shipper ran out of product before it was full",
-      "The shipper ran out of product",
+      "The tank has a leak",
       "Partly full tanks are always required"
      ],
      "e": "Heavy liquids like some acids can hit legal weight limits long before the tank is full."
@@ -2260,7 +2260,7 @@
      "q": "What is a converter dolly?",
      "a": "A coupling device with one or two axles and a fifth wheel used to connect a second trailer",
      "w": [
-      "A device that converts air brakes to hydraulic",
+      "A cart for loading freight",
       "A jack used to raise the landing gear",
       "A device that converts the air brakes on the second trailer to hydraulic"
      ],
@@ -2282,7 +2282,7 @@
      "w": [
       "Closed on every trailer",
       "Closed on the first trailer and open at the back of the last trailer",
-      "Closed on the first trailer, open at the rear"
+      "Open on every trailer"
      ],
      "e": "Open valves let air flow through to every trailer. The valves at the very rear must be closed so air doesn't escape."
     },
@@ -2290,8 +2290,8 @@
      "q": "How can you check that air is flowing to all trailers?",
      "a": "Open the emergency line shut-off valve at the back of the last trailer and listen for air escaping",
      "w": [
-      "Watch the tractor's application gauge",
-      "Watch the tractor's application gauge while pressing the brake pedal",
+      "Pull the trailer hand valve",
+      "Look at the colors of the glad hands",
       "Watch the tractor's application gauge while someone presses the brake pedal for you"
      ],
      "e": "Air rushing out of the rear valve shows the whole system is charged. Close the valve again before driving."
@@ -2320,7 +2320,7 @@
      "q": "Why should steering be extra smooth when pulling doubles or triples?",
      "a": "Sudden movements are amplified at the rear trailer and can cause rollovers",
      "w": [
-      "Doubles have weaker steering systems than single trailers",
+      "Smooth steering only saves fuel",
       "Doubles have weaker steering systems than single trailers do",
       "Sudden movements damage the dolly"
      ],
@@ -2360,7 +2360,7 @@
      "q": "When coupling the dolly to the second trailer, the trailer should be:",
      "a": "Slightly lower than the center of the dolly's fifth wheel",
      "w": [
-      "Several inches higher than the fifth wheel",
+      "As high as the landing gear goes",
       "Exactly level with the top of the dolly",
       "Several inches higher than the dolly's fifth wheel"
      ],
@@ -2519,7 +2519,7 @@
      "a": "Secured so the driver and passengers can move freely and exits aren't blocked",
      "w": [
       "In the aisle near the front, so riders can reach it during the trip",
-      "In the aisle near the front, so riders can reach it easily",
+      "In front of the standee line",
       "On empty seats near the emergency exit"
      ],
      "e": "Aisles and exits must stay clear, and loose items can fly forward in a sudden stop."
@@ -2528,7 +2528,7 @@
      "q": "During a bus pre-trip, what should you check inside?",
      "a": "Handholds, railings, floor covering, signal devices and emergency exits",
      "w": [
-      "Only the driver's seat, mirrors and the radio",
+      "Only the radio and lights",
       "Only the driver's seat, the mirrors and the radio, since riders check the rest",
       "Nothing, interiors aren't inspected"
      ],
@@ -2558,7 +2558,7 @@
      "q": "When may a bus cross railroad tracks without stopping?",
      "a": "When a police officer or flagger directs traffic",
      "w": [
-      "Any time no train is visible",
+      "When the bus is empty",
       "At night when tracks are lit",
       "Any time no train is visible in either direction"
      ],
@@ -2636,7 +2636,7 @@
      "q": "What are the crossover mirrors used for?",
      "a": "Seeing the blind area directly in front of the bus and along its front sides",
      "w": [
-      "Watching students in the back of the bus while you drive",
+      "Seeing traffic far behind the bus",
       "Watching students in the back of the bus while you drive down the road",
       "Checking the roof emergency hatch"
      ],
@@ -2686,7 +2686,7 @@
      "q": "A student drops something near the bus. What should they do?",
      "a": "Move away from the bus and ask the driver for help",
      "w": [
-      "Pick it up quickly before the bus moves",
+      "Crawl under the bus to get it",
       "Pick it up quickly, before the bus starts to move",
       "Ask another student to grab it"
      ],
@@ -2736,7 +2736,7 @@
      "q": "Your bus stalls on the railroad tracks. What should you do?",
      "a": "Get everyone off and move them away from the tracks, toward the oncoming train",
      "w": [
-      "Keep students seated and try to restart",
+      "Wait for the train to stop",
       "Move students away in the same direction the train is going",
       "Keep students seated and buckled while you try to restart the engine quickly"
      ],
@@ -2756,7 +2756,7 @@
      "q": "If you leave the driver's seat while students are on board, you should:",
      "a": "Set the parking brake, put it in park or neutral, shut off the engine and take the key",
      "w": [
-      "Leave the engine running so the heat stays on",
+      "Just set the parking brake",
       "Leave the key in for the next driver",
       "Leave the engine running so the heat stays on, and set the parking brake"
      ],
@@ -2796,7 +2796,7 @@
      "q": "At a stop, when should students start crossing in front of the bus?",
      "a": "Only after you signal them that it's safe",
      "w": [
-      "As soon as the door opens",
+      "After the bus pulls away",
       "When they see a gap in traffic",
       "As soon as the door opens and traffic slows down"
      ],
