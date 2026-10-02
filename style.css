@@ -79,6 +79,11 @@ footer p{margin:0 0 8px;max-width:70ch}
 .score{font-size:64px;font-weight:800;line-height:1;margin:6px 0}
 .verdict{font-size:22px;font-weight:800;margin:0 0 8px}
 .verdict.pass{color:var(--ok)} .verdict.fail{color:var(--bad)}
+.next{margin:20px 0 6px;background:var(--sign);color:var(--white);border-radius:12px;padding:20px 22px}
+.next h3{margin:0 0 6px;font-size:22px;font-weight:800}
+.next p{margin:0 0 14px}
+.next .alt{margin:12px 0 0;font-size:16px}
+.next .alt a{color:var(--white);font-weight:700}
 .missed{margin:18px 0 0;padding:0;list-style:none}
 .missed li{border-top:1px solid var(--line);padding:12px 0}
 .missed .ans{color:var(--ok);font-weight:700}

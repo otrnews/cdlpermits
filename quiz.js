@@ -1,3 +1,10 @@
+// Where the results screen sends people. Swap in your exact MyCDLCoach links here.
+var LINKS = {
+  course: 'https://mycdlcoach.com',  // CDL Fast Track ($149) checkout or course page
+  lounge: 'https://mycdlcoach.com'   // Free Driver's Lounge sign-up page
+};
+function track(url, result){return url+(url.indexOf('?')>-1?'&':'?')+'utm_source=cdlpermits&utm_medium=results&utm_campaign='+result;}
+
 (function(){
   var data = window.QUIZ; if(!data) return;
   var box = document.getElementById('quiz');
@@ -47,8 +54,18 @@
       '<p class="count">'+esc(data.name)+' practice test complete</p>'+
       '<div class="score">'+p+'%</div>'+
       '<p class="verdict '+(pass?'pass':'fail')+'">'+(pass?'You would pass.':'Not passing yet.')+'</p>'+
-      '<p>You got '+right+' of '+qs.length+' right. Most states require 80% to pass.</p>'+
-      '<div class="actions"><button class="btn btn-sign" type="button" id="again">Take it again</button>'+
+      '<p>You got '+right+' of '+qs.length+' right. Most states require 80% to pass.</p>';
+    if(pass){
+      h+='<div class="next"><h3>Your next step: ELDT theory</h3>'+
+        '<p>Before your CDL skills test, federal rules require Entry-Level Driver Training theory from a registered provider. MyCDLCoach Fast Track is FMCSA-certified, 100% online, and most students finish in under a day. Your certificate is uploaded to the FMCSA the same day.</p>'+
+        '<a class="btn btn-sign" href="'+track(LINKS.course,'pass')+'">Get my ELDT certificate, $149</a>'+
+        '<p class="alt">Not ready to pay? <a href="'+track(LINKS.lounge,'pass')+'">Join the free Driver\'s Lounge</a></p></div>';
+    }else{
+      h+='<div class="next"><h3>Get help reaching 80%</h3>'+
+        '<p>Join the free MyCDLCoach Driver\'s Lounge. Ask working drivers about the questions that tripped you up, get study tips, and connect with people going through the same process.</p>'+
+        '<a class="btn btn-sign" href="'+track(LINKS.lounge,'fail')+'">Join the free Driver\'s Lounge</a></div>';
+    }
+    h+='<div class="actions"><button class="btn btn-ghost" type="button" id="again">Take it again</button>'+
       '<a class="btn btn-ghost" href="/">Pick another test</a></div>';
     if(missed.length){
       h+='<h3>Review what you missed</h3><ul class="missed">';
