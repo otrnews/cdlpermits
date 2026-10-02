@@ -16,6 +16,19 @@ ADS = [
     {"name": "DAT Load Board", "text": "Looking for freight once you're driving? Get 10% off a DAT load board subscription.", "cta": "Try DAT", "url": "https://www.dat.com/power/0002438644", "img": "https://www.dat.com/wp-content/uploads/media/images/affiliates/Affiliate_banner_black_blue_O1.png"},
     {"name": "LodoShop", "text": "Big brands, bigger savings. Discount deals on everyday gear, tools and household goods.", "cta": "Shop deals", "url": "https://lodoshop.com?utm_source=cdlpermits&utm_medium=ad", "img": "https://otrnews.com/partners/partner-lodoshop.webp"},
 ]
+# MyCDLCoach ebooks shown as ads on matching pages (edit ebooks.json to change titles, prices or links)
+EBOOKS = json.load(open("ebooks.json", encoding="utf-8"))
+EBOOK_FOR = {
+    "general-knowledge": "cdl-study-guide-2026-2027", "air-brakes": "class-a-pre-trip-brake-check-guide",
+    "combination-vehicles": "class-a-pre-trip-brake-check-guide", "hazmat": "cdl-study-guide-2026-2027",
+    "tanker": "cdl-study-guide-2026-2027", "doubles-triples": "cdl-study-guide-2026-2027",
+    "passenger": "cdl-inspection-study-pack", "school-bus": "cdl-inspection-study-pack",
+    "lesson:cdl-basics": "cdl-study-guide-2026-2027", "lesson:vehicle-inspection": "cdl-inspection-study-pack",
+    "lesson:basic-control": "class-a-pre-trip-brake-check-guide", "lesson:cargo": "en-route-inspection-checklist",
+    "lesson:air-brakes": "class-a-pre-trip-brake-check-guide", "lesson:combination-vehicles": "class-a-pre-trip-brake-check-guide",
+    "lesson:endorsements": "cdl-study-guide-2026-2027", "lesson:railroads-and-fitness": "post-trip-inspection-checklist",
+    "default": "cdl-study-guide-2026-2027",
+}
 # ---------------------------------------------
 
 YEAR = datetime.date.today().year
@@ -86,6 +99,18 @@ def partners(title="Tools for drivers", lang="en"):
 <span class="ptext">{e(p["text"])}</span><span class="pcta">{e(p["cta"])}</span></a>"""
     return h + "</div></section>"
 
+def ebook_ad(key="default"):
+    bk = EBOOKS.get(EBOOK_FOR.get(key, EBOOK_FOR["default"]))
+    if not bk:
+        return ""
+    sep = "&" if "?" in bk["url"] else "?"
+    url = f'{bk["url"]}{sep}{UTM}&utm_medium=ebook-ad&utm_campaign={key.replace(":", "-")}'
+    cover = f'<img src="{e(bk["cover"])}" alt="" loading="lazy">' if bk["cover"] else ""
+    return f"""<aside class="ebook"><span class="ptag">Ad</span><a href="{e(url)}" target="_blank" rel="noopener" class="ebook-in">
+<span class="ebook-cover">{cover}</span><span class="ebook-txt"><span class="ebook-from">From MyCDLCoach</span><strong>{e(bk["title"])}</strong>
+<span class="ebook-price">{e(bk["price"])}, instant download</span><span class="btn btn-sign">Get the guide</span></span></a></aside>"""
+
+
 def cta(lang="en"):
     if lang == "es":
         return f"""<aside class="cta"><img class="shield-img" src="{SHIELD}" alt="MyCDLCoach" width="48" height="48">
@@ -104,10 +129,10 @@ def cta(lang="en"):
 def foot(lang="en"):
     if lang == "es":
         txt = f"""<p>CDL Permits es un sitio de estudio gratuito. No está afiliado con la FMCSA ni con ningún DMV estatal. Las preguntas se basan en el manual federal modelo de la CDL; estudie también el manual de su estado.</p>
-<p>Los anuncios pueden ser enlaces de afiliado. Podemos ganar una comisión si se registra, sin costo para usted.</p>"""
+<p>CDL Permits es parte de la red MyCDLCoach, junto con OTR News. Algunos anuncios promueven productos de nuestra propia red; otros son enlaces de afiliado y podemos ganar una comisión si se registra, sin costo para usted.</p>"""
     else:
         txt = f"""<p>CDL Permits is a free study site. It is not affiliated with the FMCSA or any state DMV. Questions are based on the federal model CDL manual; always study your own state's CDL manual too, since rules and question counts vary.</p>
-<p>Ads on this site may be affiliate links. We may earn a commission if you sign up, at no cost to you.</p>"""
+<p>CDL Permits is part of the MyCDLCoach network, along with OTR News. Some ads promote our own network's products and services; others are affiliate links, and we may earn a commission if you sign up, at no cost to you.</p>"""
     return f"""</main>
 <footer><div class="wrap">
 {txt}
@@ -169,7 +194,7 @@ h += """</ul>
 <p>To get your commercial learner's permit (CLP), you take written knowledge tests at your state's licensing office. Everyone takes General Knowledge. Most drivers also take Air Brakes, and Class A drivers take Combination Vehicles. Endorsements like Hazmat, Tanker, Doubles/Triples, Passenger and School Bus each have their own test.</p>
 <p>Most states require a score of 80% on each test. Start with General Knowledge, then work down the list. Pass a test here and it earns a check mark, so you can see what's left.</p>
 </section>"""
-h += cta() + partners()
+h += ebook_ad() + cta() + partners()
 h += faq_ld([("Are these CDL practice tests free?", "Yes. Every test is free with no sign-up."),
              ("What score do I need to pass the CDL permit test?", "Most states require 80% on each knowledge test."),
              ("Which CDL permit tests do I need?", "Everyone takes General Knowledge. Most drivers also take Air Brakes, and Class A drivers take Combination Vehicles. Endorsements each have their own test.")])
@@ -189,7 +214,7 @@ for t in tests:
     p += study_list(t["questions"], f"Study all {qn} questions with answers")
     p += '<h2 class="more-h">Other practice tests</h2><ul class="more">'
     p += "".join(f'<li><a href="/{o["slug"]}">{e(o["name"])}</a></li>' for o in tests if o is not t)
-    p += "</ul>" + cta() + partners()
+    p += "</ul>" + ebook_ad(t["slug"]) + cta() + partners()
     p += f"<script>window.QUIZ={js({'slug': t['slug'], 'name': t['name'], 'questions': t['questions']})};</script>" + foot()
     pages.append((t["slug"] + ".html", p, f"/{t['slug']}"))
 
@@ -218,7 +243,7 @@ for name, agency in STATES:
 <p>Check with {e(agency)} for current fees, office locations, what documents to bring, and the {e(name)} CDL manual.</p></section>
 <h2 class="more-h">More {e(name)} CDL practice tests</h2><ul class="more">"""
     p += "".join(f'<li><a href="/{o["slug"]}">{e(o["name"])}</a></li>' for o in tests)
-    p += "</ul>" + cta() + partners()
+    p += "</ul>" + ebook_ad("general-knowledge") + cta() + partners()
     p += faq_ld([(f"How many questions are on the {name} CDL general knowledge test?", "Most states use 50 questions for General Knowledge. Check your state's CDL manual to confirm."),
                  (f"What score do I need to pass the {name} CDL permit test?", "Most states require 80% on each knowledge test."),
                  (f"Who issues CDL permits in {name}?", f"CDL permits in {name} are issued by {agency}.")])
@@ -254,7 +279,7 @@ c += """</ol>
 <button class="btn btn-sign" type="button" id="certprint">Print or save as PDF</button>
 </section>"""
 c += f"<script>window.LESSONS={js([L['slug'] for L in LESSONS])};</script>"
-c += cta() + partners() + foot()
+c += ebook_ad() + cta() + partners() + foot()
 pages.append(("free-cdl-course.html", c, "/free-cdl-course"))
 for i, L in enumerate(LESSONS):
     nxt = LESSONS[i + 1] if i + 1 < len(LESSONS) else None
@@ -268,7 +293,7 @@ for i, L in enumerate(LESSONS):
     p += '<h2 class="more-h" id="check">Lesson check</h2><div class="quiz" id="quiz"></div>'
     p += '<div class="lnav">' + (f'<a class="btn btn-ghost" href="/cdl-course-{prv["slug"]}">Previous lesson</a>' if prv else '') + \
          (f'<a class="btn btn-ghost" href="/cdl-course-{nxt["slug"]}">Next lesson</a>' if nxt else '<a class="btn btn-ghost" href="/free-cdl-course">Back to the course</a>') + '</div>'
-    p += cta() + partners()
+    p += ebook_ad("lesson:" + L["slug"]) + cta() + partners()
     quiz = {"slug": "lesson-" + L["slug"], "name": f"Lesson {i+1}", "questions": [find_q(x) for x in L["quiz"]],
             "lesson": {"slug": L["slug"], "next": ("/cdl-course-" + nxt["slug"]) if nxt else "/free-cdl-course", "nextTitle": nxt["title"] if nxt else None}}
     p += f"<script>window.QUIZ={js(quiz)};</script>" + foot()

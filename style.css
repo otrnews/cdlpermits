@@ -234,3 +234,14 @@ ul.states{margin-top:16px}
   .top nav{width:100%;justify-content:space-between;border-top:1px solid var(--line);padding-top:8px}
   .top nav a{font-size:16px}
 }
+
+/* ---------- v5: ebook ads ---------- */
+.ebook{position:relative;background:var(--white);border:2px solid var(--blue);border-radius:14px;padding:16px;margin:28px 0}
+.ebook .ptag{position:absolute;top:12px;right:12px}
+.ebook-in{display:grid;grid-template-columns:110px 1fr;gap:18px;align-items:center;text-decoration:none;color:var(--ink)}
+.ebook-cover img{width:110px;height:auto;border-radius:6px;box-shadow:0 4px 14px rgba(0,0,0,.2);display:block}
+.ebook-txt{display:flex;flex-direction:column;gap:4px;align-items:flex-start}
+.ebook-from{font-size:14px;font-weight:700;color:var(--blue)}
+.ebook-txt strong{font-size:20px;line-height:1.25;padding-right:34px}
+.ebook-price{color:var(--muted);font-size:16px;margin-bottom:6px}
+.ebook .btn{font-size:16px;padding:10px 16px}
